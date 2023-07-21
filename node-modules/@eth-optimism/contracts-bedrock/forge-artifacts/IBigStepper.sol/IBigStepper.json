@@ -1,0 +1,335 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "_stateData",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_proof",
+          "type": "bytes"
+        }
+      ],
+      "name": "step",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "postState_",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "step(bytes,bytes)": "f8e0cb96"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"_stateData\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"_proof\",\"type\":\"bytes\"}],\"name\":\"step\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"postState_\",\"type\":\"bytes32\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"step(bytes,bytes)\":{\"params\":{\"_proof\":\"A proof for the inclusion of the prestate's memory in the merkle tree.\",\"_stateData\":\"The preimage of the prestate hash.\"},\"returns\":{\"postState_\":\"The poststate hash after the instruction step.\"}}},\"title\":\"IBigStepper\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"step(bytes,bytes)\":{\"notice\":\"Performs a single instruction step from a given prestate and returns the poststate         hash.\"}},\"notice\":\"An interface for a contract with a state transition function that         will accept a pre state and return a post state. \\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u28c0\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800 \\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2880\\u28fc\\u2836\\u2885\\u2812\\u2884\\u2894\\u28f6\\u2866\\u28e4\\u2864\\u2804\\u28c0\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800 \\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2828\\u284f\\u2800\\u2800\\u2808\\u2822\\u28d9\\u28af\\u28c4\\u2800\\u28a8\\u282f\\u287a\\u2858\\u2884\\u2800\\u2800\\u2800\\u2800\\u2800 \\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u28c0\\u28f6\\u2846\\u2800\\u2800\\u2800\\u2800\\u2808\\u2813\\u282c\\u2852\\u2821\\u28c0\\u2899\\u285c\\u2840\\u2813\\u2804\\u2800\\u2800\\u2800 \\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u28b8\\u2877\\u283f\\u28e7\\u28c0\\u2840\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2809\\u2823\\u28de\\u2829\\u2825\\u2800\\u283c\\u2884\\u2800\\u2800 \\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u28b8\\u2847\\u2800\\u2800\\u2800\\u2809\\u28b9\\u28f6\\u2812\\u2812\\u2802\\u2808\\u2809\\u2801\\u2818\\u2846\\u2800\\u28ff\\u28ff\\u282b\\u2844\\u2800 \\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u28e0\\u28b6\\u28e4\\u28c0\\u2840\\u2800\\u2800\\u28b8\\u287f\\u2800\\u2800\\u2800\\u2800\\u2800\\u2880\\u281e\\u2800\\u2800\\u28a1\\u28a8\\u2880\\u2844\\u2800 \\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u28e0\\u2852\\u28ff\\u28bf\\u2864\\u281d\\u2863\\u2809\\u2801\\u281a\\u281b\\u2800\\u2824\\u2824\\u28c4\\u2870\\u2801\\u2800\\u2800\\u2800\\u2809\\u2819\\u28b8\\u2800\\u2800 \\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2880\\u2864\\u28af\\u284c\\u287f\\u2847\\u2818\\u2877\\u2800\\u2801\\u2800\\u2800\\u2880\\u28f0\\u2822\\u2832\\u281b\\u28c8\\u28f8\\u2826\\u2824\\u2836\\u2834\\u28ac\\u28d0\\u28ca\\u2842\\u2800 \\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2880\\u28e4\\u286a\\u2857\\u28ab\\u281e\\u2800\\u2806\\u28c0\\u283b\\u2824\\u2834\\u2810\\u281a\\u28c9\\u2880\\u2826\\u2802\\u280b\\u2801\\u2800\\u2801\\u2800\\u2800\\u2800\\u2800\\u288b\\u2809\\u2807\\u2800 \\u2800\\u2800\\u2800\\u2800\\u28c0\\u2864\\u2810\\u2812\\u2818\\u2879\\u2809\\u28b8\\u2807\\u2838\\u2800\\u2800\\u2800\\u2800\\u28c0\\u28e4\\u2834\\u281a\\u2809\\u2808\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u283c\\u2800\\u28fe\\u2800 \\u2800\\u2800\\u2800\\u2870\\u2800\\u2809\\u2809\\u2800\\u2801\\u2800\\u2800\\u2808\\u2887\\u2808\\u2812\\u2812\\u2818\\u2808\\u2880\\u28a1\\u2842\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u28b0\\u2800\\u28b8\\u2844 \\u2800\\u2800\\u2838\\u28ff\\u28c6\\u2824\\u2880\\u2840\\u2800\\u2800\\u2800\\u2800\\u2898\\u284c\\u2800\\u2800\\u28c0\\u28c0\\u28c0\\u2848\\u28e4\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u28b8\\u2800\\u28b8\\u2847 \\u2800\\u2800\\u28b8\\u28c0\\u2800\\u2809\\u2812\\u2810\\u281b\\u280b\\u282d\\u282d\\u280d\\u2809\\u281b\\u2812\\u2812\\u2812\\u2800\\u2812\\u281a\\u281b\\u281b\\u281b\\u2829\\u282d\\u282d\\u282d\\u282d\\u2824\\u2824\\u2824\\u2824\\u2824\\u282d\\u282d\\u2809\\u2813\\u2846 \\u2800\\u2800\\u2818\\u283f\\u28f7\\u28f6\\u28e4\\u28e4\\u28c0\\u28c0\\u2840\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u28e0\\u28e4\\u28c4\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2847 \\u2800\\u2800\\u2800\\u2800\\u2800\\u2809\\u2819\\u281b\\u281b\\u283b\\u283f\\u28bf\\u28ff\\u28ff\\u28f7\\u28f6\\u28f6\\u28f6\\u28e4\\u28e4\\u28c0\\u28c1\\u28db\\u28c3\\u28d2\\u283f\\u283f\\u283f\\u2824\\u2820\\u2804\\u2824\\u2824\\u28a4\\u28db\\u28d3\\u28c2\\u28fb\\u2847 \\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2808\\u2809\\u2809\\u2809\\u2819\\u281b\\u283b\\u283f\\u283f\\u283f\\u28bf\\u28ff\\u28ff\\u28ff\\u28f7\\u28f6\\u28f6\\u28fe\\u28ff\\u28ff\\u28ff\\u28ff\\u283f\\u281f\\u2801 \\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2800\\u2808\\u2808\\u2809\\u2809\\u2809\\u2809\\u2801\\u2800\\u2800\\u2800\\u2800\\u2800\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/dispute/interfaces/IBigStepper.sol\":\"IBigStepper\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"none\"},\"optimizer\":{\"enabled\":true,\"runs\":999999},\"remappings\":[\":@cwia/=node_modules/clones-with-immutable-args/src/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/\",\":@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/\",\":@rari-capital/=node_modules/@rari-capital/\",\":@rari-capital/solmate/=node_modules/@rari-capital/solmate/\",\":clones-with-immutable-args/=node_modules/clones-with-immutable-args/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\"]},\"sources\":{\"contracts/dispute/interfaces/IBigStepper.sol\":{\"keccak256\":\"0xd70a4f9d657be0ad973258512a5d884441511108e2074b28988f17c8915178aa\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://17b85440478038942b4fa01aee6efe77e69f77531df0a7e5c70ea7410d238761\",\"dweb:/ipfs/QmUYu2x3r9Q4kCZYMJpK3pZK9aVfjqsy2Gzk9YfQbyihdz\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.15+commit.e14f2714"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "_stateData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "_proof",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "step",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "postState_",
+              "type": "bytes32"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "step(bytes,bytes)": {
+            "params": {
+              "_proof": "A proof for the inclusion of the prestate's memory in the merkle tree.",
+              "_stateData": "The preimage of the prestate hash."
+            },
+            "returns": {
+              "postState_": "The poststate hash after the instruction step."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "step(bytes,bytes)": {
+            "notice": "Performs a single instruction step from a given prestate and returns the poststate         hash."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@cwia/=node_modules/clones-with-immutable-args/src/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/",
+        "@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/",
+        "@rari-capital/=node_modules/@rari-capital/",
+        "@rari-capital/solmate/=node_modules/@rari-capital/solmate/",
+        "clones-with-immutable-args/=node_modules/clones-with-immutable-args/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 999999
+      },
+      "metadata": {
+        "bytecodeHash": "none"
+      },
+      "compilationTarget": {
+        "contracts/dispute/interfaces/IBigStepper.sol": "IBigStepper"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/dispute/interfaces/IBigStepper.sol": {
+        "keccak256": "0xd70a4f9d657be0ad973258512a5d884441511108e2074b28988f17c8915178aa",
+        "urls": [
+          "bzz-raw://17b85440478038942b4fa01aee6efe77e69f77531df0a7e5c70ea7410d238761",
+          "dweb:/ipfs/QmUYu2x3r9Q4kCZYMJpK3pZK9aVfjqsy2Gzk9YfQbyihdz"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": {}
+  },
+  "userdoc": {
+    "version": 1,
+    "kind": "user",
+    "methods": {
+      "step(bytes,bytes)": {
+        "notice": "Performs a single instruction step from a given prestate and returns the poststate         hash."
+      }
+    },
+    "notice": "An interface for a contract with a state transition function that         will accept a pre state and return a post state. ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⠶⢅⠒⢄⢔⣶⡦⣤⡤⠄⣀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠨⡏⠀⠀⠈⠢⣙⢯⣄⠀⢨⠯⡺⡘⢄⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣶⡆⠀⠀⠀⠀⠈⠓⠬⡒⠡⣀⢙⡜⡀⠓⠄⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡷⠿⣧⣀⡀⠀⠀⠀⠀⠀⠀⠉⠣⣞⠩⠥⠀⠼⢄⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠉⢹⣶⠒⠒⠂⠈⠉⠁⠘⡆⠀⣿⣿⠫⡄⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⢶⣤⣀⡀⠀⠀⢸⡿⠀⠀⠀⠀⠀⢀⠞⠀⠀⢡⢨⢀⡄⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡒⣿⢿⡤⠝⡣⠉⠁⠚⠛⠀⠤⠤⣄⡰⠁⠀⠀⠀⠉⠙⢸⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⢯⡌⡿⡇⠘⡷⠀⠁⠀⠀⢀⣰⠢⠲⠛⣈⣸⠦⠤⠶⠴⢬⣐⣊⡂⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⡪⡗⢫⠞⠀⠆⣀⠻⠤⠴⠐⠚⣉⢀⠦⠂⠋⠁⠀⠁⠀⠀⠀⠀⢋⠉⠇⠀ ⠀⠀⠀⠀⣀⡤⠐⠒⠘⡹⠉⢸⠇⠸⠀⠀⠀⠀⣀⣤⠴⠚⠉⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠼⠀⣾⠀ ⠀⠀⠀⡰⠀⠉⠉⠀⠁⠀⠀⠈⢇⠈⠒⠒⠘⠈⢀⢡⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠀⢸⡄ ⠀⠀⠸⣿⣆⠤⢀⡀⠀⠀⠀⠀⢘⡌⠀⠀⣀⣀⣀⡈⣤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⢸⡇ ⠀⠀⢸⣀⠀⠉⠒⠐⠛⠋⠭⠭⠍⠉⠛⠒⠒⠒⠀⠒⠚⠛⠛⠛⠩⠭⠭⠭⠭⠤⠤⠤⠤⠤⠭⠭⠉⠓⡆ ⠀⠀⠘⠿⣷⣶⣤⣤⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇ ⠀⠀⠀⠀⠀⠉⠙⠛⠛⠻⠿⢿⣿⣿⣷⣶⣶⣶⣤⣤⣀⣁⣛⣃⣒⠿⠿⠿⠤⠠⠄⠤⠤⢤⣛⣓⣂⣻⡇ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠙⠛⠻⠿⠿⠿⢿⣿⣿⣿⣷⣶⣶⣾⣿⣿⣿⣿⠿⠟⠁ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠈⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀"
+  },
+  "devdoc": {
+    "version": 1,
+    "kind": "dev",
+    "methods": {
+      "step(bytes,bytes)": {
+        "params": {
+          "_proof": "A proof for the inclusion of the prestate's memory in the merkle tree.",
+          "_stateData": "The preimage of the prestate hash."
+        },
+        "returns": {
+          "postState_": "The poststate hash after the instruction step."
+        }
+      }
+    },
+    "title": "IBigStepper"
+  },
+  "ast": {
+    "absolutePath": "contracts/dispute/interfaces/IBigStepper.sol",
+    "id": 40358,
+    "exportedSymbols": {
+      "IBigStepper": [
+        40357
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:2882:70",
+    "nodes": [
+      {
+        "id": 40345,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:70",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".15"
+        ]
+      },
+      {
+        "id": 40357,
+        "nodeType": "ContractDefinition",
+        "src": "2416:497:70",
+        "nodes": [
+          {
+            "id": 40356,
+            "nodeType": "FunctionDefinition",
+            "src": "2793:118:70",
+            "nodes": [],
+            "documentation": {
+              "id": 40347,
+              "nodeType": "StructuredDocumentation",
+              "src": "2444:344:70",
+              "text": "@notice Performs a single instruction step from a given prestate and returns the poststate\n         hash.\n @param _stateData The preimage of the prestate hash.\n @param _proof A proof for the inclusion of the prestate's memory in the merkle tree.\n @return postState_ The poststate hash after the instruction step."
+            },
+            "functionSelector": "f8e0cb96",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "step",
+            "nameLocation": "2802:4:70",
+            "parameters": {
+              "id": 40352,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40349,
+                  "mutability": "mutable",
+                  "name": "_stateData",
+                  "nameLocation": "2822:10:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40356,
+                  "src": "2807:25:70",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 40348,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2807:5:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 40351,
+                  "mutability": "mutable",
+                  "name": "_proof",
+                  "nameLocation": "2849:6:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40356,
+                  "src": "2834:21:70",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 40350,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2834:5:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2806:50:70"
+            },
+            "returnParameters": {
+              "id": 40355,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40354,
+                  "mutability": "mutable",
+                  "name": "postState_",
+                  "nameLocation": "2899:10:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40356,
+                  "src": "2891:18:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 40353,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2891:7:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2890:20:70"
+            },
+            "scope": 40357,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IBigStepper",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 40346,
+          "nodeType": "StructuredDocumentation",
+          "src": "58:2358:70",
+          "text": "@title IBigStepper\n @notice An interface for a contract with a state transition function that\n         will accept a pre state and return a post state.\n ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⠶⢅⠒⢄⢔⣶⡦⣤⡤⠄⣀⠀⠀⠀⠀⠀⠀⠀\n ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠨⡏⠀⠀⠈⠢⣙⢯⣄⠀⢨⠯⡺⡘⢄⠀⠀⠀⠀⠀\n ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣶⡆⠀⠀⠀⠀⠈⠓⠬⡒⠡⣀⢙⡜⡀⠓⠄⠀⠀⠀\n ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡷⠿⣧⣀⡀⠀⠀⠀⠀⠀⠀⠉⠣⣞⠩⠥⠀⠼⢄⠀⠀\n ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠉⢹⣶⠒⠒⠂⠈⠉⠁⠘⡆⠀⣿⣿⠫⡄⠀\n ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⢶⣤⣀⡀⠀⠀⢸⡿⠀⠀⠀⠀⠀⢀⠞⠀⠀⢡⢨⢀⡄⠀\n ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡒⣿⢿⡤⠝⡣⠉⠁⠚⠛⠀⠤⠤⣄⡰⠁⠀⠀⠀⠉⠙⢸⠀⠀\n ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⢯⡌⡿⡇⠘⡷⠀⠁⠀⠀⢀⣰⠢⠲⠛⣈⣸⠦⠤⠶⠴⢬⣐⣊⡂⠀\n ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⡪⡗⢫⠞⠀⠆⣀⠻⠤⠴⠐⠚⣉⢀⠦⠂⠋⠁⠀⠁⠀⠀⠀⠀⢋⠉⠇⠀\n ⠀⠀⠀⠀⣀⡤⠐⠒⠘⡹⠉⢸⠇⠸⠀⠀⠀⠀⣀⣤⠴⠚⠉⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠼⠀⣾⠀\n ⠀⠀⠀⡰⠀⠉⠉⠀⠁⠀⠀⠈⢇⠈⠒⠒⠘⠈⢀⢡⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠀⢸⡄\n ⠀⠀⠸⣿⣆⠤⢀⡀⠀⠀⠀⠀⢘⡌⠀⠀⣀⣀⣀⡈⣤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⢸⡇\n ⠀⠀⢸⣀⠀⠉⠒⠐⠛⠋⠭⠭⠍⠉⠛⠒⠒⠒⠀⠒⠚⠛⠛⠛⠩⠭⠭⠭⠭⠤⠤⠤⠤⠤⠭⠭⠉⠓⡆\n ⠀⠀⠘⠿⣷⣶⣤⣤⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇\n ⠀⠀⠀⠀⠀⠉⠙⠛⠛⠻⠿⢿⣿⣿⣷⣶⣶⣶⣤⣤⣀⣁⣛⣃⣒⠿⠿⠿⠤⠠⠄⠤⠤⢤⣛⣓⣂⣻⡇\n ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠙⠛⠻⠿⠿⠿⢿⣿⣿⣿⣷⣶⣶⣾⣿⣿⣿⣿⠿⠟⠁\n ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠈⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          40357
+        ],
+        "name": "IBigStepper",
+        "nameLocation": "2426:11:70",
+        "scope": 40358,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 70
+}

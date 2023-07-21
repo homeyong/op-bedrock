@@ -1,0 +1,288 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "_params",
+          "type": "bytes"
+        }
+      ],
+      "name": "check",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "check(bytes)": "c64b3bb5"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"_params\",\"type\":\"bytes\"}],\"name\":\"check\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"check(bytes)\":{\"params\":{\"_params\":\"Encoded parameters for the drip check.\"},\"returns\":{\"_0\":\"Whether the drip should be executed.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"check(bytes)\":{\"notice\":\"Checks whether a drip should be executable.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/periphery/drippie/IDripCheck.sol\":\"IDripCheck\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"none\"},\"optimizer\":{\"enabled\":true,\"runs\":999999},\"remappings\":[\":@cwia/=node_modules/clones-with-immutable-args/src/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/\",\":@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/\",\":@rari-capital/=node_modules/@rari-capital/\",\":@rari-capital/solmate/=node_modules/@rari-capital/solmate/\",\":clones-with-immutable-args/=node_modules/clones-with-immutable-args/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\"]},\"sources\":{\"contracts/periphery/drippie/IDripCheck.sol\":{\"keccak256\":\"0xb52c89360566b2963dfd82cb2cc23f0c3ce4503a69e8563878e8aa80b6c60b3f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d1a67f456f8eb6219f4e85857714bed1c27ce934e5e81497b733646848b315c\",\"dweb:/ipfs/QmRFwsdm5ZCWP9b3S7YAz9TuCdgLzsNrAMpX5WckU3v7WG\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.15+commit.e14f2714"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "_params",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "check",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "check(bytes)": {
+            "params": {
+              "_params": "Encoded parameters for the drip check."
+            },
+            "returns": {
+              "_0": "Whether the drip should be executed."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "check(bytes)": {
+            "notice": "Checks whether a drip should be executable."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@cwia/=node_modules/clones-with-immutable-args/src/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/",
+        "@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/",
+        "@rari-capital/=node_modules/@rari-capital/",
+        "@rari-capital/solmate/=node_modules/@rari-capital/solmate/",
+        "clones-with-immutable-args/=node_modules/clones-with-immutable-args/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 999999
+      },
+      "metadata": {
+        "bytecodeHash": "none"
+      },
+      "compilationTarget": {
+        "contracts/periphery/drippie/IDripCheck.sol": "IDripCheck"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/periphery/drippie/IDripCheck.sol": {
+        "keccak256": "0xb52c89360566b2963dfd82cb2cc23f0c3ce4503a69e8563878e8aa80b6c60b3f",
+        "urls": [
+          "bzz-raw://2d1a67f456f8eb6219f4e85857714bed1c27ce934e5e81497b733646848b315c",
+          "dweb:/ipfs/QmRFwsdm5ZCWP9b3S7YAz9TuCdgLzsNrAMpX5WckU3v7WG"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": {}
+  },
+  "userdoc": {
+    "version": 1,
+    "kind": "user",
+    "methods": {
+      "check(bytes)": {
+        "notice": "Checks whether a drip should be executable."
+      }
+    }
+  },
+  "devdoc": {
+    "version": 1,
+    "kind": "dev",
+    "methods": {
+      "check(bytes)": {
+        "params": {
+          "_params": "Encoded parameters for the drip check."
+        },
+        "returns": {
+          "_0": "Whether the drip should be executed."
+        }
+      }
+    }
+  },
+  "ast": {
+    "absolutePath": "contracts/periphery/drippie/IDripCheck.sol",
+    "id": 46025,
+    "exportedSymbols": {
+      "IDripCheck": [
+        46024
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:670:110",
+    "nodes": [
+      {
+        "id": 46015,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:110",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 46024,
+        "nodeType": "ContractDefinition",
+        "src": "57:644:110",
+        "nodes": [
+          {
+            "id": 46023,
+            "nodeType": "FunctionDefinition",
+            "src": "633:66:110",
+            "nodes": [],
+            "documentation": {
+              "id": 46016,
+              "nodeType": "StructuredDocumentation",
+              "src": "431:197:110",
+              "text": " @notice Checks whether a drip should be executable.\n @param _params Encoded parameters for the drip check.\n @return Whether the drip should be executed."
+            },
+            "functionSelector": "c64b3bb5",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "check",
+            "nameLocation": "642:5:110",
+            "parameters": {
+              "id": 46019,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46018,
+                  "mutability": "mutable",
+                  "name": "_params",
+                  "nameLocation": "661:7:110",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46023,
+                  "src": "648:20:110",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 46017,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "648:5:110",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "647:22:110"
+            },
+            "returnParameters": {
+              "id": 46022,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46021,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46023,
+                  "src": "693:4:110",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 46020,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "693:4:110",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "692:6:110"
+            },
+            "scope": 46024,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IDripCheck",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          46024
+        ],
+        "name": "IDripCheck",
+        "nameLocation": "67:10:110",
+        "scope": 46025,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 110
+}

@@ -1,0 +1,435 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address payable",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "nonce",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct Faucet.DripParameters",
+          "name": "_params",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_id",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_proof",
+          "type": "bytes"
+        }
+      ],
+      "name": "verify",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "verify((address,bytes32),bytes32,bytes)": "f5431ffa"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"address payable\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"nonce\",\"type\":\"bytes32\"}],\"internalType\":\"struct Faucet.DripParameters\",\"name\":\"_params\",\"type\":\"tuple\"},{\"internalType\":\"bytes32\",\"name\":\"_id\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"_proof\",\"type\":\"bytes\"}],\"name\":\"verify\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"verify((address,bytes32),bytes32,bytes)\":{\"params\":{\"_id\":\"Authentication ID to verify.\",\"_params\":\"Drip parameters to verify.\",\"_proof\":\"Authentication proof to verify.\"}}},\"title\":\"IFaucetAuthModule\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"verify((address,bytes32),bytes32,bytes)\":{\"notice\":\"Verifies that the given drip parameters are valid.\"}},\"notice\":\"Interface for faucet authentication modules.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/periphery/faucet/authmodules/IFaucetAuthModule.sol\":\"IFaucetAuthModule\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"none\"},\"optimizer\":{\"enabled\":true,\"runs\":999999},\"remappings\":[\":@cwia/=node_modules/clones-with-immutable-args/src/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/\",\":@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/\",\":@rari-capital/=node_modules/@rari-capital/\",\":@rari-capital/solmate/=node_modules/@rari-capital/solmate/\",\":clones-with-immutable-args/=node_modules/clones-with-immutable-args/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\"]},\"sources\":{\"contracts/periphery/faucet/Faucet.sol\":{\"keccak256\":\"0x0df3b36eae1b8593259f7c96d0c11164b92ea6d03a379c96e13b851c9142fcc5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3594bcb5373ccd847c64e1ae1d7e3f5db656d09746a4712e4e0bbbc2abfe2eaf\",\"dweb:/ipfs/QmQgVTGXHHh7Yxn41GvSFppG1yk4wKwsfrzjs74rZomVto\"]},\"contracts/periphery/faucet/authmodules/IFaucetAuthModule.sol\":{\"keccak256\":\"0x8d957f6f57a7ffdbb89ea3405bedaca9462a15c13767c9b6025b02923d9af792\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0fd6798f85729c64f9b93519ccdf707b1dc0d51a319cf07bb884542a3d3a6d69\",\"dweb:/ipfs/QmYkmf59sFtzRMz9qYyuU1A3fBEypFbhKwaegNLjRLrpwW\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.15+commit.e14f2714"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "struct Faucet.DripParameters",
+              "name": "_params",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address payable",
+                  "name": "recipient",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "nonce",
+                  "type": "bytes32"
+                }
+              ]
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_id",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes",
+              "name": "_proof",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "verify",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "verify((address,bytes32),bytes32,bytes)": {
+            "params": {
+              "_id": "Authentication ID to verify.",
+              "_params": "Drip parameters to verify.",
+              "_proof": "Authentication proof to verify."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "verify((address,bytes32),bytes32,bytes)": {
+            "notice": "Verifies that the given drip parameters are valid."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@cwia/=node_modules/clones-with-immutable-args/src/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/",
+        "@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/",
+        "@rari-capital/=node_modules/@rari-capital/",
+        "@rari-capital/solmate/=node_modules/@rari-capital/solmate/",
+        "clones-with-immutable-args/=node_modules/clones-with-immutable-args/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 999999
+      },
+      "metadata": {
+        "bytecodeHash": "none"
+      },
+      "compilationTarget": {
+        "contracts/periphery/faucet/authmodules/IFaucetAuthModule.sol": "IFaucetAuthModule"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/periphery/faucet/Faucet.sol": {
+        "keccak256": "0x0df3b36eae1b8593259f7c96d0c11164b92ea6d03a379c96e13b851c9142fcc5",
+        "urls": [
+          "bzz-raw://3594bcb5373ccd847c64e1ae1d7e3f5db656d09746a4712e4e0bbbc2abfe2eaf",
+          "dweb:/ipfs/QmQgVTGXHHh7Yxn41GvSFppG1yk4wKwsfrzjs74rZomVto"
+        ],
+        "license": "MIT"
+      },
+      "contracts/periphery/faucet/authmodules/IFaucetAuthModule.sol": {
+        "keccak256": "0x8d957f6f57a7ffdbb89ea3405bedaca9462a15c13767c9b6025b02923d9af792",
+        "urls": [
+          "bzz-raw://0fd6798f85729c64f9b93519ccdf707b1dc0d51a319cf07bb884542a3d3a6d69",
+          "dweb:/ipfs/QmYkmf59sFtzRMz9qYyuU1A3fBEypFbhKwaegNLjRLrpwW"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": {}
+  },
+  "userdoc": {
+    "version": 1,
+    "kind": "user",
+    "methods": {
+      "verify((address,bytes32),bytes32,bytes)": {
+        "notice": "Verifies that the given drip parameters are valid."
+      }
+    },
+    "notice": "Interface for faucet authentication modules."
+  },
+  "devdoc": {
+    "version": 1,
+    "kind": "dev",
+    "methods": {
+      "verify((address,bytes32),bytes32,bytes)": {
+        "params": {
+          "_id": "Authentication ID to verify.",
+          "_params": "Drip parameters to verify.",
+          "_proof": "Authentication proof to verify."
+        }
+      }
+    },
+    "title": "IFaucetAuthModule"
+  },
+  "ast": {
+    "absolutePath": "contracts/periphery/faucet/authmodules/IFaucetAuthModule.sol",
+    "id": 46554,
+    "exportedSymbols": {
+      "Faucet": [
+        46450
+      ],
+      "IFaucetAuthModule": [
+        46553
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:586:117",
+    "nodes": [
+      {
+        "id": 46536,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:117",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".15"
+        ]
+      },
+      {
+        "id": 46538,
+        "nodeType": "ImportDirective",
+        "src": "57:39:117",
+        "nodes": [],
+        "absolutePath": "contracts/periphery/faucet/Faucet.sol",
+        "file": "../Faucet.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 46554,
+        "sourceUnit": 46451,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 46537,
+              "name": "Faucet",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 46450,
+              "src": "66:6:117",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 46553,
+        "nodeType": "ContractDefinition",
+        "src": "191:426:117",
+        "nodes": [
+          {
+            "id": 46552,
+            "nodeType": "FunctionDefinition",
+            "src": "468:147:117",
+            "nodes": [],
+            "documentation": {
+              "id": 46540,
+              "nodeType": "StructuredDocumentation",
+              "src": "225:238:117",
+              "text": " @notice Verifies that the given drip parameters are valid.\n @param _params Drip parameters to verify.\n @param _id     Authentication ID to verify.\n @param _proof  Authentication proof to verify."
+            },
+            "functionSelector": "f5431ffa",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "verify",
+            "nameLocation": "477:6:117",
+            "parameters": {
+              "id": 46548,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46543,
+                  "mutability": "mutable",
+                  "name": "_params",
+                  "nameLocation": "522:7:117",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46552,
+                  "src": "493:36:117",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_DripParameters_$46230_memory_ptr",
+                    "typeString": "struct Faucet.DripParameters"
+                  },
+                  "typeName": {
+                    "id": 46542,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 46541,
+                      "name": "Faucet.DripParameters",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 46230,
+                      "src": "493:21:117"
+                    },
+                    "referencedDeclaration": 46230,
+                    "src": "493:21:117",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_DripParameters_$46230_storage_ptr",
+                      "typeString": "struct Faucet.DripParameters"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 46545,
+                  "mutability": "mutable",
+                  "name": "_id",
+                  "nameLocation": "547:3:117",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46552,
+                  "src": "539:11:117",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 46544,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "539:7:117",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 46547,
+                  "mutability": "mutable",
+                  "name": "_proof",
+                  "nameLocation": "573:6:117",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46552,
+                  "src": "560:19:117",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 46546,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "560:5:117",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "483:102:117"
+            },
+            "returnParameters": {
+              "id": 46551,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46550,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46552,
+                  "src": "609:4:117",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 46549,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "609:4:117",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "608:6:117"
+            },
+            "scope": 46553,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IFaucetAuthModule",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 46539,
+          "nodeType": "StructuredDocumentation",
+          "src": "98:92:117",
+          "text": " @title  IFaucetAuthModule\n @notice Interface for faucet authentication modules."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          46553
+        ],
+        "name": "IFaucetAuthModule",
+        "nameLocation": "201:17:117",
+        "scope": 46554,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 117
+}

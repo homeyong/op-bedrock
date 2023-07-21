@@ -1,0 +1,653 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "_preimage",
+          "type": "bytes"
+        }
+      ],
+      "name": "computePreimageKey",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "key_",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_partOffset",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_preimage",
+          "type": "bytes"
+        }
+      ],
+      "name": "loadKeccak256PreimagePart",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_key",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_offset",
+          "type": "uint256"
+        }
+      ],
+      "name": "readPreimage",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "dat_",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "datLen_",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "computePreimageKey(bytes)": "a57c202c",
+    "loadKeccak256PreimagePart(uint256,bytes)": "e1592611",
+    "readPreimage(bytes32,uint256)": "e03110e1"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"_preimage\",\"type\":\"bytes\"}],\"name\":\"computePreimageKey\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"key_\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_partOffset\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"_preimage\",\"type\":\"bytes\"}],\"name\":\"loadKeccak256PreimagePart\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_key\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"_offset\",\"type\":\"uint256\"}],\"name\":\"readPreimage\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"dat_\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"datLen_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"computePreimageKey(bytes)\":{\"params\":{\"_preimage\":\"The pre-image.\"},\"returns\":{\"key_\":\"The pre-image key.\"}},\"loadKeccak256PreimagePart(uint256,bytes)\":{\"params\":{\"_partOffset\":\"The offset of the preimage to read.\",\"_preimage\":\"The preimage data.\"}},\"readPreimage(bytes32,uint256)\":{\"params\":{\"_key\":\"The key of the preimage to read.\",\"_offset\":\"The offset of the preimage to read.\"},\"returns\":{\"datLen_\":\"The length of the preimage data.\",\"dat_\":\"The preimage data.\"}}},\"title\":\"IPreimageOracle\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"computePreimageKey(bytes)\":{\"notice\":\"Computes and returns the key for a pre-image.\"},\"loadKeccak256PreimagePart(uint256,bytes)\":{\"notice\":\"Prepares a preimage to be read by keccak256 key, starting at         the given offset and up to 32 bytes (clipped at preimage length, if out of data).\"},\"readPreimage(bytes32,uint256)\":{\"notice\":\"Reads a preimage from the oracle.\"}},\"notice\":\"Interface for a preimage oracle.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/cannon/interfaces/IPreimageOracle.sol\":\"IPreimageOracle\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"none\"},\"optimizer\":{\"enabled\":true,\"runs\":999999},\"remappings\":[\":@cwia/=node_modules/clones-with-immutable-args/src/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/\",\":@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/\",\":@rari-capital/=node_modules/@rari-capital/\",\":@rari-capital/solmate/=node_modules/@rari-capital/solmate/\",\":clones-with-immutable-args/=node_modules/clones-with-immutable-args/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\"]},\"sources\":{\"contracts/cannon/interfaces/IPreimageOracle.sol\":{\"keccak256\":\"0xc0c6b5c1ad2e896f644e09fce680fa9abdff1d8ec65380448c76637c34d864f8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://37180a838ae00e1fea7ffacbbee64c040804321698d07df624f4d0690f9f3c95\",\"dweb:/ipfs/QmTaLiencURne43X6rGr2iRXywsSU8nLo9inhN1CDrk7zC\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "_preimage",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "computePreimageKey",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "key_",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_partOffset",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "_preimage",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "loadKeccak256PreimagePart"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_key",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_offset",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "readPreimage",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "dat_",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "datLen_",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "computePreimageKey(bytes)": {
+            "params": {
+              "_preimage": "The pre-image."
+            },
+            "returns": {
+              "key_": "The pre-image key."
+            }
+          },
+          "loadKeccak256PreimagePart(uint256,bytes)": {
+            "params": {
+              "_partOffset": "The offset of the preimage to read.",
+              "_preimage": "The preimage data."
+            }
+          },
+          "readPreimage(bytes32,uint256)": {
+            "params": {
+              "_key": "The key of the preimage to read.",
+              "_offset": "The offset of the preimage to read."
+            },
+            "returns": {
+              "datLen_": "The length of the preimage data.",
+              "dat_": "The preimage data."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "computePreimageKey(bytes)": {
+            "notice": "Computes and returns the key for a pre-image."
+          },
+          "loadKeccak256PreimagePart(uint256,bytes)": {
+            "notice": "Prepares a preimage to be read by keccak256 key, starting at         the given offset and up to 32 bytes (clipped at preimage length, if out of data)."
+          },
+          "readPreimage(bytes32,uint256)": {
+            "notice": "Reads a preimage from the oracle."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@cwia/=node_modules/clones-with-immutable-args/src/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/",
+        "@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/",
+        "@rari-capital/=node_modules/@rari-capital/",
+        "@rari-capital/solmate/=node_modules/@rari-capital/solmate/",
+        "clones-with-immutable-args/=node_modules/clones-with-immutable-args/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 999999
+      },
+      "metadata": {
+        "bytecodeHash": "none"
+      },
+      "compilationTarget": {
+        "contracts/cannon/interfaces/IPreimageOracle.sol": "IPreimageOracle"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/cannon/interfaces/IPreimageOracle.sol": {
+        "keccak256": "0xc0c6b5c1ad2e896f644e09fce680fa9abdff1d8ec65380448c76637c34d864f8",
+        "urls": [
+          "bzz-raw://37180a838ae00e1fea7ffacbbee64c040804321698d07df624f4d0690f9f3c95",
+          "dweb:/ipfs/QmTaLiencURne43X6rGr2iRXywsSU8nLo9inhN1CDrk7zC"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": {}
+  },
+  "userdoc": {
+    "version": 1,
+    "kind": "user",
+    "methods": {
+      "computePreimageKey(bytes)": {
+        "notice": "Computes and returns the key for a pre-image."
+      },
+      "loadKeccak256PreimagePart(uint256,bytes)": {
+        "notice": "Prepares a preimage to be read by keccak256 key, starting at         the given offset and up to 32 bytes (clipped at preimage length, if out of data)."
+      },
+      "readPreimage(bytes32,uint256)": {
+        "notice": "Reads a preimage from the oracle."
+      }
+    },
+    "notice": "Interface for a preimage oracle."
+  },
+  "devdoc": {
+    "version": 1,
+    "kind": "dev",
+    "methods": {
+      "computePreimageKey(bytes)": {
+        "params": {
+          "_preimage": "The pre-image."
+        },
+        "returns": {
+          "key_": "The pre-image key."
+        }
+      },
+      "loadKeccak256PreimagePart(uint256,bytes)": {
+        "params": {
+          "_partOffset": "The offset of the preimage to read.",
+          "_preimage": "The preimage data."
+        }
+      },
+      "readPreimage(bytes32,uint256)": {
+        "params": {
+          "_key": "The key of the preimage to read.",
+          "_offset": "The offset of the preimage to read."
+        },
+        "returns": {
+          "datLen_": "The length of the preimage data.",
+          "dat_": "The preimage data."
+        }
+      }
+    },
+    "title": "IPreimageOracle"
+  },
+  "ast": {
+    "absolutePath": "contracts/cannon/interfaces/IPreimageOracle.sol",
+    "id": 2311,
+    "exportedSymbols": {
+      "IPreimageOracle": [
+        2310
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:1139:1",
+    "nodes": [
+      {
+        "id": 2280,
+        "nodeType": "PragmaDirective",
+        "src": "32:22:1",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.7",
+          ".6"
+        ]
+      },
+      {
+        "id": 2310,
+        "nodeType": "ContractDefinition",
+        "src": "128:1042:1",
+        "nodes": [
+          {
+            "id": 2293,
+            "nodeType": "FunctionDefinition",
+            "src": "419:131:1",
+            "nodes": [],
+            "documentation": {
+              "id": 2282,
+              "nodeType": "StructuredDocumentation",
+              "src": "160:254:1",
+              "text": "@notice Reads a preimage from the oracle.\n @param _key The key of the preimage to read.\n @param _offset The offset of the preimage to read.\n @return dat_ The preimage data.\n @return datLen_ The length of the preimage data."
+            },
+            "functionSelector": "e03110e1",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "readPreimage",
+            "parameters": {
+              "id": 2287,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2284,
+                  "mutability": "mutable",
+                  "name": "_key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2293,
+                  "src": "441:12:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 2283,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "441:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2286,
+                  "mutability": "mutable",
+                  "name": "_offset",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2293,
+                  "src": "455:15:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2285,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "455:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "440:31:1"
+            },
+            "returnParameters": {
+              "id": 2292,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2289,
+                  "mutability": "mutable",
+                  "name": "dat_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2293,
+                  "src": "519:12:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 2288,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "519:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2291,
+                  "mutability": "mutable",
+                  "name": "datLen_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2293,
+                  "src": "533:15:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2290,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "533:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "518:31:1"
+            },
+            "scope": 2310,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2301,
+            "nodeType": "FunctionDefinition",
+            "src": "698:91:1",
+            "nodes": [],
+            "documentation": {
+              "id": 2294,
+              "nodeType": "StructuredDocumentation",
+              "src": "556:137:1",
+              "text": "@notice Computes and returns the key for a pre-image.\n @param _preimage The pre-image.\n @return key_ The pre-image key."
+            },
+            "functionSelector": "a57c202c",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "computePreimageKey",
+            "parameters": {
+              "id": 2297,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2296,
+                  "mutability": "mutable",
+                  "name": "_preimage",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2301,
+                  "src": "726:24:1",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2295,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "726:5:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "725:26:1"
+            },
+            "returnParameters": {
+              "id": 2300,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2299,
+                  "mutability": "mutable",
+                  "name": "key_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2301,
+                  "src": "775:12:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 2298,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "775:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "774:14:1"
+            },
+            "scope": 2310,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2309,
+            "nodeType": "FunctionDefinition",
+            "src": "1077:91:1",
+            "nodes": [],
+            "documentation": {
+              "id": 2302,
+              "nodeType": "StructuredDocumentation",
+              "src": "795:277:1",
+              "text": "@notice Prepares a preimage to be read by keccak256 key, starting at\n         the given offset and up to 32 bytes (clipped at preimage length, if out of data).\n @param _partOffset The offset of the preimage to read.\n @param _preimage The preimage data."
+            },
+            "functionSelector": "e1592611",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "loadKeccak256PreimagePart",
+            "parameters": {
+              "id": 2307,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2304,
+                  "mutability": "mutable",
+                  "name": "_partOffset",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2309,
+                  "src": "1112:19:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2303,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1112:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2306,
+                  "mutability": "mutable",
+                  "name": "_preimage",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2309,
+                  "src": "1133:24:1",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2305,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1133:5:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1111:47:1"
+            },
+            "returnParameters": {
+              "id": 2308,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1167:0:1"
+            },
+            "scope": 2310,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 2281,
+          "nodeType": "StructuredDocumentation",
+          "src": "56:72:1",
+          "text": "@title IPreimageOracle\n @notice Interface for a preimage oracle."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          2310
+        ],
+        "name": "IPreimageOracle",
+        "scope": 2311
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 1
+}

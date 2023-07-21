@@ -1,0 +1,547 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "contracts/libraries/DisputeErrors.sol",
+    "id": 42659,
+    "exportedSymbols": {
+      "AlreadyChallenged": [
+        42655
+      ],
+      "BondAmount": [
+        42686
+      ],
+      "BondTooLow": [
+        42619
+      ],
+      "CannotDefendRootClaim": [
+        42622
+      ],
+      "Claim": [
+        42682
+      ],
+      "ClaimAlreadyExists": [
+        42625
+      ],
+      "ClaimHash": [
+        42684
+      ],
+      "Clock": [
+        42694
+      ],
+      "ClockNotExpired": [
+        42637
+      ],
+      "ClockTimeExceeded": [
+        42634
+      ],
+      "Duration": [
+        42690
+      ],
+      "GameAlreadyExists": [
+        42616
+      ],
+      "GameDepthExceeded": [
+        42640
+      ],
+      "GameId": [
+        42692
+      ],
+      "GameNotInProgress": [
+        42631
+      ],
+      "GameStatus": [
+        42702
+      ],
+      "GameType": [
+        42698
+      ],
+      "GameTypes": [
+        42728
+      ],
+      "Hash": [
+        42680
+      ],
+      "InvalidClaim": [
+        42628
+      ],
+      "InvalidParent": [
+        42643
+      ],
+      "InvalidPrestate": [
+        42646
+      ],
+      "InvalidSignature": [
+        42652
+      ],
+      "LibClock": [
+        40731
+      ],
+      "LibHashing": [
+        40751
+      ],
+      "LibPosition": [
+        40909
+      ],
+      "NoImplementation": [
+        42610
+      ],
+      "NotOwner": [
+        42658
+      ],
+      "Position": [
+        42696
+      ],
+      "Timestamp": [
+        42688
+      ],
+      "ValidStep": [
+        42649
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:2865:94",
+    "nodes": [
+      {
+        "id": 42603,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:94",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".15"
+        ]
+      },
+      {
+        "id": 42604,
+        "nodeType": "ImportDirective",
+        "src": "58:28:94",
+        "nodes": [],
+        "absolutePath": "contracts/libraries/DisputeTypes.sol",
+        "file": "./DisputeTypes.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 42659,
+        "sourceUnit": 42729,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 42610,
+        "nodeType": "ErrorDefinition",
+        "src": "428:42:94",
+        "nodes": [],
+        "documentation": {
+          "id": 42605,
+          "nodeType": "StructuredDocumentation",
+          "src": "284:144:94",
+          "text": "@notice Thrown when a dispute game is attempted to be created with an unsupported game type.\n @param gameType The unsupported game type."
+        },
+        "errorSelector": "44265d6f",
+        "name": "NoImplementation",
+        "nameLocation": "434:16:94",
+        "parameters": {
+          "id": 42609,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 42608,
+              "mutability": "mutable",
+              "name": "gameType",
+              "nameLocation": "460:8:94",
+              "nodeType": "VariableDeclaration",
+              "scope": 42610,
+              "src": "451:17:94",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_userDefinedValueType$_GameType_$42698",
+                "typeString": "GameType"
+              },
+              "typeName": {
+                "id": 42607,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 42606,
+                  "name": "GameType",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 42698,
+                  "src": "451:8:94"
+                },
+                "referencedDeclaration": 42698,
+                "src": "451:8:94",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_userDefinedValueType$_GameType_$42698",
+                  "typeString": "GameType"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "450:19:94"
+        }
+      },
+      {
+        "id": 42616,
+        "nodeType": "ErrorDefinition",
+        "src": "625:35:94",
+        "nodes": [],
+        "documentation": {
+          "id": 42611,
+          "nodeType": "StructuredDocumentation",
+          "src": "472:153:94",
+          "text": "@notice Thrown when a dispute game that already exists is attempted to be created.\n @param uuid The UUID of the dispute game that already exists."
+        },
+        "errorSelector": "014f6fe5",
+        "name": "GameAlreadyExists",
+        "nameLocation": "631:17:94",
+        "parameters": {
+          "id": 42615,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 42614,
+              "mutability": "mutable",
+              "name": "uuid",
+              "nameLocation": "654:4:94",
+              "nodeType": "VariableDeclaration",
+              "scope": 42616,
+              "src": "649:9:94",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_userDefinedValueType$_Hash_$42680",
+                "typeString": "Hash"
+              },
+              "typeName": {
+                "id": 42613,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 42612,
+                  "name": "Hash",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 42680,
+                  "src": "649:4:94"
+                },
+                "referencedDeclaration": 42680,
+                "src": "649:4:94",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_userDefinedValueType$_Hash_$42680",
+                  "typeString": "Hash"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "648:11:94"
+        }
+      },
+      {
+        "id": 42619,
+        "nodeType": "ErrorDefinition",
+        "src": "975:19:94",
+        "nodes": [],
+        "documentation": {
+          "id": 42617,
+          "nodeType": "StructuredDocumentation",
+          "src": "858:117:94",
+          "text": "@notice Thrown when a supplied bond is too low to cover the\n         cost of the next possible counter claim."
+        },
+        "errorSelector": "6e360f94",
+        "name": "BondTooLow",
+        "nameLocation": "981:10:94",
+        "parameters": {
+          "id": 42618,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "991:2:94"
+        }
+      },
+      {
+        "id": 42622,
+        "nodeType": "ErrorDefinition",
+        "src": "1067:30:94",
+        "nodes": [],
+        "documentation": {
+          "id": 42620,
+          "nodeType": "StructuredDocumentation",
+          "src": "996:71:94",
+          "text": "@notice Thrown when a defense against the root claim is attempted."
+        },
+        "errorSelector": "a42637bc",
+        "name": "CannotDefendRootClaim",
+        "nameLocation": "1073:21:94",
+        "parameters": {
+          "id": 42621,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "1094:2:94"
+        }
+      },
+      {
+        "id": 42625,
+        "nodeType": "ErrorDefinition",
+        "src": "1177:27:94",
+        "nodes": [],
+        "documentation": {
+          "id": 42623,
+          "nodeType": "StructuredDocumentation",
+          "src": "1099:78:94",
+          "text": "@notice Thrown when a claim is attempting to be made that already exists."
+        },
+        "errorSelector": "80497e3b",
+        "name": "ClaimAlreadyExists",
+        "nameLocation": "1183:18:94",
+        "parameters": {
+          "id": 42624,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "1201:2:94"
+        }
+      },
+      {
+        "id": 42628,
+        "nodeType": "ErrorDefinition",
+        "src": "1260:21:94",
+        "nodes": [],
+        "documentation": {
+          "id": 42626,
+          "nodeType": "StructuredDocumentation",
+          "src": "1206:54:94",
+          "text": "@notice Thrown when a given claim is invalid (0)."
+        },
+        "errorSelector": "ed3c247c",
+        "name": "InvalidClaim",
+        "nameLocation": "1266:12:94",
+        "parameters": {
+          "id": 42627,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "1278:2:94"
+        }
+      },
+      {
+        "id": 42631,
+        "nodeType": "ErrorDefinition",
+        "src": "1417:26:94",
+        "nodes": [],
+        "documentation": {
+          "id": 42629,
+          "nodeType": "StructuredDocumentation",
+          "src": "1283:134:94",
+          "text": "@notice Thrown when an action that requires the game to be `IN_PROGRESS` is invoked when\n         the game is not in progress."
+        },
+        "errorSelector": "67fe1950",
+        "name": "GameNotInProgress",
+        "nameLocation": "1423:17:94",
+        "parameters": {
+          "id": 42630,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "1440:2:94"
+        }
+      },
+      {
+        "id": 42634,
+        "nodeType": "ErrorDefinition",
+        "src": "1531:26:94",
+        "nodes": [],
+        "documentation": {
+          "id": 42632,
+          "nodeType": "StructuredDocumentation",
+          "src": "1445:86:94",
+          "text": "@notice Thrown when a move is attempted to be made after the clock has timed out."
+        },
+        "errorSelector": "3381d114",
+        "name": "ClockTimeExceeded",
+        "nameLocation": "1537:17:94",
+        "parameters": {
+          "id": 42633,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "1554:2:94"
+        }
+      },
+      {
+        "id": 42637,
+        "nodeType": "ErrorDefinition",
+        "src": "1631:24:94",
+        "nodes": [],
+        "documentation": {
+          "id": 42635,
+          "nodeType": "StructuredDocumentation",
+          "src": "1559:72:94",
+          "text": "@notice Thrown when the game is attempted to be resolved too early."
+        },
+        "errorSelector": "f2440b53",
+        "name": "ClockNotExpired",
+        "nameLocation": "1637:15:94",
+        "parameters": {
+          "id": 42636,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "1652:2:94"
+        }
+      },
+      {
+        "id": 42640,
+        "nodeType": "ErrorDefinition",
+        "src": "1758:26:94",
+        "nodes": [],
+        "documentation": {
+          "id": 42638,
+          "nodeType": "StructuredDocumentation",
+          "src": "1657:101:94",
+          "text": "@notice Thrown when a move is attempted to be made at or greater than the max depth of the game."
+        },
+        "errorSelector": "56f57b2b",
+        "name": "GameDepthExceeded",
+        "nameLocation": "1764:17:94",
+        "parameters": {
+          "id": 42639,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "1781:2:94"
+        }
+      },
+      {
+        "id": 42643,
+        "nodeType": "ErrorDefinition",
+        "src": "1860:22:94",
+        "nodes": [],
+        "documentation": {
+          "id": 42641,
+          "nodeType": "StructuredDocumentation",
+          "src": "1786:74:94",
+          "text": "@notice Thrown when a step is attempted above the maximum game depth."
+        },
+        "errorSelector": "5f53dd98",
+        "name": "InvalidParent",
+        "nameLocation": "1866:13:94",
+        "parameters": {
+          "id": 42642,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "1879:2:94"
+        }
+      },
+      {
+        "id": 42646,
+        "nodeType": "ErrorDefinition",
+        "src": "1951:24:94",
+        "nodes": [],
+        "documentation": {
+          "id": 42644,
+          "nodeType": "StructuredDocumentation",
+          "src": "1884:67:94",
+          "text": "@notice Thrown when an invalid prestate is supplied to `step`."
+        },
+        "errorSelector": "696550ff",
+        "name": "InvalidPrestate",
+        "nameLocation": "1957:15:94",
+        "parameters": {
+          "id": 42645,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "1972:2:94"
+        }
+      },
+      {
+        "id": 42649,
+        "nodeType": "ErrorDefinition",
+        "src": "2065:18:94",
+        "nodes": [],
+        "documentation": {
+          "id": 42647,
+          "nodeType": "StructuredDocumentation",
+          "src": "1977:88:94",
+          "text": "@notice Thrown when a step is made that computes the expected post state correctly."
+        },
+        "errorSelector": "fb4e40dd",
+        "name": "ValidStep",
+        "nameLocation": "2071:9:94",
+        "parameters": {
+          "id": 42648,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "2080:2:94"
+        }
+      },
+      {
+        "id": 42652,
+        "nodeType": "ErrorDefinition",
+        "src": "2355:25:94",
+        "nodes": [],
+        "documentation": {
+          "id": 42650,
+          "nodeType": "StructuredDocumentation",
+          "src": "2281:74:94",
+          "text": "@notice Thrown when an invalid signature is submitted to `challenge`."
+        },
+        "errorSelector": "8baa579f",
+        "name": "InvalidSignature",
+        "nameLocation": "2361:16:94",
+        "parameters": {
+          "id": 42651,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "2377:2:94"
+        }
+      },
+      {
+        "id": 42655,
+        "nodeType": "ErrorDefinition",
+        "src": "2513:26:94",
+        "nodes": [],
+        "documentation": {
+          "id": 42653,
+          "nodeType": "StructuredDocumentation",
+          "src": "2382:131:94",
+          "text": "@notice Thrown when a signature that has already been used to support the\n         `rootClaim` is submitted to `challenge`."
+        },
+        "errorSelector": "f1082a93",
+        "name": "AlreadyChallenged",
+        "nameLocation": "2519:17:94",
+        "parameters": {
+          "id": 42654,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "2536:2:94"
+        }
+      },
+      {
+        "id": 42658,
+        "nodeType": "ErrorDefinition",
+        "src": "2879:17:94",
+        "nodes": [],
+        "documentation": {
+          "id": 42656,
+          "nodeType": "StructuredDocumentation",
+          "src": "2737:142:94",
+          "text": "@notice Thrown when a function that is protected by the `onlyOwner` modifier\n          is called from an account other than the owner."
+        },
+        "errorSelector": "30cd7471",
+        "name": "NotOwner",
+        "nameLocation": "2885:8:94",
+        "parameters": {
+          "id": 42657,
+          "nodeType": "ParameterList",
+          "parameters": [],
+          "src": "2893:2:94"
+        }
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 94
+}

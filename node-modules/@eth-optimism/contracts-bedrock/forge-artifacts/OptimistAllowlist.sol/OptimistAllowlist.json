@@ -1,0 +1,2598 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract AttestationStation",
+          "name": "_attestationStation",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_allowlistAttestor",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_coinbaseQuestAttestor",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_optimistInviter",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "ALLOWLIST_ATTESTOR",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ATTESTATION_STATION",
+      "outputs": [
+        {
+          "internalType": "contract AttestationStation",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "COINBASE_QUEST_ATTESTOR",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "COINBASE_QUEST_ELIGIBLE_ATTESTATION_KEY",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "OPTIMIST_CAN_MINT_ATTESTATION_KEY",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "OPTIMIST_INVITER",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_claimer",
+          "type": "address"
+        }
+      ],
+      "name": "isAllowedToMint",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "version",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x61016060405234801561001157600080fd5b50604051610a74380380610a748339810160408190526100309161007c565b6001608052600060a081905260c0526001600160a01b0393841660e0529183166101005282166101205216610140526100db565b6001600160a01b038116811461007957600080fd5b50565b6000806000806080858703121561009257600080fd5b845161009d81610064565b60208601519094506100ae81610064565b60408601519093506100bf81610064565b60608601519092506100d081610064565b939692955090935050565b60805160a05160c05160e0516101005161012051610140516109246101506000396000818161011b015261035a0152600081816092015261030d01526000818161019e01526102c001526000818161017701526105360152600061026f015260006102460152600061021d01526109246000f3fe608060405234801561001057600080fd5b50600436106100885760003560e01c8063819f7e841161005b578063819f7e841461013d578063db083d7114610172578063db3c316314610199578063e7bd804e146101c057600080fd5b80633ac52df71461008d5780634813d8a6146100de57806354fd4d50146101015780635e4f489a14610116575b600080fd5b6100b47f000000000000000000000000000000000000000000000000000000000000000081565b60405173ffffffffffffffffffffffffffffffffffffffff90911681526020015b60405180910390f35b6100f16100ec3660046105cd565b6101e7565b60405190151581526020016100d5565b610109610216565b6040516100d5919061063a565b6100b47f000000000000000000000000000000000000000000000000000000000000000081565b6101647f636f696e626173652e71756573742d656c696769626c6500000000000000000081565b6040519081526020016100d5565b6100b47f000000000000000000000000000000000000000000000000000000000000000081565b6100b47f000000000000000000000000000000000000000000000000000000000000000081565b6101647f6f7074696d6973742e63616e2d6d696e7400000000000000000000000000000081565b60006101f2826102b9565b80610201575061020182610306565b80610210575061021082610353565b92915050565b60606102417f00000000000000000000000000000000000000000000000000000000000000006103a0565b61026a7f00000000000000000000000000000000000000000000000000000000000000006103a0565b6102937f00000000000000000000000000000000000000000000000000000000000000006103a0565b6040516020016102a59392919061068b565b604051602081830303815290604052905090565b60006102107f0000000000000000000000000000000000000000000000000000000000000000837f6f7074696d6973742e63616e2d6d696e740000000000000000000000000000006104dd565b60006102107f0000000000000000000000000000000000000000000000000000000000000000837f636f696e626173652e71756573742d656c696769626c650000000000000000006104dd565b60006102107f0000000000000000000000000000000000000000000000000000000000000000837f6f7074696d6973742e63616e2d6d696e742d66726f6d2d696e766974650000006104dd565b6060816000036103e357505060408051808201909152600181527f3000000000000000000000000000000000000000000000000000000000000000602082015290565b8160005b811561040d57806103f781610730565b91506104069050600a83610797565b91506103e7565b60008167ffffffffffffffff811115610428576104286107ab565b6040519080825280601f01601f191660200182016040528015610452576020820181803683370190505b5090505b84156104d5576104676001836107da565b9150610474600a866107f1565b61047f906030610805565b60f81b8183815181106104945761049461081d565b60200101907effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916908160001a9053506104ce600a86610797565b9450610456565b949350505050565b6040517f29b42cb500000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff848116600483015283811660248301526044820183905260009182917f000000000000000000000000000000000000000000000000000000000000000016906329b42cb590606401600060405180830381865afa15801561057d573d6000803e3d6000fd5b505050506040513d6000823e601f3d9081017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe01682016040526105c3919081019061084c565b5111949350505050565b6000602082840312156105df57600080fd5b813573ffffffffffffffffffffffffffffffffffffffff8116811461060357600080fd5b9392505050565b60005b8381101561062557818101518382015260200161060d565b83811115610634576000848401525b50505050565b602081526000825180602084015261065981604085016020870161060a565b601f017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0169190910160400192915050565b6000845161069d81846020890161060a565b80830190507f2e0000000000000000000000000000000000000000000000000000000000000080825285516106d9816001850160208a0161060a565b600192019182015283516106f481600284016020880161060a565b0160020195945050505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b60007fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff820361076157610761610701565b5060010190565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601260045260246000fd5b6000826107a6576107a6610768565b500490565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6000828210156107ec576107ec610701565b500390565b60008261080057610800610768565b500690565b6000821982111561081857610818610701565b500190565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052603260045260246000fd5b60006020828403121561085e57600080fd5b815167ffffffffffffffff8082111561087657600080fd5b818401915084601f83011261088a57600080fd5b81518181111561089c5761089c6107ab565b604051601f82017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0908116603f011681019083821181831017156108e2576108e26107ab565b816040528281528760208487010111156108fb57600080fd5b61090c83602083016020880161060a565b97965050505050505056fea164736f6c634300080f000a",
+    "sourceMap": "502:5380:120:-:0;;;1968:402;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;2151:1;762:22:211;;2154:1:120;794:22:211;;;;826;;-1:-1:-1;;;;;2170:41:120;;::::1;;::::0;2221:39;;::::1;;::::0;2270:48;::::1;;::::0;2328:35:::1;;::::0;502:5380;;14:151:283;-1:-1:-1;;;;;109:31:283;;99:42;;89:70;;155:1;152;145:12;89:70;14:151;:::o;170:762::-;295:6;303;311;319;372:3;360:9;351:7;347:23;343:33;340:53;;;389:1;386;379:12;340:53;421:9;415:16;440:51;485:5;440:51;:::i;:::-;560:2;545:18;;539:25;510:5;;-1:-1:-1;573:53:283;539:25;573:53;:::i;:::-;697:2;682:18;;676:25;645:7;;-1:-1:-1;710:53:283;676:25;710:53;:::i;:::-;834:2;819:18;;813:25;782:7;;-1:-1:-1;847:53:283;813:25;847:53;:::i;:::-;170:762;;;;-1:-1:-1;170:762:283;;-1:-1:-1;;170:762:283:o;:::-;502:5380:120;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100885760003560e01c8063819f7e841161005b578063819f7e841461013d578063db083d7114610172578063db3c316314610199578063e7bd804e146101c057600080fd5b80633ac52df71461008d5780634813d8a6146100de57806354fd4d50146101015780635e4f489a14610116575b600080fd5b6100b47f000000000000000000000000000000000000000000000000000000000000000081565b60405173ffffffffffffffffffffffffffffffffffffffff90911681526020015b60405180910390f35b6100f16100ec3660046105cd565b6101e7565b60405190151581526020016100d5565b610109610216565b6040516100d5919061063a565b6100b47f000000000000000000000000000000000000000000000000000000000000000081565b6101647f636f696e626173652e71756573742d656c696769626c6500000000000000000081565b6040519081526020016100d5565b6100b47f000000000000000000000000000000000000000000000000000000000000000081565b6100b47f000000000000000000000000000000000000000000000000000000000000000081565b6101647f6f7074696d6973742e63616e2d6d696e7400000000000000000000000000000081565b60006101f2826102b9565b80610201575061020182610306565b80610210575061021082610353565b92915050565b60606102417f00000000000000000000000000000000000000000000000000000000000000006103a0565b61026a7f00000000000000000000000000000000000000000000000000000000000000006103a0565b6102937f00000000000000000000000000000000000000000000000000000000000000006103a0565b6040516020016102a59392919061068b565b604051602081830303815290604052905090565b60006102107f0000000000000000000000000000000000000000000000000000000000000000837f6f7074696d6973742e63616e2d6d696e740000000000000000000000000000006104dd565b60006102107f0000000000000000000000000000000000000000000000000000000000000000837f636f696e626173652e71756573742d656c696769626c650000000000000000006104dd565b60006102107f0000000000000000000000000000000000000000000000000000000000000000837f6f7074696d6973742e63616e2d6d696e742d66726f6d2d696e766974650000006104dd565b6060816000036103e357505060408051808201909152600181527f3000000000000000000000000000000000000000000000000000000000000000602082015290565b8160005b811561040d57806103f781610730565b91506104069050600a83610797565b91506103e7565b60008167ffffffffffffffff811115610428576104286107ab565b6040519080825280601f01601f191660200182016040528015610452576020820181803683370190505b5090505b84156104d5576104676001836107da565b9150610474600a866107f1565b61047f906030610805565b60f81b8183815181106104945761049461081d565b60200101907effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916908160001a9053506104ce600a86610797565b9450610456565b949350505050565b6040517f29b42cb500000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff848116600483015283811660248301526044820183905260009182917f000000000000000000000000000000000000000000000000000000000000000016906329b42cb590606401600060405180830381865afa15801561057d573d6000803e3d6000fd5b505050506040513d6000823e601f3d9081017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe01682016040526105c3919081019061084c565b5111949350505050565b6000602082840312156105df57600080fd5b813573ffffffffffffffffffffffffffffffffffffffff8116811461060357600080fd5b9392505050565b60005b8381101561062557818101518382015260200161060d565b83811115610634576000848401525b50505050565b602081526000825180602084015261065981604085016020870161060a565b601f017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0169190910160400192915050565b6000845161069d81846020890161060a565b80830190507f2e0000000000000000000000000000000000000000000000000000000000000080825285516106d9816001850160208a0161060a565b600192019182015283516106f481600284016020880161060a565b0160020195945050505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b60007fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff820361076157610761610701565b5060010190565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601260045260246000fd5b6000826107a6576107a6610768565b500490565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6000828210156107ec576107ec610701565b500390565b60008261080057610800610768565b500690565b6000821982111561081857610818610701565b500190565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052603260045260246000fd5b60006020828403121561085e57600080fd5b815167ffffffffffffffff8082111561087657600080fd5b818401915084601f83011261088a57600080fd5b81518181111561089c5761089c6107ab565b604051601f82017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0908116603f011681019083821181831017156108e2576108e26107ab565b816040528281528760208487010111156108fb57600080fd5b61090c83602083016020880161060a565b97965050505050505056fea164736f6c634300080f000a",
+    "sourceMap": "502:5380:120:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1366:48;;;;;;;;190:42:283;178:55;;;160:74;;148:2;133:18;1366:48:120;;;;;;;;3187:278;;;;;;:::i;:::-;;:::i;:::-;;;724:14:283;;717:22;699:41;;687:2;672:18;3187:278:120;559:187:283;972:372:211;;;:::i;:::-;;;;;;;:::i;1561:41:120:-;;;;;886:108;;960:34;886:108;;;;;1607:25:283;;;1595:2;1580:18;886:108:120;1461:177:283;1076:55:120;;;;;1224:43;;;;;681:88;;741:28;681:88;;3187:278;3251:4;3286:46;3323:8;3286:36;:46::i;:::-;:112;;;;3348:50;3389:8;3348:40;:50::i;:::-;3286:172;;;;3414:44;3449:8;3414:34;:44::i;:::-;3267:191;3187:278;-1:-1:-1;;3187:278:120:o;972:372:211:-;1012:13;1118:31;1135:13;1118:16;:31::i;:::-;1196;1213:13;1196:16;:31::i;:::-;1274;1291:13;1274:16;:31::i;:::-;1080:243;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;1037:300;;972:372;:::o;3738:271:120:-;3825:4;3917:85;3938:18;3958:8;741:28;3917:20;:85::i;4246:376::-;4361:4;4457:158;4495:23;4536:8;960:34;4457:20;:158::i;4866:365::-;4951:4;5049:175;5087:16;5121:8;418:40:122;5049:20:120;:175::i;392:703:250:-;448:13;665:5;674:1;665:10;661:51;;-1:-1:-1;;691:10:250;;;;;;;;;;;;;;;;;;392:703::o;661:51::-;736:5;721:12;775:75;782:9;;775:75;;807:8;;;;:::i;:::-;;-1:-1:-1;829:10:250;;-1:-1:-1;837:2:250;829:10;;:::i;:::-;;;775:75;;;859:19;891:6;881:17;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;881:17:250;;859:39;;908:150;915:10;;908:150;;941:11;951:1;941:11;;:::i;:::-;;-1:-1:-1;1009:10:250;1017:2;1009:5;:10;:::i;:::-;996:24;;:2;:24;:::i;:::-;983:39;;966:6;973;966:14;;;;;;;;:::i;:::-;;;;:56;;;;;;;;;;-1:-1:-1;1036:11:250;1045:2;1036:11;;:::i;:::-;;;908:150;;;1081:6;392:703;-1:-1:-1;;;;392:703:250:o;5652:228:120:-;5806:56;;;;;:32;4609:15:283;;;5806:56:120;;;4591:34:283;4661:15;;;4641:18;;;4634:43;4693:18;;;4686:34;;;5783:4:120;;;;5806:19;:32;;;;4503:18:283;;5806:56:120;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;:63;:67;;5652:228;-1:-1:-1;;;;5652:228:120:o;245:309:283:-;304:6;357:2;345:9;336:7;332:23;328:32;325:52;;;373:1;370;363:12;325:52;412:9;399:23;462:42;455:5;451:54;444:5;441:65;431:93;;520:1;517;510:12;431:93;543:5;245:309;-1:-1:-1;;;245:309:283:o;751:258::-;823:1;833:113;847:6;844:1;841:13;833:113;;;923:11;;;917:18;904:11;;;897:39;869:2;862:10;833:113;;;964:6;961:1;958:13;955:48;;;999:1;990:6;985:3;981:16;974:27;955:48;;751:258;;;:::o;1014:442::-;1163:2;1152:9;1145:21;1126:4;1195:6;1189:13;1238:6;1233:2;1222:9;1218:18;1211:34;1254:66;1313:6;1308:2;1297:9;1293:18;1288:2;1280:6;1276:15;1254:66;:::i;:::-;1372:2;1360:15;1377:66;1356:88;1341:104;;;;1447:2;1337:113;;1014:442;-1:-1:-1;;1014:442:283:o;1902:960::-;2331:3;2369:6;2363:13;2385:53;2431:6;2426:3;2419:4;2411:6;2407:17;2385:53;:::i;:::-;2469:6;2464:3;2460:16;2447:29;;2495:3;2521:2;2514:5;2507:17;2555:6;2549:13;2571:65;2627:8;2623:1;2616:5;2612:13;2605:4;2597:6;2593:17;2571:65;:::i;:::-;2699:1;2655:20;;2691:10;;;2684:22;2731:13;;2753:62;2731:13;2802:1;2794:10;;2787:4;2775:17;;2753:62;:::i;:::-;2835:17;2854:1;2831:25;;1902:960;-1:-1:-1;;;;;1902:960:283:o;2867:184::-;2919:77;2916:1;2909:88;3016:4;3013:1;3006:15;3040:4;3037:1;3030:15;3056:195;3095:3;3126:66;3119:5;3116:77;3113:103;;3196:18;;:::i;:::-;-1:-1:-1;3243:1:283;3232:13;;3056:195::o;3256:184::-;3308:77;3305:1;3298:88;3405:4;3402:1;3395:15;3429:4;3426:1;3419:15;3445:120;3485:1;3511;3501:35;;3516:18;;:::i;:::-;-1:-1:-1;3550:9:283;;3445:120::o;3570:184::-;3622:77;3619:1;3612:88;3719:4;3716:1;3709:15;3743:4;3740:1;3733:15;3759:125;3799:4;3827:1;3824;3821:8;3818:34;;;3832:18;;:::i;:::-;-1:-1:-1;3869:9:283;;3759:125::o;3889:112::-;3921:1;3947;3937:35;;3952:18;;:::i;:::-;-1:-1:-1;3986:9:283;;3889:112::o;4006:128::-;4046:3;4077:1;4073:6;4070:1;4067:13;4064:39;;;4083:18;;:::i;:::-;-1:-1:-1;4119:9:283;;4006:128::o;4139:184::-;4191:77;4188:1;4181:88;4288:4;4285:1;4278:15;4312:4;4309:1;4302:15;4731:942;4810:6;4863:2;4851:9;4842:7;4838:23;4834:32;4831:52;;;4879:1;4876;4869:12;4831:52;4912:9;4906:16;4941:18;4982:2;4974:6;4971:14;4968:34;;;4998:1;4995;4988:12;4968:34;5036:6;5025:9;5021:22;5011:32;;5081:7;5074:4;5070:2;5066:13;5062:27;5052:55;;5103:1;5100;5093:12;5052:55;5132:2;5126:9;5154:2;5150;5147:10;5144:36;;;5160:18;;:::i;:::-;5294:2;5288:9;5356:4;5348:13;;5199:66;5344:22;;;5368:2;5340:31;5336:40;5324:53;;;5392:18;;;5412:22;;;5389:46;5386:72;;;5438:18;;:::i;:::-;5478:10;5474:2;5467:22;5513:2;5505:6;5498:18;5553:7;5548:2;5543;5539;5535:11;5531:20;5528:33;5525:53;;;5574:1;5571;5564:12;5525:53;5587:55;5639:2;5634;5626:6;5622:15;5617:2;5613;5609:11;5587:55;:::i;:::-;5661:6;4731:942;-1:-1:-1;;;;;;;4731:942:283:o",
+    "linkReferences": {},
+    "immutableReferences": {
+      "106017": [
+        {
+          "start": 541,
+          "length": 32
+        }
+      ],
+      "106020": [
+        {
+          "start": 582,
+          "length": 32
+        }
+      ],
+      "106023": [
+        {
+          "start": 623,
+          "length": 32
+        }
+      ],
+      "46955": [
+        {
+          "start": 375,
+          "length": 32
+        },
+        {
+          "start": 1334,
+          "length": 32
+        }
+      ],
+      "46958": [
+        {
+          "start": 414,
+          "length": 32
+        },
+        {
+          "start": 704,
+          "length": 32
+        }
+      ],
+      "46961": [
+        {
+          "start": 146,
+          "length": 32
+        },
+        {
+          "start": 781,
+          "length": 32
+        }
+      ],
+      "46964": [
+        {
+          "start": 283,
+          "length": 32
+        },
+        {
+          "start": 858,
+          "length": 32
+        }
+      ]
+    }
+  },
+  "methodIdentifiers": {
+    "ALLOWLIST_ATTESTOR()": "db3c3163",
+    "ATTESTATION_STATION()": "db083d71",
+    "COINBASE_QUEST_ATTESTOR()": "3ac52df7",
+    "COINBASE_QUEST_ELIGIBLE_ATTESTATION_KEY()": "819f7e84",
+    "OPTIMIST_CAN_MINT_ATTESTATION_KEY()": "e7bd804e",
+    "OPTIMIST_INVITER()": "5e4f489a",
+    "isAllowedToMint(address)": "4813d8a6",
+    "version()": "54fd4d50"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract AttestationStation\",\"name\":\"_attestationStation\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_allowlistAttestor\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_coinbaseQuestAttestor\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_optimistInviter\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"ALLOWLIST_ATTESTOR\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ATTESTATION_STATION\",\"outputs\":[{\"internalType\":\"contract AttestationStation\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"COINBASE_QUEST_ATTESTOR\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"COINBASE_QUEST_ELIGIBLE_ATTESTATION_KEY\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"OPTIMIST_CAN_MINT_ATTESTATION_KEY\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"OPTIMIST_INVITER\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_claimer\",\"type\":\"address\"}],\"name\":\"isAllowedToMint\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"version\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"constructor\":{\"custom:semver\":\"1.0.0\",\"params\":{\"_allowlistAttestor\":\"Address of the allowlist attestor.\",\"_attestationStation\":\"Address of the AttestationStation contract.\",\"_coinbaseQuestAttestor\":\"Address of the Coinbase Quest attestor.\",\"_optimistInviter\":\"Address of the OptimistInviter contract.\"}},\"isAllowedToMint(address)\":{\"params\":{\"_claimer\":\"Address to check.\"},\"returns\":{\"_0\":\"Whether or not the address is allowed to mint yet.\"}},\"version()\":{\"returns\":{\"_0\":\"Semver contract version as a string.\"}}},\"title\":\"OptimistAllowlist\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"ALLOWLIST_ATTESTOR()\":{\"notice\":\"Attestor that issues 'optimist.can-mint' attestations.\"},\"ATTESTATION_STATION()\":{\"notice\":\"Address of the AttestationStation contract.\"},\"COINBASE_QUEST_ATTESTOR()\":{\"notice\":\"Attestor that issues 'coinbase.quest-eligible' attestations.\"},\"COINBASE_QUEST_ELIGIBLE_ATTESTATION_KEY()\":{\"notice\":\"Attestation key used by Coinbase to issue attestations for Quest participants.\"},\"OPTIMIST_CAN_MINT_ATTESTATION_KEY()\":{\"notice\":\"Attestation key used by the AllowlistAttestor to manually add addresses to the         allowlist.\"},\"OPTIMIST_INVITER()\":{\"notice\":\"Address of OptimistInviter contract that issues 'optimist.can-mint-from-invite'         attestations.\"},\"isAllowedToMint(address)\":{\"notice\":\"Checks whether a given address is allowed to mint the Optimist NFT yet. Since the         Optimist NFT will also be used as part of the Citizens House, mints are currently         restricted. Eventually anyone will be able to mint.         Currently, address is allowed to mint if it satisfies any of the following:         1) Has a valid 'optimist.can-mint' attestation from the allowlist attestor.         2) Has a valid 'coinbase.quest-eligible' attestation from Coinbase Quest attestor         3) Has a valid 'optimist.can-mint-from-invite' attestation from the OptimistInviter            contract.\"},\"version()\":{\"notice\":\"Returns the full semver contract version.\"}},\"notice\":\"Source of truth for whether an address is able to mint an Optimist NFT. isAllowedToMint function checks various signals to return boolean value for whether an address is eligible or not.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/periphery/op-nft/OptimistAllowlist.sol\":\"OptimistAllowlist\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"none\"},\"optimizer\":{\"enabled\":true,\"runs\":999999},\"remappings\":[\":@cwia/=node_modules/clones-with-immutable-args/src/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/\",\":@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/\",\":@rari-capital/=node_modules/@rari-capital/\",\":@rari-capital/solmate/=node_modules/@rari-capital/solmate/\",\":clones-with-immutable-args/=node_modules/clones-with-immutable-args/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\"]},\"sources\":{\"contracts/periphery/op-nft/AttestationStation.sol\":{\"keccak256\":\"0x899ebc97e07a1b6b57a2b50ac1aab5bd92c5831643fb18f56637b299edc192a5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6438afacf96dd589db2196c59709e42000bda9997a24533a3a4be2bdf8030ebd\",\"dweb:/ipfs/Qme1WFRRr4NcebZj3wWf2FonSutFTw66h9jmroKeQ1rAiq\"]},\"contracts/periphery/op-nft/OptimistAllowlist.sol\":{\"keccak256\":\"0xe2e6a9e71d550bb0fab20dce3a62f006252e700c6b03b05bd2884c0336765608\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a94a86369acb0b5781dc1f5cc55827f5924821e5aa5b2fdf9e1d7d118c16dc84\",\"dweb:/ipfs/QmbV5Kd9VLd4sfcFwhJEWxjQPFHyYovN9rWCbsHyBcFHiF\"]},\"contracts/periphery/op-nft/libraries/OptimistConstants.sol\":{\"keccak256\":\"0x6eebe1db87f8a5de79bf8af9120e5b0cc6a9b51d8d86e6461cdb6bc52a1dde21\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ff03d9ebffd48a84f0fc7d381ba569843e53c7960b91ec00178ee14c7dcf833c\",\"dweb:/ipfs/QmXit8hX46BHAzP9Wtk3AEkShTw6qqNd5nnQzceEvBdhVr\"]},\"contracts/universal/Semver.sol\":{\"keccak256\":\"0xc455c84bb1f17e994dea0451fd363f81f83965bfa86e81ac6c8b3a327b9a0ff0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fab499f3c0d7df8eb763b50621848d5d2147fb9c42a8eb9b65a11093090bb482\",\"dweb:/ipfs/QmUKsG4ztwtUZFjuRYAxgUFTgH5YxWSGF1BFFaB7vdM2K3\"]},\"node_modules/@openzeppelin/contracts/utils/Strings.sol\":{\"keccak256\":\"0xaf159a8b1923ad2a26d516089bceca9bdeaeacd04be50983ea00ba63070f08a3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6f2cf1c531122bc7ca96b8c8db6a60deae60441e5223065e792553d4849b5638\",\"dweb:/ipfs/QmPBdJmBBABMDCfyDjCbdxgiqRavgiSL88SYPGibgbPas9\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.15+commit.e14f2714"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract AttestationStation",
+              "name": "_attestationStation",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "_allowlistAttestor",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "_coinbaseQuestAttestor",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "_optimistInviter",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "ALLOWLIST_ATTESTOR",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "ATTESTATION_STATION",
+          "outputs": [
+            {
+              "internalType": "contract AttestationStation",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "COINBASE_QUEST_ATTESTOR",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "COINBASE_QUEST_ELIGIBLE_ATTESTATION_KEY",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "OPTIMIST_CAN_MINT_ATTESTATION_KEY",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "OPTIMIST_INVITER",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_claimer",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isAllowedToMint",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "version",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "constructor": {
+            "custom:semver": "1.0.0",
+            "params": {
+              "_allowlistAttestor": "Address of the allowlist attestor.",
+              "_attestationStation": "Address of the AttestationStation contract.",
+              "_coinbaseQuestAttestor": "Address of the Coinbase Quest attestor.",
+              "_optimistInviter": "Address of the OptimistInviter contract."
+            }
+          },
+          "isAllowedToMint(address)": {
+            "params": {
+              "_claimer": "Address to check."
+            },
+            "returns": {
+              "_0": "Whether or not the address is allowed to mint yet."
+            }
+          },
+          "version()": {
+            "returns": {
+              "_0": "Semver contract version as a string."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "ALLOWLIST_ATTESTOR()": {
+            "notice": "Attestor that issues 'optimist.can-mint' attestations."
+          },
+          "ATTESTATION_STATION()": {
+            "notice": "Address of the AttestationStation contract."
+          },
+          "COINBASE_QUEST_ATTESTOR()": {
+            "notice": "Attestor that issues 'coinbase.quest-eligible' attestations."
+          },
+          "COINBASE_QUEST_ELIGIBLE_ATTESTATION_KEY()": {
+            "notice": "Attestation key used by Coinbase to issue attestations for Quest participants."
+          },
+          "OPTIMIST_CAN_MINT_ATTESTATION_KEY()": {
+            "notice": "Attestation key used by the AllowlistAttestor to manually add addresses to the         allowlist."
+          },
+          "OPTIMIST_INVITER()": {
+            "notice": "Address of OptimistInviter contract that issues 'optimist.can-mint-from-invite'         attestations."
+          },
+          "isAllowedToMint(address)": {
+            "notice": "Checks whether a given address is allowed to mint the Optimist NFT yet. Since the         Optimist NFT will also be used as part of the Citizens House, mints are currently         restricted. Eventually anyone will be able to mint.         Currently, address is allowed to mint if it satisfies any of the following:         1) Has a valid 'optimist.can-mint' attestation from the allowlist attestor.         2) Has a valid 'coinbase.quest-eligible' attestation from Coinbase Quest attestor         3) Has a valid 'optimist.can-mint-from-invite' attestation from the OptimistInviter            contract."
+          },
+          "version()": {
+            "notice": "Returns the full semver contract version."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@cwia/=node_modules/clones-with-immutable-args/src/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/",
+        "@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/",
+        "@rari-capital/=node_modules/@rari-capital/",
+        "@rari-capital/solmate/=node_modules/@rari-capital/solmate/",
+        "clones-with-immutable-args/=node_modules/clones-with-immutable-args/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 999999
+      },
+      "metadata": {
+        "bytecodeHash": "none"
+      },
+      "compilationTarget": {
+        "contracts/periphery/op-nft/OptimistAllowlist.sol": "OptimistAllowlist"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/periphery/op-nft/AttestationStation.sol": {
+        "keccak256": "0x899ebc97e07a1b6b57a2b50ac1aab5bd92c5831643fb18f56637b299edc192a5",
+        "urls": [
+          "bzz-raw://6438afacf96dd589db2196c59709e42000bda9997a24533a3a4be2bdf8030ebd",
+          "dweb:/ipfs/Qme1WFRRr4NcebZj3wWf2FonSutFTw66h9jmroKeQ1rAiq"
+        ],
+        "license": "MIT"
+      },
+      "contracts/periphery/op-nft/OptimistAllowlist.sol": {
+        "keccak256": "0xe2e6a9e71d550bb0fab20dce3a62f006252e700c6b03b05bd2884c0336765608",
+        "urls": [
+          "bzz-raw://a94a86369acb0b5781dc1f5cc55827f5924821e5aa5b2fdf9e1d7d118c16dc84",
+          "dweb:/ipfs/QmbV5Kd9VLd4sfcFwhJEWxjQPFHyYovN9rWCbsHyBcFHiF"
+        ],
+        "license": "MIT"
+      },
+      "contracts/periphery/op-nft/libraries/OptimistConstants.sol": {
+        "keccak256": "0x6eebe1db87f8a5de79bf8af9120e5b0cc6a9b51d8d86e6461cdb6bc52a1dde21",
+        "urls": [
+          "bzz-raw://ff03d9ebffd48a84f0fc7d381ba569843e53c7960b91ec00178ee14c7dcf833c",
+          "dweb:/ipfs/QmXit8hX46BHAzP9Wtk3AEkShTw6qqNd5nnQzceEvBdhVr"
+        ],
+        "license": "MIT"
+      },
+      "contracts/universal/Semver.sol": {
+        "keccak256": "0xc455c84bb1f17e994dea0451fd363f81f83965bfa86e81ac6c8b3a327b9a0ff0",
+        "urls": [
+          "bzz-raw://fab499f3c0d7df8eb763b50621848d5d2147fb9c42a8eb9b65a11093090bb482",
+          "dweb:/ipfs/QmUKsG4ztwtUZFjuRYAxgUFTgH5YxWSGF1BFFaB7vdM2K3"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+        "keccak256": "0xaf159a8b1923ad2a26d516089bceca9bdeaeacd04be50983ea00ba63070f08a3",
+        "urls": [
+          "bzz-raw://6f2cf1c531122bc7ca96b8c8db6a60deae60441e5223065e792553d4849b5638",
+          "dweb:/ipfs/QmPBdJmBBABMDCfyDjCbdxgiqRavgiSL88SYPGibgbPas9"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": {}
+  },
+  "userdoc": {
+    "version": 1,
+    "kind": "user",
+    "methods": {
+      "ALLOWLIST_ATTESTOR()": {
+        "notice": "Attestor that issues 'optimist.can-mint' attestations."
+      },
+      "ATTESTATION_STATION()": {
+        "notice": "Address of the AttestationStation contract."
+      },
+      "COINBASE_QUEST_ATTESTOR()": {
+        "notice": "Attestor that issues 'coinbase.quest-eligible' attestations."
+      },
+      "COINBASE_QUEST_ELIGIBLE_ATTESTATION_KEY()": {
+        "notice": "Attestation key used by Coinbase to issue attestations for Quest participants."
+      },
+      "OPTIMIST_CAN_MINT_ATTESTATION_KEY()": {
+        "notice": "Attestation key used by the AllowlistAttestor to manually add addresses to the         allowlist."
+      },
+      "OPTIMIST_INVITER()": {
+        "notice": "Address of OptimistInviter contract that issues 'optimist.can-mint-from-invite'         attestations."
+      },
+      "isAllowedToMint(address)": {
+        "notice": "Checks whether a given address is allowed to mint the Optimist NFT yet. Since the         Optimist NFT will also be used as part of the Citizens House, mints are currently         restricted. Eventually anyone will be able to mint.         Currently, address is allowed to mint if it satisfies any of the following:         1) Has a valid 'optimist.can-mint' attestation from the allowlist attestor.         2) Has a valid 'coinbase.quest-eligible' attestation from Coinbase Quest attestor         3) Has a valid 'optimist.can-mint-from-invite' attestation from the OptimistInviter            contract."
+      },
+      "version()": {
+        "notice": "Returns the full semver contract version."
+      }
+    },
+    "notice": "Source of truth for whether an address is able to mint an Optimist NFT. isAllowedToMint function checks various signals to return boolean value for whether an address is eligible or not."
+  },
+  "devdoc": {
+    "version": 1,
+    "kind": "dev",
+    "methods": {
+      "constructor": {
+        "params": {
+          "_allowlistAttestor": "Address of the allowlist attestor.",
+          "_attestationStation": "Address of the AttestationStation contract.",
+          "_coinbaseQuestAttestor": "Address of the Coinbase Quest attestor.",
+          "_optimistInviter": "Address of the OptimistInviter contract."
+        }
+      },
+      "isAllowedToMint(address)": {
+        "params": {
+          "_claimer": "Address to check."
+        },
+        "returns": {
+          "_0": "Whether or not the address is allowed to mint yet."
+        }
+      },
+      "version()": {
+        "returns": {
+          "_0": "Semver contract version as a string."
+        }
+      }
+    },
+    "title": "OptimistAllowlist"
+  },
+  "ast": {
+    "absolutePath": "contracts/periphery/op-nft/OptimistAllowlist.sol",
+    "id": 47091,
+    "exportedSymbols": {
+      "AttestationStation": [
+        46671
+      ],
+      "OptimistAllowlist": [
+        47090
+      ],
+      "OptimistConstants": [
+        47440
+      ],
+      "Semver": [
+        106075
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:5851:120",
+    "nodes": [
+      {
+        "id": 46928,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:120",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".15"
+        ]
+      },
+      {
+        "id": 46930,
+        "nodeType": "ImportDirective",
+        "src": "57:52:120",
+        "nodes": [],
+        "absolutePath": "contracts/universal/Semver.sol",
+        "file": "../../universal/Semver.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 47091,
+        "sourceUnit": 106076,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 46929,
+              "name": "Semver",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 106075,
+              "src": "66:6:120",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 46932,
+        "nodeType": "ImportDirective",
+        "src": "110:62:120",
+        "nodes": [],
+        "absolutePath": "contracts/periphery/op-nft/AttestationStation.sol",
+        "file": "./AttestationStation.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 47091,
+        "sourceUnit": 46672,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 46931,
+              "name": "AttestationStation",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 46671,
+              "src": "119:18:120",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 46934,
+        "nodeType": "ImportDirective",
+        "src": "173:70:120",
+        "nodes": [],
+        "absolutePath": "contracts/periphery/op-nft/libraries/OptimistConstants.sol",
+        "file": "./libraries/OptimistConstants.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 47091,
+        "sourceUnit": 47441,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 46933,
+              "name": "OptimistConstants",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 47440,
+              "src": "182:17:120",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 47090,
+        "nodeType": "ContractDefinition",
+        "src": "502:5380:120",
+        "nodes": [
+          {
+            "id": 46944,
+            "nodeType": "VariableDeclaration",
+            "src": "681:88:120",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 46938,
+              "nodeType": "StructuredDocumentation",
+              "src": "545:131:120",
+              "text": " @notice Attestation key used by the AllowlistAttestor to manually add addresses to the\n         allowlist."
+            },
+            "functionSelector": "e7bd804e",
+            "mutability": "constant",
+            "name": "OPTIMIST_CAN_MINT_ATTESTATION_KEY",
+            "nameLocation": "705:33:120",
+            "scope": 47090,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 46939,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "681:7:120",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "value": {
+              "arguments": [
+                {
+                  "hexValue": "6f7074696d6973742e63616e2d6d696e74",
+                  "id": 46942,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "string",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "749:19:120",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_stringliteral_052936ee16d89f9e65a9b7bbd8d9b2bc86423aed8540d6da93edb9c52fb226e4",
+                    "typeString": "literal_string \"optimist.can-mint\""
+                  },
+                  "value": "optimist.can-mint"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_stringliteral_052936ee16d89f9e65a9b7bbd8d9b2bc86423aed8540d6da93edb9c52fb226e4",
+                    "typeString": "literal_string \"optimist.can-mint\""
+                  }
+                ],
+                "id": 46941,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "lValueRequested": false,
+                "nodeType": "ElementaryTypeNameExpression",
+                "src": "741:7:120",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_bytes32_$",
+                  "typeString": "type(bytes32)"
+                },
+                "typeName": {
+                  "id": 46940,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "741:7:120",
+                  "typeDescriptions": {}
+                }
+              },
+              "id": 46943,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "741:28:120",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 46951,
+            "nodeType": "VariableDeclaration",
+            "src": "886:108:120",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 46945,
+              "nodeType": "StructuredDocumentation",
+              "src": "776:105:120",
+              "text": " @notice Attestation key used by Coinbase to issue attestations for Quest participants."
+            },
+            "functionSelector": "819f7e84",
+            "mutability": "constant",
+            "name": "COINBASE_QUEST_ELIGIBLE_ATTESTATION_KEY",
+            "nameLocation": "910:39:120",
+            "scope": 47090,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 46946,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "886:7:120",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "value": {
+              "arguments": [
+                {
+                  "hexValue": "636f696e626173652e71756573742d656c696769626c65",
+                  "id": 46949,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "string",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "968:25:120",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_stringliteral_061d62794d2ee045bbdaae9451ac28b2b9e4531061a0cbeb1046dbda1ca3528a",
+                    "typeString": "literal_string \"coinbase.quest-eligible\""
+                  },
+                  "value": "coinbase.quest-eligible"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_stringliteral_061d62794d2ee045bbdaae9451ac28b2b9e4531061a0cbeb1046dbda1ca3528a",
+                    "typeString": "literal_string \"coinbase.quest-eligible\""
+                  }
+                ],
+                "id": 46948,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "lValueRequested": false,
+                "nodeType": "ElementaryTypeNameExpression",
+                "src": "960:7:120",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_bytes32_$",
+                  "typeString": "type(bytes32)"
+                },
+                "typeName": {
+                  "id": 46947,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "960:7:120",
+                  "typeDescriptions": {}
+                }
+              },
+              "id": 46950,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "960:34:120",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 46955,
+            "nodeType": "VariableDeclaration",
+            "src": "1076:55:120",
+            "nodes": [],
+            "constant": false,
+            "documentation": {
+              "id": 46952,
+              "nodeType": "StructuredDocumentation",
+              "src": "1001:70:120",
+              "text": " @notice Address of the AttestationStation contract."
+            },
+            "functionSelector": "db083d71",
+            "mutability": "immutable",
+            "name": "ATTESTATION_STATION",
+            "nameLocation": "1112:19:120",
+            "scope": 47090,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_AttestationStation_$46671",
+              "typeString": "contract AttestationStation"
+            },
+            "typeName": {
+              "id": 46954,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 46953,
+                "name": "AttestationStation",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 46671,
+                "src": "1076:18:120"
+              },
+              "referencedDeclaration": 46671,
+              "src": "1076:18:120",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_AttestationStation_$46671",
+                "typeString": "contract AttestationStation"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 46958,
+            "nodeType": "VariableDeclaration",
+            "src": "1224:43:120",
+            "nodes": [],
+            "constant": false,
+            "documentation": {
+              "id": 46956,
+              "nodeType": "StructuredDocumentation",
+              "src": "1138:81:120",
+              "text": " @notice Attestor that issues 'optimist.can-mint' attestations."
+            },
+            "functionSelector": "db3c3163",
+            "mutability": "immutable",
+            "name": "ALLOWLIST_ATTESTOR",
+            "nameLocation": "1249:18:120",
+            "scope": 47090,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 46957,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "1224:7:120",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 46961,
+            "nodeType": "VariableDeclaration",
+            "src": "1366:48:120",
+            "nodes": [],
+            "constant": false,
+            "documentation": {
+              "id": 46959,
+              "nodeType": "StructuredDocumentation",
+              "src": "1274:87:120",
+              "text": " @notice Attestor that issues 'coinbase.quest-eligible' attestations."
+            },
+            "functionSelector": "3ac52df7",
+            "mutability": "immutable",
+            "name": "COINBASE_QUEST_ATTESTOR",
+            "nameLocation": "1391:23:120",
+            "scope": 47090,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 46960,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "1366:7:120",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 46964,
+            "nodeType": "VariableDeclaration",
+            "src": "1561:41:120",
+            "nodes": [],
+            "constant": false,
+            "documentation": {
+              "id": 46962,
+              "nodeType": "StructuredDocumentation",
+              "src": "1421:135:120",
+              "text": " @notice Address of OptimistInviter contract that issues 'optimist.can-mint-from-invite'\n         attestations."
+            },
+            "functionSelector": "5e4f489a",
+            "mutability": "immutable",
+            "name": "OPTIMIST_INVITER",
+            "nameLocation": "1586:16:120",
+            "scope": 47090,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 46963,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "1561:7:120",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 46999,
+            "nodeType": "FunctionDefinition",
+            "src": "1968:402:120",
+            "nodes": [],
+            "body": {
+              "id": 46998,
+              "nodeType": "Block",
+              "src": "2160:210:120",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 46984,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 46982,
+                      "name": "ATTESTATION_STATION",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46955,
+                      "src": "2170:19:120",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_AttestationStation_$46671",
+                        "typeString": "contract AttestationStation"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 46983,
+                      "name": "_attestationStation",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46968,
+                      "src": "2192:19:120",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_AttestationStation_$46671",
+                        "typeString": "contract AttestationStation"
+                      }
+                    },
+                    "src": "2170:41:120",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_AttestationStation_$46671",
+                      "typeString": "contract AttestationStation"
+                    }
+                  },
+                  "id": 46985,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2170:41:120"
+                },
+                {
+                  "expression": {
+                    "id": 46988,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 46986,
+                      "name": "ALLOWLIST_ATTESTOR",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46958,
+                      "src": "2221:18:120",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 46987,
+                      "name": "_allowlistAttestor",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46970,
+                      "src": "2242:18:120",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "2221:39:120",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 46989,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2221:39:120"
+                },
+                {
+                  "expression": {
+                    "id": 46992,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 46990,
+                      "name": "COINBASE_QUEST_ATTESTOR",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46961,
+                      "src": "2270:23:120",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 46991,
+                      "name": "_coinbaseQuestAttestor",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46972,
+                      "src": "2296:22:120",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "2270:48:120",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 46993,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2270:48:120"
+                },
+                {
+                  "expression": {
+                    "id": 46996,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 46994,
+                      "name": "OPTIMIST_INVITER",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46964,
+                      "src": "2328:16:120",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 46995,
+                      "name": "_optimistInviter",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46974,
+                      "src": "2347:16:120",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "2328:35:120",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 46997,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2328:35:120"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 46965,
+              "nodeType": "StructuredDocumentation",
+              "src": "1609:354:120",
+              "text": " @custom:semver 1.0.0\n @param _attestationStation    Address of the AttestationStation contract.\n @param _allowlistAttestor     Address of the allowlist attestor.\n @param _coinbaseQuestAttestor Address of the Coinbase Quest attestor.\n @param _optimistInviter       Address of the OptimistInviter contract."
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "hexValue": "31",
+                    "id": 46977,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "2151:1:120",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_1_by_1",
+                      "typeString": "int_const 1"
+                    },
+                    "value": "1"
+                  },
+                  {
+                    "hexValue": "30",
+                    "id": 46978,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "2154:1:120",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_0_by_1",
+                      "typeString": "int_const 0"
+                    },
+                    "value": "0"
+                  },
+                  {
+                    "hexValue": "30",
+                    "id": 46979,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "2157:1:120",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_0_by_1",
+                      "typeString": "int_const 0"
+                    },
+                    "value": "0"
+                  }
+                ],
+                "id": 46980,
+                "kind": "baseConstructorSpecifier",
+                "modifierName": {
+                  "id": 46976,
+                  "name": "Semver",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 106075,
+                  "src": "2144:6:120"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "2144:15:120"
+              }
+            ],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 46975,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46968,
+                  "mutability": "mutable",
+                  "name": "_attestationStation",
+                  "nameLocation": "2008:19:120",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46999,
+                  "src": "1989:38:120",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_AttestationStation_$46671",
+                    "typeString": "contract AttestationStation"
+                  },
+                  "typeName": {
+                    "id": 46967,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 46966,
+                      "name": "AttestationStation",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 46671,
+                      "src": "1989:18:120"
+                    },
+                    "referencedDeclaration": 46671,
+                    "src": "1989:18:120",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_AttestationStation_$46671",
+                      "typeString": "contract AttestationStation"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 46970,
+                  "mutability": "mutable",
+                  "name": "_allowlistAttestor",
+                  "nameLocation": "2045:18:120",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46999,
+                  "src": "2037:26:120",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 46969,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2037:7:120",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 46972,
+                  "mutability": "mutable",
+                  "name": "_coinbaseQuestAttestor",
+                  "nameLocation": "2081:22:120",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46999,
+                  "src": "2073:30:120",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 46971,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2073:7:120",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 46974,
+                  "mutability": "mutable",
+                  "name": "_optimistInviter",
+                  "nameLocation": "2121:16:120",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46999,
+                  "src": "2113:24:120",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 46973,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2113:7:120",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1979:164:120"
+            },
+            "returnParameters": {
+              "id": 46981,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2160:0:120"
+            },
+            "scope": 47090,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 47020,
+            "nodeType": "FunctionDefinition",
+            "src": "3187:278:120",
+            "nodes": [],
+            "body": {
+              "id": 47019,
+              "nodeType": "Block",
+              "src": "3257:208:120",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "commonType": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "id": 47017,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "commonType": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "id": 47013,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "arguments": [
+                          {
+                            "id": 47008,
+                            "name": "_claimer",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 47002,
+                            "src": "3323:8:120",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 47007,
+                          "name": "_hasAttestationFromAllowlistAttestor",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 47035,
+                          "src": "3286:36:120",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
+                            "typeString": "function (address) view returns (bool)"
+                          }
+                        },
+                        "id": 47009,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "3286:46:120",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "||",
+                      "rightExpression": {
+                        "arguments": [
+                          {
+                            "id": 47011,
+                            "name": "_claimer",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 47002,
+                            "src": "3389:8:120",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 47010,
+                          "name": "_hasAttestationFromCoinbaseQuestAttestor",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 47050,
+                          "src": "3348:40:120",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
+                            "typeString": "function (address) view returns (bool)"
+                          }
+                        },
+                        "id": 47012,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "3348:50:120",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "src": "3286:112:120",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "||",
+                    "rightExpression": {
+                      "arguments": [
+                        {
+                          "id": 47015,
+                          "name": "_claimer",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 47002,
+                          "src": "3449:8:120",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 47014,
+                        "name": "_hasAttestationFromOptimistInviter",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 47066,
+                        "src": "3414:34:120",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
+                          "typeString": "function (address) view returns (bool)"
+                        }
+                      },
+                      "id": 47016,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "3414:44:120",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "src": "3286:172:120",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 47006,
+                  "id": 47018,
+                  "nodeType": "Return",
+                  "src": "3267:191:120"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 47000,
+              "nodeType": "StructuredDocumentation",
+              "src": "2376:806:120",
+              "text": " @notice Checks whether a given address is allowed to mint the Optimist NFT yet. Since the\n         Optimist NFT will also be used as part of the Citizens House, mints are currently\n         restricted. Eventually anyone will be able to mint.\n         Currently, address is allowed to mint if it satisfies any of the following:\n         1) Has a valid 'optimist.can-mint' attestation from the allowlist attestor.\n         2) Has a valid 'coinbase.quest-eligible' attestation from Coinbase Quest attestor\n         3) Has a valid 'optimist.can-mint-from-invite' attestation from the OptimistInviter\n            contract.\n @param _claimer Address to check.\n @return Whether or not the address is allowed to mint yet."
+            },
+            "functionSelector": "4813d8a6",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isAllowedToMint",
+            "nameLocation": "3196:15:120",
+            "parameters": {
+              "id": 47003,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 47002,
+                  "mutability": "mutable",
+                  "name": "_claimer",
+                  "nameLocation": "3220:8:120",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47020,
+                  "src": "3212:16:120",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 47001,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3212:7:120",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3211:18:120"
+            },
+            "returnParameters": {
+              "id": 47006,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 47005,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47020,
+                  "src": "3251:4:120",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 47004,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3251:4:120",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3250:6:120"
+            },
+            "scope": 47090,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 47035,
+            "nodeType": "FunctionDefinition",
+            "src": "3738:271:120",
+            "nodes": [],
+            "body": {
+              "id": 47034,
+              "nodeType": "Block",
+              "src": "3831:178:120",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 47029,
+                        "name": "ALLOWLIST_ATTESTOR",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 46958,
+                        "src": "3938:18:120",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 47030,
+                        "name": "_claimer",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 47023,
+                        "src": "3958:8:120",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 47031,
+                        "name": "OPTIMIST_CAN_MINT_ATTESTATION_KEY",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 46944,
+                        "src": "3968:33:120",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "id": 47028,
+                      "name": "_hasValidAttestation",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 47089,
+                      "src": "3917:20:120",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_address_$_t_address_$_t_bytes32_$returns$_t_bool_$",
+                        "typeString": "function (address,address,bytes32) view returns (bool)"
+                      }
+                    },
+                    "id": 47032,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3917:85:120",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 47027,
+                  "id": 47033,
+                  "nodeType": "Return",
+                  "src": "3898:104:120"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 47021,
+              "nodeType": "StructuredDocumentation",
+              "src": "3471:262:120",
+              "text": " @notice Checks whether an address has a valid 'optimist.can-mint' attestation from the\n         allowlist attestor.\n @param _claimer Address to check.\n @return Whether or not the address has a valid attestation."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_hasAttestationFromAllowlistAttestor",
+            "nameLocation": "3747:36:120",
+            "parameters": {
+              "id": 47024,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 47023,
+                  "mutability": "mutable",
+                  "name": "_claimer",
+                  "nameLocation": "3792:8:120",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47035,
+                  "src": "3784:16:120",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 47022,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3784:7:120",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3783:18:120"
+            },
+            "returnParameters": {
+              "id": 47027,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 47026,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47035,
+                  "src": "3825:4:120",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 47025,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3825:4:120",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3824:6:120"
+            },
+            "scope": 47090,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 47050,
+            "nodeType": "FunctionDefinition",
+            "src": "4246:376:120",
+            "nodes": [],
+            "body": {
+              "id": 47049,
+              "nodeType": "Block",
+              "src": "4371:251:120",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 47044,
+                        "name": "COINBASE_QUEST_ATTESTOR",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 46961,
+                        "src": "4495:23:120",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 47045,
+                        "name": "_claimer",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 47038,
+                        "src": "4536:8:120",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 47046,
+                        "name": "COINBASE_QUEST_ELIGIBLE_ATTESTATION_KEY",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 46951,
+                        "src": "4562:39:120",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "id": 47043,
+                      "name": "_hasValidAttestation",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 47089,
+                      "src": "4457:20:120",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_address_$_t_address_$_t_bytes32_$returns$_t_bool_$",
+                        "typeString": "function (address,address,bytes32) view returns (bool)"
+                      }
+                    },
+                    "id": 47047,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "4457:158:120",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 47042,
+                  "id": 47048,
+                  "nodeType": "Return",
+                  "src": "4438:177:120"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 47036,
+              "nodeType": "StructuredDocumentation",
+              "src": "4015:226:120",
+              "text": " @notice Checks whether an address has a valid attestation from the Coinbase attestor.\n @param _claimer Address to check.\n @return Whether or not the address has a valid attestation."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_hasAttestationFromCoinbaseQuestAttestor",
+            "nameLocation": "4255:40:120",
+            "parameters": {
+              "id": 47039,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 47038,
+                  "mutability": "mutable",
+                  "name": "_claimer",
+                  "nameLocation": "4304:8:120",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47050,
+                  "src": "4296:16:120",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 47037,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4296:7:120",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4295:18:120"
+            },
+            "returnParameters": {
+              "id": 47042,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 47041,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47050,
+                  "src": "4361:4:120",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 47040,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4361:4:120",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4360:6:120"
+            },
+            "scope": 47090,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 47066,
+            "nodeType": "FunctionDefinition",
+            "src": "4866:365:120",
+            "nodes": [],
+            "body": {
+              "id": 47065,
+              "nodeType": "Block",
+              "src": "4957:274:120",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 47059,
+                        "name": "OPTIMIST_INVITER",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 46964,
+                        "src": "5087:16:120",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 47060,
+                        "name": "_claimer",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 47053,
+                        "src": "5121:8:120",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "expression": {
+                          "id": 47061,
+                          "name": "OptimistConstants",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 47440,
+                          "src": "5147:17:120",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_OptimistConstants_$47440_$",
+                            "typeString": "type(library OptimistConstants)"
+                          }
+                        },
+                        "id": 47062,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "OPTIMIST_CAN_MINT_FROM_INVITE_ATTESTATION_KEY",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 47439,
+                        "src": "5147:63:120",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "id": 47058,
+                      "name": "_hasValidAttestation",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 47089,
+                      "src": "5049:20:120",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_address_$_t_address_$_t_bytes32_$returns$_t_bool_$",
+                        "typeString": "function (address,address,bytes32) view returns (bool)"
+                      }
+                    },
+                    "id": 47063,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "5049:175:120",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 47057,
+                  "id": 47064,
+                  "nodeType": "Return",
+                  "src": "5030:194:120"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 47051,
+              "nodeType": "StructuredDocumentation",
+              "src": "4628:233:120",
+              "text": " @notice Checks whether an address has a valid attestation from the OptimistInviter contract.\n @param _claimer Address to check.\n @return Whether or not the address has a valid attestation."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_hasAttestationFromOptimistInviter",
+            "nameLocation": "4875:34:120",
+            "parameters": {
+              "id": 47054,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 47053,
+                  "mutability": "mutable",
+                  "name": "_claimer",
+                  "nameLocation": "4918:8:120",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47066,
+                  "src": "4910:16:120",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 47052,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4910:7:120",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4909:18:120"
+            },
+            "returnParameters": {
+              "id": 47057,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 47056,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47066,
+                  "src": "4951:4:120",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 47055,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4951:4:120",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4950:6:120"
+            },
+            "scope": 47090,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 47089,
+            "nodeType": "FunctionDefinition",
+            "src": "5652:228:120",
+            "nodes": [],
+            "body": {
+              "id": 47088,
+              "nodeType": "Block",
+              "src": "5789:91:120",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 47086,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "expression": {
+                        "arguments": [
+                          {
+                            "id": 47080,
+                            "name": "_creator",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 47069,
+                            "src": "5839:8:120",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          {
+                            "id": 47081,
+                            "name": "_about",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 47071,
+                            "src": "5849:6:120",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          {
+                            "id": 47082,
+                            "name": "_key",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 47073,
+                            "src": "5857:4:120",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          ],
+                          "expression": {
+                            "id": 47078,
+                            "name": "ATTESTATION_STATION",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 46955,
+                            "src": "5806:19:120",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_AttestationStation_$46671",
+                              "typeString": "contract AttestationStation"
+                            }
+                          },
+                          "id": 47079,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "attestations",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 46576,
+                          "src": "5806:32:120",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$_t_address_$_t_address_$_t_bytes32_$returns$_t_bytes_memory_ptr_$",
+                            "typeString": "function (address,address,bytes32) view external returns (bytes memory)"
+                          }
+                        },
+                        "id": 47083,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "5806:56:120",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      },
+                      "id": 47084,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "src": "5806:63:120",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">",
+                    "rightExpression": {
+                      "hexValue": "30",
+                      "id": 47085,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "5872:1:120",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "5806:67:120",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 47077,
+                  "id": 47087,
+                  "nodeType": "Return",
+                  "src": "5799:74:120"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 47067,
+              "nodeType": "StructuredDocumentation",
+              "src": "5237:410:120",
+              "text": " @notice Checks whether an address has a valid truthy attestation.\n         Any attestation val other than bytes32(\"\") is considered truthy.\n @param _creator Address that made the attestation.\n @param _about   Address attestation is about.\n @param _key     Key of the attestation.\n @return Whether or not the address has a valid truthy attestation."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_hasValidAttestation",
+            "nameLocation": "5661:20:120",
+            "parameters": {
+              "id": 47074,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 47069,
+                  "mutability": "mutable",
+                  "name": "_creator",
+                  "nameLocation": "5699:8:120",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47089,
+                  "src": "5691:16:120",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 47068,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5691:7:120",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 47071,
+                  "mutability": "mutable",
+                  "name": "_about",
+                  "nameLocation": "5725:6:120",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47089,
+                  "src": "5717:14:120",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 47070,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5717:7:120",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 47073,
+                  "mutability": "mutable",
+                  "name": "_key",
+                  "nameLocation": "5749:4:120",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47089,
+                  "src": "5741:12:120",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 47072,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5741:7:120",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5681:78:120"
+            },
+            "returnParameters": {
+              "id": 47077,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 47076,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47089,
+                  "src": "5783:4:120",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 47075,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5783:4:120",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5782:6:120"
+            },
+            "scope": 47090,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 46936,
+              "name": "Semver",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 106075,
+              "src": "532:6:120"
+            },
+            "id": 46937,
+            "nodeType": "InheritanceSpecifier",
+            "src": "532:6:120"
+          }
+        ],
+        "canonicalName": "OptimistAllowlist",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 46935,
+          "nodeType": "StructuredDocumentation",
+          "src": "245:256:120",
+          "text": " @title  OptimistAllowlist\n @notice Source of truth for whether an address is able to mint an Optimist NFT.\nisAllowedToMint function checks various signals to return boolean value for whether an\naddress is eligible or not."
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          47090,
+          106075
+        ],
+        "name": "OptimistAllowlist",
+        "nameLocation": "511:17:120",
+        "scope": 47091,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 120
+}

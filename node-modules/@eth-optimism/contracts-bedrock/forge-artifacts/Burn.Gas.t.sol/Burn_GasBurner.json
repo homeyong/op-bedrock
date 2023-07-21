@@ -1,0 +1,2320 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract Vm",
+          "name": "_vm",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "burnGas",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "failedGasBurn",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b506040516106fc3803806106fc83398101604081905261002f91610054565b600080546001600160a01b0319166001600160a01b0392909216919091179055610084565b60006020828403121561006657600080fd5b81516001600160a01b038116811461007d57600080fd5b9392505050565b610669806100936000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c80634ad5d16f1461003b57806379df245a14610050575b600080fd5b61004e6100493660046104cd565b610089565b005b6000546100759074010000000000000000000000000000000000000000900460ff1681565b604051901515815260200160405180910390f35b627a1200600061009a83828461010e565b905060005a90506100aa82610163565b60005a905082828203111580156100c2575081838303115b1561010757600080547fffffffffffffffffffffff00ffffffffffffffffffffffffffffffffffffffff16740100000000000000000000000000000000000000001790555b5050505050565b600061011b848484610191565b905061015c6040518060400160405280600c81526020017f426f756e6420526573756c740000000000000000000000000000000000000000815250826103cd565b9392505050565b6000805a90505b825a6101769083610515565b101561018c576101858261052c565b915061016a565b505050565b600081831115610227576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152603e60248201527f5374645574696c7320626f756e642875696e743235362c75696e743235362c7560448201527f696e74323536293a204d6178206973206c657373207468616e206d696e2e0000606482015260840160405180910390fd5b8284101580156102375750818411155b1561024357508261015c565b600061024f8484610515565b61025a906001610564565b90506003851115801561026c57508481115b156102835761027b8585610564565b91505061015c565b6102ae60037fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff610515565b85101580156102e557506102e2857fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff610515565b81115b1561031e57610314857fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff610515565b61027b9084610515565b828511156103745760006103328487610515565b90506000610340838361057c565b9050806000036103555784935050505061015c565b60016103618288610564565b61036b9190610515565b935050506103c5565b838510156103c55760006103888686610515565b90506000610396838361057c565b9050806000036103ab5785935050505061015c565b6103b58186610515565b6103c0906001610564565b935050505b509392505050565b60006a636f6e736f6c652e6c6f6773ffffffffffffffffffffffffffffffffffffffff1683836040516024016104049291906105e7565b604080517fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe08184030181529181526020820180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff167fb60e72cc00000000000000000000000000000000000000000000000000000000179052516104859190610640565b600060405180830381855afa9150503d80600081146104c0576040519150601f19603f3d011682016040523d82523d6000602084013e6104c5565b606091505b505050505050565b6000602082840312156104df57600080fd5b5035919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b600082821015610527576105276104e6565b500390565b60007fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff820361055d5761055d6104e6565b5060010190565b60008219821115610577576105776104e6565b500190565b6000826105b2577f4e487b7100000000000000000000000000000000000000000000000000000000600052601260045260246000fd5b500690565b60005b838110156105d25781810151838201526020016105ba565b838111156105e1576000848401525b50505050565b60408152600083518060408401526106068160608501602088016105b7565b602083019390935250601f919091017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe01601606001919050565b600082516106528184602087016105b7565b919091019291505056fea164736f6c634300080f000a",
+    "sourceMap": "300:1054:191:-:0;;;394:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;424:2;:8;;-1:-1:-1;;;;;;424:8:191;-1:-1:-1;;;;;424:8:191;;;;;;;;;;300:1054;;14:303:283;97:6;150:2;138:9;129:7;125:23;121:32;118:52;;;166:1;163;156:12;118:52;192:16;;-1:-1:-1;;;;;237:31:283;;227:42;;217:70;;283:1;280;273:12;217:70;306:5;14:303;-1:-1:-1;;;14:303:283:o;:::-;300:1054:191;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c80634ad5d16f1461003b57806379df245a14610050575b600080fd5b61004e6100493660046104cd565b610089565b005b6000546100759074010000000000000000000000000000000000000000900460ff1681565b604051901515815260200160405180910390f35b627a1200600061009a83828461010e565b905060005a90506100aa82610163565b60005a905082828203111580156100c2575081838303115b1561010757600080547fffffffffffffffffffffff00ffffffffffffffffffffffffffffffffffffffff16740100000000000000000000000000000000000000001790555b5050505050565b600061011b848484610191565b905061015c6040518060400160405280600c81526020017f426f756e6420526573756c740000000000000000000000000000000000000000815250826103cd565b9392505050565b6000805a90505b825a6101769083610515565b101561018c576101858261052c565b915061016a565b505050565b600081831115610227576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152603e60248201527f5374645574696c7320626f756e642875696e743235362c75696e743235362c7560448201527f696e74323536293a204d6178206973206c657373207468616e206d696e2e0000606482015260840160405180910390fd5b8284101580156102375750818411155b1561024357508261015c565b600061024f8484610515565b61025a906001610564565b90506003851115801561026c57508481115b156102835761027b8585610564565b91505061015c565b6102ae60037fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff610515565b85101580156102e557506102e2857fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff610515565b81115b1561031e57610314857fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff610515565b61027b9084610515565b828511156103745760006103328487610515565b90506000610340838361057c565b9050806000036103555784935050505061015c565b60016103618288610564565b61036b9190610515565b935050506103c5565b838510156103c55760006103888686610515565b90506000610396838361057c565b9050806000036103ab5785935050505061015c565b6103b58186610515565b6103c0906001610564565b935050505b509392505050565b60006a636f6e736f6c652e6c6f6773ffffffffffffffffffffffffffffffffffffffff1683836040516024016104049291906105e7565b604080517fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe08184030181529181526020820180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff167fb60e72cc00000000000000000000000000000000000000000000000000000000179052516104859190610640565b600060405180830381855afa9150503d80600081146104c0576040519150601f19603f3d011682016040523d82523d6000602084013e6104c5565b606091505b505050505050565b6000602082840312156104df57600080fd5b5035919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b600082821015610527576105276104e6565b500390565b60007fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff820361055d5761055d6104e6565b5060010190565b60008219821115610577576105776104e6565b500190565b6000826105b2577f4e487b7100000000000000000000000000000000000000000000000000000000600052601260045260246000fd5b500690565b60005b838110156105d25781810151838201526020016105ba565b838111156105e1576000848401525b50505050565b60408152600083518060408401526106068160608501602088016105b7565b602083019390935250601f919091017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe01601606001919050565b600082516106528184602087016105b7565b919091019291505056fea164736f6c634300080f000a",
+    "sourceMap": "300:1054:191:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;646:706;;;;;;:::i;:::-;;:::i;:::-;;362:25;;;;;;;;;;;;;;;364:14:283;;357:22;339:41;;327:2;312:18;362:25:191;;;;;;;646:706;778:9;749:26;813:36;819:6;749:26;778:9;813:5;:36::i;:::-;797:52;;914:18;935:9;914:30;;987:15;996:5;987:8;:15::i;:::-;1058:19;1080:9;1058:31;;1241:5;1227:10;1213:11;:24;:33;;:68;;;;;1271:10;1263:5;1250:10;:18;:31;1213:68;1209:127;;;1301:13;:20;;;;;;;;1209:127;688:664;;;;646:706;:::o;2815:190:277:-;2898:14;2933:19;2940:1;2943:3;2948;2933:6;:19::i;:::-;2924:28;;2962:36;;;;;;;;;;;;;;;;;;2991:6;2962:12;:36::i;:::-;2815:190;;;;;:::o;407:192:90:-;461:9;484:18;505:9;484:30;;524:69;556:7;544:9;531:22;;:10;:22;:::i;:::-;:32;524:69;;;579:3;;;:::i;:::-;;;524:69;;;451:148;;407:192;:::o;1546:1263:277:-;1630:14;1671:3;1664;:10;;1656:85;;;;;;;1112:2:283;1656:85:277;;;1094:21:283;1151:2;1131:18;;;1124:30;1190:34;1170:18;;;1163:62;1261:32;1241:18;;;1234:60;1311:19;;1656:85:277;;;;;;;;1975:3;1970:1;:8;;:20;;;;;1987:3;1982:1;:8;;1970:20;1966:34;;;-1:-1:-1;1999:1:277;1992:8;;1966:34;2011:12;2026:9;2032:3;2026;:9;:::i;:::-;:13;;2038:1;2026:13;:::i;:::-;2011:28;;2234:1;2229;:6;;:18;;;;;2246:1;2239:4;:8;2229:18;2225:38;;;2256:7;2262:1;2256:3;:7;:::i;:::-;2249:14;;;;;2225:38;2282:15;2296:1;1042:78;2282:15;:::i;:::-;2277:1;:20;;:46;;;;-1:-1:-1;2308:15:277;2322:1;1042:78;2308:15;:::i;:::-;2301:4;:22;2277:46;2273:82;;;2339:15;2353:1;1042:78;2339:15;:::i;:::-;2332:23;;:3;:23;:::i;2273:82::-;2459:3;2455:1;:7;2451:352;;;2478:12;2493:7;2497:3;2493:1;:7;:::i;:::-;2478:22;-1:-1:-1;2514:11:277;2528;2535:4;2478:22;2528:11;:::i;:::-;2514:25;;2557:3;2564:1;2557:8;2553:24;;2574:3;2567:10;;;;;;;2553:24;2612:1;2600:9;2606:3;2600;:9;:::i;:::-;:13;;;;:::i;:::-;2591:22;;2464:160;;2451:352;;;2638:3;2634:1;:7;2630:173;;;2657:12;2672:7;2678:1;2672:3;:7;:::i;:::-;2657:22;-1:-1:-1;2693:11:277;2707;2714:4;2657:22;2707:11;:::i;:::-;2693:25;;2736:3;2743:1;2736:8;2732:24;;2753:3;2746:10;;;;;;;2732:24;2779:9;2785:3;2779;:9;:::i;:::-;:13;;2791:1;2779:13;:::i;:::-;2770:22;;2643:160;;2630:173;1646:1163;1546:1263;;;;;:::o;10096:207::-;10172:11;679:42;10188:36;;10272:2;10276;10225:54;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;10188:92;;;10225:54;10188:92;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;10096:207:277:o;14:180:283:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:283;;14:180;-1:-1:-1;14:180:283:o;391:184::-;443:77;440:1;433:88;540:4;537:1;530:15;564:4;561:1;554:15;580:125;620:4;648:1;645;642:8;639:34;;;653:18;;:::i;:::-;-1:-1:-1;690:9:283;;580:125::o;710:195::-;749:3;780:66;773:5;770:77;767:103;;850:18;;:::i;:::-;-1:-1:-1;897:1:283;886:13;;710:195::o;1341:128::-;1381:3;1412:1;1408:6;1405:1;1402:13;1399:39;;;1418:18;;:::i;:::-;-1:-1:-1;1454:9:283;;1341:128::o;1474:266::-;1506:1;1532;1522:189;;1567:77;1564:1;1557:88;1668:4;1665:1;1658:15;1696:4;1693:1;1686:15;1522:189;-1:-1:-1;1725:9:283;;1474:266::o;1745:258::-;1817:1;1827:113;1841:6;1838:1;1835:13;1827:113;;;1917:11;;;1911:18;1898:11;;;1891:39;1863:2;1856:10;1827:113;;;1958:6;1955:1;1952:13;1949:48;;;1993:1;1984:6;1979:3;1975:16;1968:27;1949:48;;1745:258;;;:::o;2008:517::-;2185:2;2174:9;2167:21;2148:4;2217:6;2211:13;2260:6;2255:2;2244:9;2240:18;2233:34;2276:68;2337:6;2332:2;2321:9;2317:18;2310:4;2302:6;2298:17;2276:68;:::i;:::-;2505:4;2490:20;;2483:36;;;;-1:-1:-1;2396:2:283;2384:15;;;;2401:66;2380:88;2365:104;2471:2;2361:113;;2008:517;-1:-1:-1;2008:517:283:o;2530:274::-;2659:3;2697:6;2691:13;2713:53;2759:6;2754:3;2747:4;2739:6;2735:17;2713:53;:::i;:::-;2782:16;;;;;2530:274;-1:-1:-1;;2530:274:283:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "burnGas(uint256)": "4ad5d16f",
+    "failedGasBurn()": "79df245a"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract Vm\",\"name\":\"_vm\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"burnGas\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"failedGasBurn\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"burnGas(uint256)\":{\"notice\":\"Takes an integer amount of gas to burn through the Burn library and updates the contract state if at least that amount of gas was not burned by the library\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/test/invariants/Burn.Gas.t.sol\":\"Burn_GasBurner\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"none\"},\"optimizer\":{\"enabled\":true,\"runs\":999999},\"remappings\":[\":@cwia/=node_modules/clones-with-immutable-args/src/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/\",\":@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/\",\":@rari-capital/=node_modules/@rari-capital/\",\":@rari-capital/solmate/=node_modules/@rari-capital/solmate/\",\":clones-with-immutable-args/=node_modules/clones-with-immutable-args/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\"]},\"sources\":{\"contracts/libraries/Burn.sol\":{\"keccak256\":\"0x90a795bcea3ef06d6d5011256c4bd63d1a4271f519246dbf1ee3e8f1c0e21010\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9f60c3aa77cf0c484ddda4754157cff4dc0e2eace4bea67990daff4c0612ab5f\",\"dweb:/ipfs/QmSYGanMFve9uBC17X7hFneSFnwnJxz86Jgh6MX9BRMweb\"]},\"contracts/test/invariants/Burn.Gas.t.sol\":{\"keccak256\":\"0x1ca18726ee7e52fc6be5ebfe7d439683cd3e775b61049197d45c6ec90ccaa814\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2721be6b514ddd5c6ee225585ad32cd708509b7141e21478d883dc7d8e513f31\",\"dweb:/ipfs/QmdDtgNEimYWGRa74wv3B3Xhqt8mKtq7FGwwyWwh3EBnrz\"]},\"node_modules/ds-test/src/test.sol\":{\"keccak256\":\"0xb39cd1d5220cb474947b131e15a4538334b7e886af244b440ae5c9c6bba96a54\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://3101520221449ac0070bda3881311a71d9aa87e5210765e875246922cb5cb5f5\",\"dweb:/ipfs/Qmbg6kAHNoG7ox9N9Xqd9Ere2H2XixMFWFqvyPwFCzB3Gr\"]},\"node_modules/forge-std/src/Base.sol\":{\"keccak256\":\"0x4ff1a785311017d1eedb1b4737956fa383067ad34eb439abfec1d989754dde1c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f553622969b9fdb930246704a4c10dfaee6b1a4468c142fa7eb9dc292a438224\",\"dweb:/ipfs/QmcxqHnqdQsMVtgsfH9VNLmZ3g7GhgNagfq7yvNCDcCHFK\"]},\"node_modules/forge-std/src/StdAssertions.sol\":{\"keccak256\":\"0x1a0dee4d8b2c81e9318e87dd85ef009467ebf7dba6575530d1fce94d34dbae60\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ddd790c86ddde1013d1f7a552a80168eacf2e9244077f96799180644ad523a5b\",\"dweb:/ipfs/QmYinBFt9uEVFXP9ytT9CDoNpzWieQVgLWRFRNiypMzJaL\"]},\"node_modules/forge-std/src/StdChains.sol\":{\"keccak256\":\"0x9100bd38453711d5f5ae32d16b4aacef8d4e26abb3061fcc9920cd30cdb49315\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://114654e304083d3403510edd13d7df2223747337150ecf51dd36b441e50498f7\",\"dweb:/ipfs/QmQy6uvcVHyHzU2RbuvEo1hKiV7k81z21gR6DSj4DkCP8D\"]},\"node_modules/forge-std/src/StdCheats.sol\":{\"keccak256\":\"0xb58d624eb0922d4ab14856efb0ab558b0727ccfc28448c5779f1ab4d98cf3daf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1869fc58cb27a7b680428b79d0e0b6f45bd3c61fedb4b3f895e143fb899519d5\",\"dweb:/ipfs/QmcjECGVpQPjhL2bokDyQeGWdzM99qPFMhq5r7KqKLot7R\"]},\"node_modules/forge-std/src/StdError.sol\":{\"keccak256\":\"0xbf477b11a42d7611696956546bcfaa29317d1166bf65e402344599c05943fc77\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bc2e117d1135e030862b96a6526a43feb38d396cc79857f1fb696d4eff0e5fd6\",\"dweb:/ipfs/QmdSuQ5RrQudTLsNmWXGEeVJX8gR5U9XPm6m4dwwuQnJrj\"]},\"node_modules/forge-std/src/StdInvariant.sol\":{\"keccak256\":\"0xd855e1fea6247f1bef118e2bee9f0039832988b7173fd17766bba4014ae26a3c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c58c0f0b66852dfd3c76fb7958d8b023489d7a874c7cb1ad4f2021f9ec8ab477\",\"dweb:/ipfs/Qmd3MX9HAkNUhPddL29ekwhqgRnjAobZ35UzchaJZNACCN\"]},\"node_modules/forge-std/src/StdJson.sol\":{\"keccak256\":\"0x9e2a7521190c462a0667706385f1c52a816220a9813ca8ac520fba7ba45d660b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7d23017fe6570b28130a731b86179352b93a5fb5af32f11559837afc1186293c\",\"dweb:/ipfs/QmR3p6zG5Kmcr8gKocFCSopLHfXv1AziPJbH17nKyMxwxV\"]},\"node_modules/forge-std/src/StdMath.sol\":{\"keccak256\":\"0xd90ad4fd8aeaeb8929964e686e769fdedd5eded3fc3815df194a0ab9f91a3fb2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7919b70f636c7b805223992f28ad1ad0145d6c1385b5931a3589aface5fe6c92\",\"dweb:/ipfs/QmY7FRaULwoGgFteF8GawjQJRfasNgpWnU2aiMsFrYpuTC\"]},\"node_modules/forge-std/src/StdStorage.sol\":{\"keccak256\":\"0xd1517df281f973dba8b7ba52c02d3df552b60d91b8f47e4669049da648778673\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://52e43264f58a5dcfd985f3c99aa81064805aa8f1c2b4c6521fd63d45cdbba8d5\",\"dweb:/ipfs/QmUMTF6cRjt5tCQrrgQDXVRmHQLjevNsTvLFdaA1m9TBj9\"]},\"node_modules/forge-std/src/StdStyle.sol\":{\"keccak256\":\"0x2882555b0f58e48144e46e9aa5118a506b31ad7485327d54e8f681e8b414c337\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2850bcb1322de9d9dd87ded42debbe0e8fc4048173788d4c00c98b50e5f76985\",\"dweb:/ipfs/QmUiPKnj7GZLLQbJGY7bVDu79Q9jGEYNjR5ZBgwFy8mH97\"]},\"node_modules/forge-std/src/StdUtils.sol\":{\"keccak256\":\"0x18ac6dcce9cdfe3bc754ce910b4b97e56963c49a92e50f57d055adb562416b86\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d6b29b4a814dc26c3722e994a792f4cc1be86e6b8c2b2adc352ed54fb326593d\",\"dweb:/ipfs/Qma8a7XELNmUepiitaLyxJXW66urnXsvCwx1bMLmRw2Fpn\"]},\"node_modules/forge-std/src/Test.sol\":{\"keccak256\":\"0xddf16afce2bb7bbb69ed868d4c7ee8b4ea4ffbf8929427fe799682f107534945\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://52f6ebde2a4cb9d08aea5fb3d62b2f15961bb9a29d6d9e30dd0859d0d631cabf\",\"dweb:/ipfs/QmeJ9Dp1GYUggzjGiwTZkxCfB15NfyfgcyrNZL5tyWZbVZ\"]},\"node_modules/forge-std/src/Vm.sol\":{\"keccak256\":\"0xb5d4816a3f37977b1efa07b5e715daa917e96fd28dec1805c4189653db4ea33a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://34338fa7f079f8d64f20d976f9bf908a710c8728f18c4b361b020b24fedfedf2\",\"dweb:/ipfs/QmYhwY1wi6vVLMUsJ32L3GiSR9HRaFhGL1Y3wRDjy41KXn\"]},\"node_modules/forge-std/src/console.sol\":{\"keccak256\":\"0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70\",\"dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec\"]},\"node_modules/forge-std/src/console2.sol\":{\"keccak256\":\"0x954646445d1014c3cd85c7918f5e7adeeca5ee44b68c00bafa237e597a4e35ea\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://516fa3be52da4763147175bfba4be0aa011fadbb0c1afb01f97265bd4cee7973\",\"dweb:/ipfs/QmdixAyMJefx7qePChgdxcBH5MxhmN7vsqPuPLx3CgrVmF\"]},\"node_modules/forge-std/src/interfaces/IMulticall3.sol\":{\"keccak256\":\"0x7aac1389150499a922d1f9ef5749c908cef127cb2075b92fa17e9cb611263d0a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d95ebb7c7c463e08ebc12dab639945752fb2480acfc6e86da32f72732a7fd0c0\",\"dweb:/ipfs/QmNXK8P8oPWwajsQHvAHw3JPyQidPLCGQN3hWu1Lk6PBL2\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.15+commit.e14f2714"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract Vm",
+              "name": "_vm",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_value",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "burnGas"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "failedGasBurn",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "burnGas(uint256)": {
+            "notice": "Takes an integer amount of gas to burn through the Burn library and updates the contract state if at least that amount of gas was not burned by the library"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@cwia/=node_modules/clones-with-immutable-args/src/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/",
+        "@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/",
+        "@rari-capital/=node_modules/@rari-capital/",
+        "@rari-capital/solmate/=node_modules/@rari-capital/solmate/",
+        "clones-with-immutable-args/=node_modules/clones-with-immutable-args/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 999999
+      },
+      "metadata": {
+        "bytecodeHash": "none"
+      },
+      "compilationTarget": {
+        "contracts/test/invariants/Burn.Gas.t.sol": "Burn_GasBurner"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/libraries/Burn.sol": {
+        "keccak256": "0x90a795bcea3ef06d6d5011256c4bd63d1a4271f519246dbf1ee3e8f1c0e21010",
+        "urls": [
+          "bzz-raw://9f60c3aa77cf0c484ddda4754157cff4dc0e2eace4bea67990daff4c0612ab5f",
+          "dweb:/ipfs/QmSYGanMFve9uBC17X7hFneSFnwnJxz86Jgh6MX9BRMweb"
+        ],
+        "license": "MIT"
+      },
+      "contracts/test/invariants/Burn.Gas.t.sol": {
+        "keccak256": "0x1ca18726ee7e52fc6be5ebfe7d439683cd3e775b61049197d45c6ec90ccaa814",
+        "urls": [
+          "bzz-raw://2721be6b514ddd5c6ee225585ad32cd708509b7141e21478d883dc7d8e513f31",
+          "dweb:/ipfs/QmdDtgNEimYWGRa74wv3B3Xhqt8mKtq7FGwwyWwh3EBnrz"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/ds-test/src/test.sol": {
+        "keccak256": "0xb39cd1d5220cb474947b131e15a4538334b7e886af244b440ae5c9c6bba96a54",
+        "urls": [
+          "bzz-raw://3101520221449ac0070bda3881311a71d9aa87e5210765e875246922cb5cb5f5",
+          "dweb:/ipfs/Qmbg6kAHNoG7ox9N9Xqd9Ere2H2XixMFWFqvyPwFCzB3Gr"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "node_modules/forge-std/src/Base.sol": {
+        "keccak256": "0x4ff1a785311017d1eedb1b4737956fa383067ad34eb439abfec1d989754dde1c",
+        "urls": [
+          "bzz-raw://f553622969b9fdb930246704a4c10dfaee6b1a4468c142fa7eb9dc292a438224",
+          "dweb:/ipfs/QmcxqHnqdQsMVtgsfH9VNLmZ3g7GhgNagfq7yvNCDcCHFK"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdAssertions.sol": {
+        "keccak256": "0x1a0dee4d8b2c81e9318e87dd85ef009467ebf7dba6575530d1fce94d34dbae60",
+        "urls": [
+          "bzz-raw://ddd790c86ddde1013d1f7a552a80168eacf2e9244077f96799180644ad523a5b",
+          "dweb:/ipfs/QmYinBFt9uEVFXP9ytT9CDoNpzWieQVgLWRFRNiypMzJaL"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdChains.sol": {
+        "keccak256": "0x9100bd38453711d5f5ae32d16b4aacef8d4e26abb3061fcc9920cd30cdb49315",
+        "urls": [
+          "bzz-raw://114654e304083d3403510edd13d7df2223747337150ecf51dd36b441e50498f7",
+          "dweb:/ipfs/QmQy6uvcVHyHzU2RbuvEo1hKiV7k81z21gR6DSj4DkCP8D"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdCheats.sol": {
+        "keccak256": "0xb58d624eb0922d4ab14856efb0ab558b0727ccfc28448c5779f1ab4d98cf3daf",
+        "urls": [
+          "bzz-raw://1869fc58cb27a7b680428b79d0e0b6f45bd3c61fedb4b3f895e143fb899519d5",
+          "dweb:/ipfs/QmcjECGVpQPjhL2bokDyQeGWdzM99qPFMhq5r7KqKLot7R"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdError.sol": {
+        "keccak256": "0xbf477b11a42d7611696956546bcfaa29317d1166bf65e402344599c05943fc77",
+        "urls": [
+          "bzz-raw://bc2e117d1135e030862b96a6526a43feb38d396cc79857f1fb696d4eff0e5fd6",
+          "dweb:/ipfs/QmdSuQ5RrQudTLsNmWXGEeVJX8gR5U9XPm6m4dwwuQnJrj"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdInvariant.sol": {
+        "keccak256": "0xd855e1fea6247f1bef118e2bee9f0039832988b7173fd17766bba4014ae26a3c",
+        "urls": [
+          "bzz-raw://c58c0f0b66852dfd3c76fb7958d8b023489d7a874c7cb1ad4f2021f9ec8ab477",
+          "dweb:/ipfs/Qmd3MX9HAkNUhPddL29ekwhqgRnjAobZ35UzchaJZNACCN"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdJson.sol": {
+        "keccak256": "0x9e2a7521190c462a0667706385f1c52a816220a9813ca8ac520fba7ba45d660b",
+        "urls": [
+          "bzz-raw://7d23017fe6570b28130a731b86179352b93a5fb5af32f11559837afc1186293c",
+          "dweb:/ipfs/QmR3p6zG5Kmcr8gKocFCSopLHfXv1AziPJbH17nKyMxwxV"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdMath.sol": {
+        "keccak256": "0xd90ad4fd8aeaeb8929964e686e769fdedd5eded3fc3815df194a0ab9f91a3fb2",
+        "urls": [
+          "bzz-raw://7919b70f636c7b805223992f28ad1ad0145d6c1385b5931a3589aface5fe6c92",
+          "dweb:/ipfs/QmY7FRaULwoGgFteF8GawjQJRfasNgpWnU2aiMsFrYpuTC"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdStorage.sol": {
+        "keccak256": "0xd1517df281f973dba8b7ba52c02d3df552b60d91b8f47e4669049da648778673",
+        "urls": [
+          "bzz-raw://52e43264f58a5dcfd985f3c99aa81064805aa8f1c2b4c6521fd63d45cdbba8d5",
+          "dweb:/ipfs/QmUMTF6cRjt5tCQrrgQDXVRmHQLjevNsTvLFdaA1m9TBj9"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdStyle.sol": {
+        "keccak256": "0x2882555b0f58e48144e46e9aa5118a506b31ad7485327d54e8f681e8b414c337",
+        "urls": [
+          "bzz-raw://2850bcb1322de9d9dd87ded42debbe0e8fc4048173788d4c00c98b50e5f76985",
+          "dweb:/ipfs/QmUiPKnj7GZLLQbJGY7bVDu79Q9jGEYNjR5ZBgwFy8mH97"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdUtils.sol": {
+        "keccak256": "0x18ac6dcce9cdfe3bc754ce910b4b97e56963c49a92e50f57d055adb562416b86",
+        "urls": [
+          "bzz-raw://d6b29b4a814dc26c3722e994a792f4cc1be86e6b8c2b2adc352ed54fb326593d",
+          "dweb:/ipfs/Qma8a7XELNmUepiitaLyxJXW66urnXsvCwx1bMLmRw2Fpn"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/Test.sol": {
+        "keccak256": "0xddf16afce2bb7bbb69ed868d4c7ee8b4ea4ffbf8929427fe799682f107534945",
+        "urls": [
+          "bzz-raw://52f6ebde2a4cb9d08aea5fb3d62b2f15961bb9a29d6d9e30dd0859d0d631cabf",
+          "dweb:/ipfs/QmeJ9Dp1GYUggzjGiwTZkxCfB15NfyfgcyrNZL5tyWZbVZ"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/Vm.sol": {
+        "keccak256": "0xb5d4816a3f37977b1efa07b5e715daa917e96fd28dec1805c4189653db4ea33a",
+        "urls": [
+          "bzz-raw://34338fa7f079f8d64f20d976f9bf908a710c8728f18c4b361b020b24fedfedf2",
+          "dweb:/ipfs/QmYhwY1wi6vVLMUsJ32L3GiSR9HRaFhGL1Y3wRDjy41KXn"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/console.sol": {
+        "keccak256": "0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba",
+        "urls": [
+          "bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70",
+          "dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/console2.sol": {
+        "keccak256": "0x954646445d1014c3cd85c7918f5e7adeeca5ee44b68c00bafa237e597a4e35ea",
+        "urls": [
+          "bzz-raw://516fa3be52da4763147175bfba4be0aa011fadbb0c1afb01f97265bd4cee7973",
+          "dweb:/ipfs/QmdixAyMJefx7qePChgdxcBH5MxhmN7vsqPuPLx3CgrVmF"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/interfaces/IMulticall3.sol": {
+        "keccak256": "0x7aac1389150499a922d1f9ef5749c908cef127cb2075b92fa17e9cb611263d0a",
+        "urls": [
+          "bzz-raw://d95ebb7c7c463e08ebc12dab639945752fb2480acfc6e86da32f72732a7fd0c0",
+          "dweb:/ipfs/QmNXK8P8oPWwajsQHvAHw3JPyQidPLCGQN3hWu1Lk6PBL2"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 100707,
+        "contract": "contracts/test/invariants/Burn.Gas.t.sol:Burn_GasBurner",
+        "label": "vm",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_contract(Vm)119058"
+      },
+      {
+        "astId": 100709,
+        "contract": "contracts/test/invariants/Burn.Gas.t.sol:Burn_GasBurner",
+        "label": "failedGasBurn",
+        "offset": 20,
+        "slot": "0",
+        "type": "t_bool"
+      }
+    ],
+    "types": {
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_contract(Vm)119058": {
+        "encoding": "inplace",
+        "label": "contract Vm",
+        "numberOfBytes": "20"
+      }
+    }
+  },
+  "userdoc": {
+    "version": 1,
+    "kind": "user",
+    "methods": {
+      "burnGas(uint256)": {
+        "notice": "Takes an integer amount of gas to burn through the Burn library and updates the contract state if at least that amount of gas was not burned by the library"
+      }
+    }
+  },
+  "devdoc": {
+    "version": 1,
+    "kind": "dev"
+  },
+  "ast": {
+    "absolutePath": "contracts/test/invariants/Burn.Gas.t.sol",
+    "id": 100848,
+    "exportedSymbols": {
+      "Burn": [
+        42278
+      ],
+      "Burn_BurnGas_Invariant": [
+        100847
+      ],
+      "Burn_GasBurner": [
+        100774
+      ],
+      "StdInvariant": [
+        116655
+      ],
+      "StdUtils": [
+        117503
+      ],
+      "Test": [
+        117552
+      ],
+      "Vm": [
+        119058
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:2236:191",
+    "nodes": [
+      {
+        "id": 100692,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:191",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".15"
+        ]
+      },
+      {
+        "id": 100694,
+        "nodeType": "ImportDirective",
+        "src": "57:50:191",
+        "nodes": [],
+        "absolutePath": "node_modules/forge-std/src/StdUtils.sol",
+        "file": "forge-std/StdUtils.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 100848,
+        "sourceUnit": 117504,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 100693,
+              "name": "StdUtils",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 117503,
+              "src": "66:8:191",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 100696,
+        "nodeType": "ImportDirective",
+        "src": "108:42:191",
+        "nodes": [],
+        "absolutePath": "node_modules/forge-std/src/Test.sol",
+        "file": "forge-std/Test.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 100848,
+        "sourceUnit": 117553,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 100695,
+              "name": "Test",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 117552,
+              "src": "117:4:191",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 100698,
+        "nodeType": "ImportDirective",
+        "src": "151:38:191",
+        "nodes": [],
+        "absolutePath": "node_modules/forge-std/src/Vm.sol",
+        "file": "forge-std/Vm.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 100848,
+        "sourceUnit": 119059,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 100697,
+              "name": "Vm",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 119058,
+              "src": "160:2:191",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 100700,
+        "nodeType": "ImportDirective",
+        "src": "191:58:191",
+        "nodes": [],
+        "absolutePath": "node_modules/forge-std/src/StdInvariant.sol",
+        "file": "forge-std/StdInvariant.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 100848,
+        "sourceUnit": 116656,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 100699,
+              "name": "StdInvariant",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 116655,
+              "src": "200:12:191",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 100702,
+        "nodeType": "ImportDirective",
+        "src": "250:48:191",
+        "nodes": [],
+        "absolutePath": "contracts/libraries/Burn.sol",
+        "file": "../../libraries/Burn.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 100848,
+        "sourceUnit": 42295,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 100701,
+              "name": "Burn",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 42278,
+              "src": "259:4:191",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 100774,
+        "nodeType": "ContractDefinition",
+        "src": "300:1054:191",
+        "nodes": [
+          {
+            "id": 100707,
+            "nodeType": "VariableDeclaration",
+            "src": "342:14:191",
+            "nodes": [],
+            "constant": false,
+            "mutability": "mutable",
+            "name": "vm",
+            "nameLocation": "354:2:191",
+            "scope": 100774,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Vm_$119058",
+              "typeString": "contract Vm"
+            },
+            "typeName": {
+              "id": 100706,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 100705,
+                "name": "Vm",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 119058,
+                "src": "342:2:191"
+              },
+              "referencedDeclaration": 119058,
+              "src": "342:2:191",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Vm_$119058",
+                "typeString": "contract Vm"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 100709,
+            "nodeType": "VariableDeclaration",
+            "src": "362:25:191",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "79df245a",
+            "mutability": "mutable",
+            "name": "failedGasBurn",
+            "nameLocation": "374:13:191",
+            "scope": 100774,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 100708,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "362:4:191",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 100720,
+            "nodeType": "FunctionDefinition",
+            "src": "394:45:191",
+            "nodes": [],
+            "body": {
+              "id": 100719,
+              "nodeType": "Block",
+              "src": "414:25:191",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 100717,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 100715,
+                      "name": "vm",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 100707,
+                      "src": "424:2:191",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Vm_$119058",
+                        "typeString": "contract Vm"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 100716,
+                      "name": "_vm",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 100712,
+                      "src": "429:3:191",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Vm_$119058",
+                        "typeString": "contract Vm"
+                      }
+                    },
+                    "src": "424:8:191",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Vm_$119058",
+                      "typeString": "contract Vm"
+                    }
+                  },
+                  "id": 100718,
+                  "nodeType": "ExpressionStatement",
+                  "src": "424:8:191"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 100713,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 100712,
+                  "mutability": "mutable",
+                  "name": "_vm",
+                  "nameLocation": "409:3:191",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 100720,
+                  "src": "406:6:191",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_Vm_$119058",
+                    "typeString": "contract Vm"
+                  },
+                  "typeName": {
+                    "id": 100711,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 100710,
+                      "name": "Vm",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 119058,
+                      "src": "406:2:191"
+                    },
+                    "referencedDeclaration": 119058,
+                    "src": "406:2:191",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Vm_$119058",
+                      "typeString": "contract Vm"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "405:8:191"
+            },
+            "returnParameters": {
+              "id": 100714,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "414:0:191"
+            },
+            "scope": 100774,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 100773,
+            "nodeType": "FunctionDefinition",
+            "src": "646:706:191",
+            "nodes": [],
+            "body": {
+              "id": 100772,
+              "nodeType": "Block",
+              "src": "688:664:191",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    100727
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 100727,
+                      "mutability": "mutable",
+                      "name": "MAX_RESOURCE_LIMIT",
+                      "nameLocation": "757:18:191",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 100772,
+                      "src": "749:26:191",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 100726,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "749:7:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 100729,
+                  "initialValue": {
+                    "hexValue": "385f3030305f303030",
+                    "id": 100728,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "778:9:191",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_8000000_by_1",
+                      "typeString": "int_const 8000000"
+                    },
+                    "value": "8_000_000"
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "749:38:191"
+                },
+                {
+                  "assignments": [
+                    100731
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 100731,
+                      "mutability": "mutable",
+                      "name": "value",
+                      "nameLocation": "805:5:191",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 100772,
+                      "src": "797:13:191",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 100730,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "797:7:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 100737,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "id": 100733,
+                        "name": "_value",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 100723,
+                        "src": "819:6:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "hexValue": "30",
+                        "id": 100734,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "827:1:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      },
+                      {
+                        "id": 100735,
+                        "name": "MAX_RESOURCE_LIMIT",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 100727,
+                        "src": "830:18:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 100732,
+                      "name": "bound",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        116855,
+                        117005
+                      ],
+                      "referencedDeclaration": 116855,
+                      "src": "813:5:191",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_uint256_$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
+                        "typeString": "function (uint256,uint256,uint256) view returns (uint256)"
+                      }
+                    },
+                    "id": 100736,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "813:36:191",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "797:52:191"
+                },
+                {
+                  "assignments": [
+                    100739
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 100739,
+                      "mutability": "mutable",
+                      "name": "preBurnGas",
+                      "nameLocation": "922:10:191",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 100772,
+                      "src": "914:18:191",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 100738,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "914:7:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 100742,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 100740,
+                      "name": "gasleft",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": -7,
+                      "src": "935:7:191",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_gasleft_view$__$returns$_t_uint256_$",
+                        "typeString": "function () view returns (uint256)"
+                      }
+                    },
+                    "id": 100741,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "935:9:191",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "914:30:191"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 100746,
+                        "name": "value",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 100731,
+                        "src": "996:5:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 100743,
+                        "name": "Burn",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 42278,
+                        "src": "987:4:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_Burn_$42278_$",
+                          "typeString": "type(library Burn)"
+                        }
+                      },
+                      "id": 100745,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "gas",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 42277,
+                      "src": "987:8:191",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256) view"
+                      }
+                    },
+                    "id": 100747,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "987:15:191",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 100748,
+                  "nodeType": "ExpressionStatement",
+                  "src": "987:15:191"
+                },
+                {
+                  "assignments": [
+                    100750
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 100750,
+                      "mutability": "mutable",
+                      "name": "postBurnGas",
+                      "nameLocation": "1066:11:191",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 100772,
+                      "src": "1058:19:191",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 100749,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1058:7:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 100753,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 100751,
+                      "name": "gasleft",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": -7,
+                      "src": "1080:7:191",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_gasleft_view$__$returns$_t_uint256_$",
+                        "typeString": "function () view returns (uint256)"
+                      }
+                    },
+                    "id": 100752,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1080:9:191",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1058:31:191"
+                },
+                {
+                  "id": 100771,
+                  "nodeType": "UncheckedBlock",
+                  "src": "1185:161:191",
+                  "statements": [
+                    {
+                      "condition": {
+                        "commonType": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "id": 100764,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "id": 100758,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftExpression": {
+                            "commonType": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            "id": 100756,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "leftExpression": {
+                              "id": 100754,
+                              "name": "postBurnGas",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 100750,
+                              "src": "1213:11:191",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "nodeType": "BinaryOperation",
+                            "operator": "-",
+                            "rightExpression": {
+                              "id": 100755,
+                              "name": "preBurnGas",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 100739,
+                              "src": "1227:10:191",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "src": "1213:24:191",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "nodeType": "BinaryOperation",
+                          "operator": "<=",
+                          "rightExpression": {
+                            "id": 100757,
+                            "name": "value",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 100731,
+                            "src": "1241:5:191",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "src": "1213:33:191",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "&&",
+                        "rightExpression": {
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "id": 100763,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftExpression": {
+                            "commonType": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            "id": 100761,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "leftExpression": {
+                              "id": 100759,
+                              "name": "preBurnGas",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 100739,
+                              "src": "1250:10:191",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "nodeType": "BinaryOperation",
+                            "operator": "-",
+                            "rightExpression": {
+                              "id": 100760,
+                              "name": "value",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 100731,
+                              "src": "1263:5:191",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "src": "1250:18:191",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "nodeType": "BinaryOperation",
+                          "operator": ">",
+                          "rightExpression": {
+                            "id": 100762,
+                            "name": "preBurnGas",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 100739,
+                            "src": "1271:10:191",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "src": "1250:31:191",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "src": "1213:68:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "id": 100770,
+                      "nodeType": "IfStatement",
+                      "src": "1209:127:191",
+                      "trueBody": {
+                        "id": 100769,
+                        "nodeType": "Block",
+                        "src": "1283:53:191",
+                        "statements": [
+                          {
+                            "expression": {
+                              "id": 100767,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "leftHandSide": {
+                                "id": 100765,
+                                "name": "failedGasBurn",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 100709,
+                                "src": "1301:13:191",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              },
+                              "nodeType": "Assignment",
+                              "operator": "=",
+                              "rightHandSide": {
+                                "hexValue": "74727565",
+                                "id": 100766,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "kind": "bool",
+                                "lValueRequested": false,
+                                "nodeType": "Literal",
+                                "src": "1317:4:191",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                "value": "true"
+                              },
+                              "src": "1301:20:191",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bool",
+                                "typeString": "bool"
+                              }
+                            },
+                            "id": 100768,
+                            "nodeType": "ExpressionStatement",
+                            "src": "1301:20:191"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "documentation": {
+              "id": 100721,
+              "nodeType": "StructuredDocumentation",
+              "src": "445:196:191",
+              "text": " @notice Takes an integer amount of gas to burn through the Burn library and\n updates the contract state if at least that amount of gas was not burned\n by the library"
+            },
+            "functionSelector": "4ad5d16f",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "burnGas",
+            "nameLocation": "655:7:191",
+            "parameters": {
+              "id": 100724,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 100723,
+                  "mutability": "mutable",
+                  "name": "_value",
+                  "nameLocation": "671:6:191",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 100773,
+                  "src": "663:14:191",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 100722,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "663:7:191",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "662:16:191"
+            },
+            "returnParameters": {
+              "id": 100725,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "688:0:191"
+            },
+            "scope": 100774,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 100703,
+              "name": "StdUtils",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 117503,
+              "src": "327:8:191"
+            },
+            "id": 100704,
+            "nodeType": "InheritanceSpecifier",
+            "src": "327:8:191"
+          }
+        ],
+        "canonicalName": "Burn_GasBurner",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          100774,
+          117503
+        ],
+        "name": "Burn_GasBurner",
+        "nameLocation": "309:14:191",
+        "scope": 100848,
+        "usedErrors": []
+      },
+      {
+        "id": 100847,
+        "nodeType": "ContractDefinition",
+        "src": "1356:911:191",
+        "nodes": [
+          {
+            "id": 100781,
+            "nodeType": "VariableDeclaration",
+            "src": "1416:29:191",
+            "nodes": [],
+            "constant": false,
+            "mutability": "mutable",
+            "name": "actor",
+            "nameLocation": "1440:5:191",
+            "scope": 100847,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Burn_GasBurner_$100774",
+              "typeString": "contract Burn_GasBurner"
+            },
+            "typeName": {
+              "id": 100780,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 100779,
+                "name": "Burn_GasBurner",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 100774,
+                "src": "1416:14:191"
+              },
+              "referencedDeclaration": 100774,
+              "src": "1416:14:191",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Burn_GasBurner_$100774",
+                "typeString": "contract Burn_GasBurner"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 100834,
+            "nodeType": "FunctionDefinition",
+            "src": "1452:386:191",
+            "nodes": [],
+            "body": {
+              "id": 100833,
+              "nodeType": "Block",
+              "src": "1476:362:191",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 100790,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 100784,
+                      "name": "actor",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 100781,
+                      "src": "1524:5:191",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Burn_GasBurner_$100774",
+                        "typeString": "contract Burn_GasBurner"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 100788,
+                          "name": "vm",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 122936,
+                          "src": "1551:2:191",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_Vm_$119058",
+                            "typeString": "contract Vm"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_contract$_Vm_$119058",
+                            "typeString": "contract Vm"
+                          }
+                        ],
+                        "id": 100787,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "1532:18:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_Vm_$119058_$returns$_t_contract$_Burn_GasBurner_$100774_$",
+                          "typeString": "function (contract Vm) returns (contract Burn_GasBurner)"
+                        },
+                        "typeName": {
+                          "id": 100786,
+                          "nodeType": "UserDefinedTypeName",
+                          "pathNode": {
+                            "id": 100785,
+                            "name": "Burn_GasBurner",
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 100774,
+                            "src": "1536:14:191"
+                          },
+                          "referencedDeclaration": 100774,
+                          "src": "1536:14:191",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_Burn_GasBurner_$100774",
+                            "typeString": "contract Burn_GasBurner"
+                          }
+                        }
+                      },
+                      "id": 100789,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1532:22:191",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Burn_GasBurner_$100774",
+                        "typeString": "contract Burn_GasBurner"
+                      }
+                    },
+                    "src": "1524:30:191",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Burn_GasBurner_$100774",
+                      "typeString": "contract Burn_GasBurner"
+                    }
+                  },
+                  "id": 100791,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1524:30:191"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 100795,
+                            "name": "actor",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 100781,
+                            "src": "1588:5:191",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_Burn_GasBurner_$100774",
+                              "typeString": "contract Burn_GasBurner"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_Burn_GasBurner_$100774",
+                              "typeString": "contract Burn_GasBurner"
+                            }
+                          ],
+                          "id": 100794,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1580:7:191",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 100793,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "1580:7:191",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 100796,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1580:14:191",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 100792,
+                      "name": "targetContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 116539,
+                      "src": "1565:14:191",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 100797,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1565:30:191",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 100798,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1565:30:191"
+                },
+                {
+                  "assignments": [
+                    100803
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 100803,
+                      "mutability": "mutable",
+                      "name": "selectors",
+                      "nameLocation": "1622:9:191",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 100833,
+                      "src": "1606:25:191",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_bytes4_$dyn_memory_ptr",
+                        "typeString": "bytes4[]"
+                      },
+                      "typeName": {
+                        "baseType": {
+                          "id": 100801,
+                          "name": "bytes4",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "1606:6:191",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes4",
+                            "typeString": "bytes4"
+                          }
+                        },
+                        "id": 100802,
+                        "nodeType": "ArrayTypeName",
+                        "src": "1606:8:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_bytes4_$dyn_storage_ptr",
+                          "typeString": "bytes4[]"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 100809,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "hexValue": "31",
+                        "id": 100807,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1647:1:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        }
+                      ],
+                      "id": 100806,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "NewExpression",
+                      "src": "1634:12:191",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_objectcreation_pure$_t_uint256_$returns$_t_array$_t_bytes4_$dyn_memory_ptr_$",
+                        "typeString": "function (uint256) pure returns (bytes4[] memory)"
+                      },
+                      "typeName": {
+                        "baseType": {
+                          "id": 100804,
+                          "name": "bytes4",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "1638:6:191",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes4",
+                            "typeString": "bytes4"
+                          }
+                        },
+                        "id": 100805,
+                        "nodeType": "ArrayTypeName",
+                        "src": "1638:8:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_bytes4_$dyn_storage_ptr",
+                          "typeString": "bytes4[]"
+                        }
+                      }
+                    },
+                    "id": 100808,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1634:15:191",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes4_$dyn_memory_ptr",
+                      "typeString": "bytes4[] memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1606:43:191"
+                },
+                {
+                  "expression": {
+                    "id": 100816,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "baseExpression": {
+                        "id": 100810,
+                        "name": "selectors",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 100803,
+                        "src": "1659:9:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_bytes4_$dyn_memory_ptr",
+                          "typeString": "bytes4[] memory"
+                        }
+                      },
+                      "id": 100812,
+                      "indexExpression": {
+                        "hexValue": "30",
+                        "id": 100811,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1669:1:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1659:12:191",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes4",
+                        "typeString": "bytes4"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "expression": {
+                        "expression": {
+                          "id": 100813,
+                          "name": "actor",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 100781,
+                          "src": "1674:5:191",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_Burn_GasBurner_$100774",
+                            "typeString": "contract Burn_GasBurner"
+                          }
+                        },
+                        "id": 100814,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "burnGas",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 100773,
+                        "src": "1674:13:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
+                          "typeString": "function (uint256) external"
+                        }
+                      },
+                      "id": 100815,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "selector",
+                      "nodeType": "MemberAccess",
+                      "src": "1674:22:191",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes4",
+                        "typeString": "bytes4"
+                      }
+                    },
+                    "src": "1659:37:191",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "id": 100817,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1659:37:191"
+                },
+                {
+                  "assignments": [
+                    100820
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 100820,
+                      "mutability": "mutable",
+                      "name": "selector",
+                      "nameLocation": "1726:8:191",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 100833,
+                      "src": "1706:28:191",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_FuzzSelector_$116440_memory_ptr",
+                        "typeString": "struct StdInvariant.FuzzSelector"
+                      },
+                      "typeName": {
+                        "id": 100819,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 100818,
+                          "name": "FuzzSelector",
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 116440,
+                          "src": "1706:12:191"
+                        },
+                        "referencedDeclaration": 116440,
+                        "src": "1706:12:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_FuzzSelector_$116440_storage_ptr",
+                          "typeString": "struct StdInvariant.FuzzSelector"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 100828,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 100824,
+                            "name": "actor",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 100781,
+                            "src": "1766:5:191",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_Burn_GasBurner_$100774",
+                              "typeString": "contract Burn_GasBurner"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_Burn_GasBurner_$100774",
+                              "typeString": "contract Burn_GasBurner"
+                            }
+                          ],
+                          "id": 100823,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1758:7:191",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 100822,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "1758:7:191",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 100825,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1758:14:191",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 100826,
+                        "name": "selectors",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 100803,
+                        "src": "1785:9:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_bytes4_$dyn_memory_ptr",
+                          "typeString": "bytes4[] memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_array$_t_bytes4_$dyn_memory_ptr",
+                          "typeString": "bytes4[] memory"
+                        }
+                      ],
+                      "id": 100821,
+                      "name": "FuzzSelector",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 116440,
+                      "src": "1737:12:191",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_struct$_FuzzSelector_$116440_storage_ptr_$",
+                        "typeString": "type(struct StdInvariant.FuzzSelector storage pointer)"
+                      }
+                    },
+                    "id": 100827,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [
+                      "addr",
+                      "selectors"
+                    ],
+                    "nodeType": "FunctionCall",
+                    "src": "1737:60:191",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_FuzzSelector_$116440_memory_ptr",
+                      "typeString": "struct StdInvariant.FuzzSelector memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1706:91:191"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 100830,
+                        "name": "selector",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 100820,
+                        "src": "1822:8:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_FuzzSelector_$116440_memory_ptr",
+                          "typeString": "struct StdInvariant.FuzzSelector memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_FuzzSelector_$116440_memory_ptr",
+                          "typeString": "struct StdInvariant.FuzzSelector memory"
+                        }
+                      ],
+                      "id": 100829,
+                      "name": "targetSelector",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 116552,
+                      "src": "1807:14:191",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_FuzzSelector_$116440_memory_ptr_$returns$__$",
+                        "typeString": "function (struct StdInvariant.FuzzSelector memory)"
+                      }
+                    },
+                    "id": 100831,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1807:24:191",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 100832,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1807:24:191"
+                }
+              ]
+            },
+            "functionSelector": "0a9254e4",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setUp",
+            "nameLocation": "1461:5:191",
+            "parameters": {
+              "id": 100782,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1466:2:191"
+            },
+            "returnParameters": {
+              "id": 100783,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1476:0:191"
+            },
+            "scope": 100847,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 100846,
+            "nodeType": "FunctionDefinition",
+            "src": "2085:180:191",
+            "nodes": [],
+            "body": {
+              "id": 100845,
+              "nodeType": "Block",
+              "src": "2124:141:191",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "expression": {
+                            "id": 100839,
+                            "name": "actor",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 100781,
+                            "src": "2229:5:191",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_Burn_GasBurner_$100774",
+                              "typeString": "contract Burn_GasBurner"
+                            }
+                          },
+                          "id": 100840,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "failedGasBurn",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 100709,
+                          "src": "2229:19:191",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$__$returns$_t_bool_$",
+                            "typeString": "function () view external returns (bool)"
+                          }
+                        },
+                        "id": 100841,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "2229:21:191",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "66616c7365",
+                        "id": 100842,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "bool",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2252:5:191",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "value": "false"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 100838,
+                      "name": "assertEq",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        123071,
+                        123096,
+                        123109,
+                        123125,
+                        123167,
+                        123209,
+                        123251,
+                        123288,
+                        123325,
+                        123362,
+                        114965,
+                        114990,
+                        115020,
+                        115045,
+                        115104,
+                        115129,
+                        115159,
+                        115184,
+                        116284,
+                        116319
+                      ],
+                      "referencedDeclaration": 123071,
+                      "src": "2220:8:191",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bool_$_t_bool_$returns$__$",
+                        "typeString": "function (bool,bool)"
+                      }
+                    },
+                    "id": 100843,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2220:38:191",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 100844,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2220:38:191"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 100835,
+              "nodeType": "StructuredDocumentation",
+              "src": "1844:236:191",
+              "text": " @custom:invariant `gas(uint256)` always burns at least the amount of gas passed.\n Asserts that when `Burn.gas(uint256)` is called, it always burns at least the amount\n of gas passed to the function."
+            },
+            "functionSelector": "d45aad94",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "invariant_burn_gas",
+            "nameLocation": "2094:18:191",
+            "parameters": {
+              "id": 100836,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2112:2:191"
+            },
+            "returnParameters": {
+              "id": 100837,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2124:0:191"
+            },
+            "scope": 100847,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 100775,
+              "name": "StdInvariant",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 116655,
+              "src": "1391:12:191"
+            },
+            "id": 100776,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1391:12:191"
+          },
+          {
+            "baseName": {
+              "id": 100777,
+              "name": "Test",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 117552,
+              "src": "1405:4:191"
+            },
+            "id": 100778,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1405:4:191"
+          }
+        ],
+        "canonicalName": "Burn_BurnGas_Invariant",
+        "contractDependencies": [
+          100774
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          100847,
+          117552,
+          122943,
+          122940,
+          117503,
+          116655,
+          127476,
+          126797,
+          125064,
+          124370,
+          116431
+        ],
+        "name": "Burn_BurnGas_Invariant",
+        "nameLocation": "1365:22:191",
+        "scope": 100848,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 191
+}

@@ -1,0 +1,2590 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_balance",
+          "type": "uint256"
+        }
+      ],
+      "name": "setTokenBalance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "userTokenBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b5061017d806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063060dac881461003b578063b47064c814610081575b600080fd5b61007f610049366004610101565b73ffffffffffffffffffffffffffffffffffffffff91821660009081526020818152604080832095909416825293909352912055565b005b6100c661008f36600461013d565b73ffffffffffffffffffffffffffffffffffffffff8082166000908152602081815260408083209386168352929052205492915050565b60405190815260200160405180910390f35b803573ffffffffffffffffffffffffffffffffffffffff811681146100fc57600080fd5b919050565b60008060006060848603121561011657600080fd5b61011f846100d8565b925061012d602085016100d8565b9150604084013590509250925092565b6000806040838503121561015057600080fd5b610159836100d8565b9150610167602084016100d8565b9050925092905056fea164736f6c634300080f000a",
+    "sourceMap": "361:447:131:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063060dac881461003b578063b47064c814610081575b600080fd5b61007f610049366004610101565b73ffffffffffffffffffffffffffffffffffffffff91821660009081526020818152604080832095909416825293909352912055565b005b6100c661008f36600461013d565b73ffffffffffffffffffffffffffffffffffffffff8082166000908152602081815260408083209386168352929052205492915050565b60405190815260200160405180910390f35b803573ffffffffffffffffffffffffffffffffffffffff811681146100fc57600080fd5b919050565b60008060006060848603121561011657600080fd5b61011f846100d8565b925061012d602085016100d8565b9150604084013590509250925092565b6000806040838503121561015057600080fd5b610159836100d8565b9150610167602084016100d8565b9050925092905056fea164736f6c634300080f000a",
+    "sourceMap": "361:447:131:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;490:169;;;;;;:::i;:::-;613:21;;;;:13;:21;;;;;;;;;;;:28;;;;;;;;;;;;:39;490:169;;;665:141;;;;;;:::i;:::-;771:21;;;;745:7;771:21;;;;;;;;;;;:28;;;;;;;;;;665:141;;;;;;;;959:25:283;;;947:2;932:18;665:141:131;;;;;;;14:196:283;82:20;;142:42;131:54;;121:65;;111:93;;200:1;197;190:12;111:93;14:196;;;:::o;215:328::-;292:6;300;308;361:2;349:9;340:7;336:23;332:32;329:52;;;377:1;374;367:12;329:52;400:29;419:9;400:29;:::i;:::-;390:39;;448:38;482:2;471:9;467:18;448:38;:::i;:::-;438:48;;533:2;522:9;518:18;505:32;495:42;;215:328;;;;;:::o;548:260::-;616:6;624;677:2;665:9;656:7;652:23;648:32;645:52;;;693:1;690;683:12;645:52;716:29;735:9;716:29;:::i;:::-;706:39;;764:38;798:2;787:9;783:18;764:38;:::i;:::-;754:48;;548:260;;;;;:::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "setTokenBalance(address,address,uint256)": "060dac88",
+    "userTokenBalance(address,address)": "b47064c8"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_balance\",\"type\":\"uint256\"}],\"name\":\"setTokenBalance\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_token\",\"type\":\"address\"}],\"name\":\"userTokenBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"title\":\"MockGelatoTreasury\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"Mocks the Gelato treasury for testing purposes. Allows arbitrary         setting of user balances.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/test/CheckGelatoLow.t.sol\":\"MockGelatoTreasury\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"none\"},\"optimizer\":{\"enabled\":true,\"runs\":999999},\"remappings\":[\":@cwia/=node_modules/clones-with-immutable-args/src/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/\",\":@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/\",\":@rari-capital/=node_modules/@rari-capital/\",\":@rari-capital/solmate/=node_modules/@rari-capital/solmate/\",\":clones-with-immutable-args/=node_modules/clones-with-immutable-args/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\"]},\"sources\":{\"contracts/periphery/drippie/IDripCheck.sol\":{\"keccak256\":\"0xb52c89360566b2963dfd82cb2cc23f0c3ce4503a69e8563878e8aa80b6c60b3f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d1a67f456f8eb6219f4e85857714bed1c27ce934e5e81497b733646848b315c\",\"dweb:/ipfs/QmRFwsdm5ZCWP9b3S7YAz9TuCdgLzsNrAMpX5WckU3v7WG\"]},\"contracts/periphery/drippie/dripchecks/CheckGelatoLow.sol\":{\"keccak256\":\"0x688570de23a319cb55491f1aeba944e80ac896d2221028a058917564eaad7e6f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4aebb50187c73e520b5526d2d01d189eebcadfb59cafc8a331bd824774e8e09a\",\"dweb:/ipfs/QmPt4DETqpq6GPFvpxRgruXJ2vaSKoEZosLdmQz8MFBJSu\"]},\"contracts/test/CheckGelatoLow.t.sol\":{\"keccak256\":\"0x03d5b274238b00336e3068db0fa18de2ce3e331e3e95aec1f019409882d836bf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://156e5c41d60d698884f986d614e18f02eb07688dcaaeba98b52c437b9163c6b9\",\"dweb:/ipfs/QmcYEti6rEDtCHDd1r7xAC3H2wm3Z4Y8r3mTLWu4PAdF4W\"]},\"node_modules/ds-test/src/test.sol\":{\"keccak256\":\"0xb39cd1d5220cb474947b131e15a4538334b7e886af244b440ae5c9c6bba96a54\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://3101520221449ac0070bda3881311a71d9aa87e5210765e875246922cb5cb5f5\",\"dweb:/ipfs/Qmbg6kAHNoG7ox9N9Xqd9Ere2H2XixMFWFqvyPwFCzB3Gr\"]},\"node_modules/forge-std/src/Base.sol\":{\"keccak256\":\"0x4ff1a785311017d1eedb1b4737956fa383067ad34eb439abfec1d989754dde1c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f553622969b9fdb930246704a4c10dfaee6b1a4468c142fa7eb9dc292a438224\",\"dweb:/ipfs/QmcxqHnqdQsMVtgsfH9VNLmZ3g7GhgNagfq7yvNCDcCHFK\"]},\"node_modules/forge-std/src/StdAssertions.sol\":{\"keccak256\":\"0x1a0dee4d8b2c81e9318e87dd85ef009467ebf7dba6575530d1fce94d34dbae60\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ddd790c86ddde1013d1f7a552a80168eacf2e9244077f96799180644ad523a5b\",\"dweb:/ipfs/QmYinBFt9uEVFXP9ytT9CDoNpzWieQVgLWRFRNiypMzJaL\"]},\"node_modules/forge-std/src/StdChains.sol\":{\"keccak256\":\"0x9100bd38453711d5f5ae32d16b4aacef8d4e26abb3061fcc9920cd30cdb49315\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://114654e304083d3403510edd13d7df2223747337150ecf51dd36b441e50498f7\",\"dweb:/ipfs/QmQy6uvcVHyHzU2RbuvEo1hKiV7k81z21gR6DSj4DkCP8D\"]},\"node_modules/forge-std/src/StdCheats.sol\":{\"keccak256\":\"0xb58d624eb0922d4ab14856efb0ab558b0727ccfc28448c5779f1ab4d98cf3daf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1869fc58cb27a7b680428b79d0e0b6f45bd3c61fedb4b3f895e143fb899519d5\",\"dweb:/ipfs/QmcjECGVpQPjhL2bokDyQeGWdzM99qPFMhq5r7KqKLot7R\"]},\"node_modules/forge-std/src/StdError.sol\":{\"keccak256\":\"0xbf477b11a42d7611696956546bcfaa29317d1166bf65e402344599c05943fc77\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bc2e117d1135e030862b96a6526a43feb38d396cc79857f1fb696d4eff0e5fd6\",\"dweb:/ipfs/QmdSuQ5RrQudTLsNmWXGEeVJX8gR5U9XPm6m4dwwuQnJrj\"]},\"node_modules/forge-std/src/StdInvariant.sol\":{\"keccak256\":\"0xd855e1fea6247f1bef118e2bee9f0039832988b7173fd17766bba4014ae26a3c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c58c0f0b66852dfd3c76fb7958d8b023489d7a874c7cb1ad4f2021f9ec8ab477\",\"dweb:/ipfs/Qmd3MX9HAkNUhPddL29ekwhqgRnjAobZ35UzchaJZNACCN\"]},\"node_modules/forge-std/src/StdJson.sol\":{\"keccak256\":\"0x9e2a7521190c462a0667706385f1c52a816220a9813ca8ac520fba7ba45d660b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7d23017fe6570b28130a731b86179352b93a5fb5af32f11559837afc1186293c\",\"dweb:/ipfs/QmR3p6zG5Kmcr8gKocFCSopLHfXv1AziPJbH17nKyMxwxV\"]},\"node_modules/forge-std/src/StdMath.sol\":{\"keccak256\":\"0xd90ad4fd8aeaeb8929964e686e769fdedd5eded3fc3815df194a0ab9f91a3fb2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7919b70f636c7b805223992f28ad1ad0145d6c1385b5931a3589aface5fe6c92\",\"dweb:/ipfs/QmY7FRaULwoGgFteF8GawjQJRfasNgpWnU2aiMsFrYpuTC\"]},\"node_modules/forge-std/src/StdStorage.sol\":{\"keccak256\":\"0xd1517df281f973dba8b7ba52c02d3df552b60d91b8f47e4669049da648778673\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://52e43264f58a5dcfd985f3c99aa81064805aa8f1c2b4c6521fd63d45cdbba8d5\",\"dweb:/ipfs/QmUMTF6cRjt5tCQrrgQDXVRmHQLjevNsTvLFdaA1m9TBj9\"]},\"node_modules/forge-std/src/StdStyle.sol\":{\"keccak256\":\"0x2882555b0f58e48144e46e9aa5118a506b31ad7485327d54e8f681e8b414c337\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2850bcb1322de9d9dd87ded42debbe0e8fc4048173788d4c00c98b50e5f76985\",\"dweb:/ipfs/QmUiPKnj7GZLLQbJGY7bVDu79Q9jGEYNjR5ZBgwFy8mH97\"]},\"node_modules/forge-std/src/StdUtils.sol\":{\"keccak256\":\"0x18ac6dcce9cdfe3bc754ce910b4b97e56963c49a92e50f57d055adb562416b86\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d6b29b4a814dc26c3722e994a792f4cc1be86e6b8c2b2adc352ed54fb326593d\",\"dweb:/ipfs/Qma8a7XELNmUepiitaLyxJXW66urnXsvCwx1bMLmRw2Fpn\"]},\"node_modules/forge-std/src/Test.sol\":{\"keccak256\":\"0xddf16afce2bb7bbb69ed868d4c7ee8b4ea4ffbf8929427fe799682f107534945\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://52f6ebde2a4cb9d08aea5fb3d62b2f15961bb9a29d6d9e30dd0859d0d631cabf\",\"dweb:/ipfs/QmeJ9Dp1GYUggzjGiwTZkxCfB15NfyfgcyrNZL5tyWZbVZ\"]},\"node_modules/forge-std/src/Vm.sol\":{\"keccak256\":\"0xb5d4816a3f37977b1efa07b5e715daa917e96fd28dec1805c4189653db4ea33a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://34338fa7f079f8d64f20d976f9bf908a710c8728f18c4b361b020b24fedfedf2\",\"dweb:/ipfs/QmYhwY1wi6vVLMUsJ32L3GiSR9HRaFhGL1Y3wRDjy41KXn\"]},\"node_modules/forge-std/src/console.sol\":{\"keccak256\":\"0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70\",\"dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec\"]},\"node_modules/forge-std/src/console2.sol\":{\"keccak256\":\"0x954646445d1014c3cd85c7918f5e7adeeca5ee44b68c00bafa237e597a4e35ea\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://516fa3be52da4763147175bfba4be0aa011fadbb0c1afb01f97265bd4cee7973\",\"dweb:/ipfs/QmdixAyMJefx7qePChgdxcBH5MxhmN7vsqPuPLx3CgrVmF\"]},\"node_modules/forge-std/src/interfaces/IMulticall3.sol\":{\"keccak256\":\"0x7aac1389150499a922d1f9ef5749c908cef127cb2075b92fa17e9cb611263d0a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d95ebb7c7c463e08ebc12dab639945752fb2480acfc6e86da32f72732a7fd0c0\",\"dweb:/ipfs/QmNXK8P8oPWwajsQHvAHw3JPyQidPLCGQN3hWu1Lk6PBL2\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.15+commit.e14f2714"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_user",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "_token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_balance",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setTokenBalance"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_user",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "_token",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "userTokenBalance",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@cwia/=node_modules/clones-with-immutable-args/src/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/",
+        "@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/",
+        "@rari-capital/=node_modules/@rari-capital/",
+        "@rari-capital/solmate/=node_modules/@rari-capital/solmate/",
+        "clones-with-immutable-args/=node_modules/clones-with-immutable-args/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 999999
+      },
+      "metadata": {
+        "bytecodeHash": "none"
+      },
+      "compilationTarget": {
+        "contracts/test/CheckGelatoLow.t.sol": "MockGelatoTreasury"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/periphery/drippie/IDripCheck.sol": {
+        "keccak256": "0xb52c89360566b2963dfd82cb2cc23f0c3ce4503a69e8563878e8aa80b6c60b3f",
+        "urls": [
+          "bzz-raw://2d1a67f456f8eb6219f4e85857714bed1c27ce934e5e81497b733646848b315c",
+          "dweb:/ipfs/QmRFwsdm5ZCWP9b3S7YAz9TuCdgLzsNrAMpX5WckU3v7WG"
+        ],
+        "license": "MIT"
+      },
+      "contracts/periphery/drippie/dripchecks/CheckGelatoLow.sol": {
+        "keccak256": "0x688570de23a319cb55491f1aeba944e80ac896d2221028a058917564eaad7e6f",
+        "urls": [
+          "bzz-raw://4aebb50187c73e520b5526d2d01d189eebcadfb59cafc8a331bd824774e8e09a",
+          "dweb:/ipfs/QmPt4DETqpq6GPFvpxRgruXJ2vaSKoEZosLdmQz8MFBJSu"
+        ],
+        "license": "MIT"
+      },
+      "contracts/test/CheckGelatoLow.t.sol": {
+        "keccak256": "0x03d5b274238b00336e3068db0fa18de2ce3e331e3e95aec1f019409882d836bf",
+        "urls": [
+          "bzz-raw://156e5c41d60d698884f986d614e18f02eb07688dcaaeba98b52c437b9163c6b9",
+          "dweb:/ipfs/QmcYEti6rEDtCHDd1r7xAC3H2wm3Z4Y8r3mTLWu4PAdF4W"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/ds-test/src/test.sol": {
+        "keccak256": "0xb39cd1d5220cb474947b131e15a4538334b7e886af244b440ae5c9c6bba96a54",
+        "urls": [
+          "bzz-raw://3101520221449ac0070bda3881311a71d9aa87e5210765e875246922cb5cb5f5",
+          "dweb:/ipfs/Qmbg6kAHNoG7ox9N9Xqd9Ere2H2XixMFWFqvyPwFCzB3Gr"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "node_modules/forge-std/src/Base.sol": {
+        "keccak256": "0x4ff1a785311017d1eedb1b4737956fa383067ad34eb439abfec1d989754dde1c",
+        "urls": [
+          "bzz-raw://f553622969b9fdb930246704a4c10dfaee6b1a4468c142fa7eb9dc292a438224",
+          "dweb:/ipfs/QmcxqHnqdQsMVtgsfH9VNLmZ3g7GhgNagfq7yvNCDcCHFK"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdAssertions.sol": {
+        "keccak256": "0x1a0dee4d8b2c81e9318e87dd85ef009467ebf7dba6575530d1fce94d34dbae60",
+        "urls": [
+          "bzz-raw://ddd790c86ddde1013d1f7a552a80168eacf2e9244077f96799180644ad523a5b",
+          "dweb:/ipfs/QmYinBFt9uEVFXP9ytT9CDoNpzWieQVgLWRFRNiypMzJaL"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdChains.sol": {
+        "keccak256": "0x9100bd38453711d5f5ae32d16b4aacef8d4e26abb3061fcc9920cd30cdb49315",
+        "urls": [
+          "bzz-raw://114654e304083d3403510edd13d7df2223747337150ecf51dd36b441e50498f7",
+          "dweb:/ipfs/QmQy6uvcVHyHzU2RbuvEo1hKiV7k81z21gR6DSj4DkCP8D"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdCheats.sol": {
+        "keccak256": "0xb58d624eb0922d4ab14856efb0ab558b0727ccfc28448c5779f1ab4d98cf3daf",
+        "urls": [
+          "bzz-raw://1869fc58cb27a7b680428b79d0e0b6f45bd3c61fedb4b3f895e143fb899519d5",
+          "dweb:/ipfs/QmcjECGVpQPjhL2bokDyQeGWdzM99qPFMhq5r7KqKLot7R"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdError.sol": {
+        "keccak256": "0xbf477b11a42d7611696956546bcfaa29317d1166bf65e402344599c05943fc77",
+        "urls": [
+          "bzz-raw://bc2e117d1135e030862b96a6526a43feb38d396cc79857f1fb696d4eff0e5fd6",
+          "dweb:/ipfs/QmdSuQ5RrQudTLsNmWXGEeVJX8gR5U9XPm6m4dwwuQnJrj"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdInvariant.sol": {
+        "keccak256": "0xd855e1fea6247f1bef118e2bee9f0039832988b7173fd17766bba4014ae26a3c",
+        "urls": [
+          "bzz-raw://c58c0f0b66852dfd3c76fb7958d8b023489d7a874c7cb1ad4f2021f9ec8ab477",
+          "dweb:/ipfs/Qmd3MX9HAkNUhPddL29ekwhqgRnjAobZ35UzchaJZNACCN"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdJson.sol": {
+        "keccak256": "0x9e2a7521190c462a0667706385f1c52a816220a9813ca8ac520fba7ba45d660b",
+        "urls": [
+          "bzz-raw://7d23017fe6570b28130a731b86179352b93a5fb5af32f11559837afc1186293c",
+          "dweb:/ipfs/QmR3p6zG5Kmcr8gKocFCSopLHfXv1AziPJbH17nKyMxwxV"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdMath.sol": {
+        "keccak256": "0xd90ad4fd8aeaeb8929964e686e769fdedd5eded3fc3815df194a0ab9f91a3fb2",
+        "urls": [
+          "bzz-raw://7919b70f636c7b805223992f28ad1ad0145d6c1385b5931a3589aface5fe6c92",
+          "dweb:/ipfs/QmY7FRaULwoGgFteF8GawjQJRfasNgpWnU2aiMsFrYpuTC"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdStorage.sol": {
+        "keccak256": "0xd1517df281f973dba8b7ba52c02d3df552b60d91b8f47e4669049da648778673",
+        "urls": [
+          "bzz-raw://52e43264f58a5dcfd985f3c99aa81064805aa8f1c2b4c6521fd63d45cdbba8d5",
+          "dweb:/ipfs/QmUMTF6cRjt5tCQrrgQDXVRmHQLjevNsTvLFdaA1m9TBj9"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdStyle.sol": {
+        "keccak256": "0x2882555b0f58e48144e46e9aa5118a506b31ad7485327d54e8f681e8b414c337",
+        "urls": [
+          "bzz-raw://2850bcb1322de9d9dd87ded42debbe0e8fc4048173788d4c00c98b50e5f76985",
+          "dweb:/ipfs/QmUiPKnj7GZLLQbJGY7bVDu79Q9jGEYNjR5ZBgwFy8mH97"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/StdUtils.sol": {
+        "keccak256": "0x18ac6dcce9cdfe3bc754ce910b4b97e56963c49a92e50f57d055adb562416b86",
+        "urls": [
+          "bzz-raw://d6b29b4a814dc26c3722e994a792f4cc1be86e6b8c2b2adc352ed54fb326593d",
+          "dweb:/ipfs/Qma8a7XELNmUepiitaLyxJXW66urnXsvCwx1bMLmRw2Fpn"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/Test.sol": {
+        "keccak256": "0xddf16afce2bb7bbb69ed868d4c7ee8b4ea4ffbf8929427fe799682f107534945",
+        "urls": [
+          "bzz-raw://52f6ebde2a4cb9d08aea5fb3d62b2f15961bb9a29d6d9e30dd0859d0d631cabf",
+          "dweb:/ipfs/QmeJ9Dp1GYUggzjGiwTZkxCfB15NfyfgcyrNZL5tyWZbVZ"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/Vm.sol": {
+        "keccak256": "0xb5d4816a3f37977b1efa07b5e715daa917e96fd28dec1805c4189653db4ea33a",
+        "urls": [
+          "bzz-raw://34338fa7f079f8d64f20d976f9bf908a710c8728f18c4b361b020b24fedfedf2",
+          "dweb:/ipfs/QmYhwY1wi6vVLMUsJ32L3GiSR9HRaFhGL1Y3wRDjy41KXn"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/console.sol": {
+        "keccak256": "0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba",
+        "urls": [
+          "bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70",
+          "dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/console2.sol": {
+        "keccak256": "0x954646445d1014c3cd85c7918f5e7adeeca5ee44b68c00bafa237e597a4e35ea",
+        "urls": [
+          "bzz-raw://516fa3be52da4763147175bfba4be0aa011fadbb0c1afb01f97265bd4cee7973",
+          "dweb:/ipfs/QmdixAyMJefx7qePChgdxcBH5MxhmN7vsqPuPLx3CgrVmF"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/forge-std/src/interfaces/IMulticall3.sol": {
+        "keccak256": "0x7aac1389150499a922d1f9ef5749c908cef127cb2075b92fa17e9cb611263d0a",
+        "urls": [
+          "bzz-raw://d95ebb7c7c463e08ebc12dab639945752fb2480acfc6e86da32f72732a7fd0c0",
+          "dweb:/ipfs/QmNXK8P8oPWwajsQHvAHw3JPyQidPLCGQN3hWu1Lk6PBL2"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 50910,
+        "contract": "contracts/test/CheckGelatoLow.t.sol:MockGelatoTreasury",
+        "label": "tokenBalances",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(address => uint256))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_address,t_uint256)"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  },
+  "userdoc": {
+    "version": 1,
+    "kind": "user",
+    "notice": "Mocks the Gelato treasury for testing purposes. Allows arbitrary         setting of user balances."
+  },
+  "devdoc": {
+    "version": 1,
+    "kind": "dev",
+    "title": "MockGelatoTreasury"
+  },
+  "ast": {
+    "absolutePath": "contracts/test/CheckGelatoLow.t.sol",
+    "id": 51071,
+    "exportedSymbols": {
+      "CheckGelatoLow": [
+        46177
+      ],
+      "CheckGelatoLowTest": [
+        51070
+      ],
+      "IGelatoTreasury": [
+        46128
+      ],
+      "MockGelatoTreasury": [
+        50945
+      ],
+      "Test": [
+        117552
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "31:2739:131",
+    "nodes": [
+      {
+        "id": 50896,
+        "nodeType": "PragmaDirective",
+        "src": "31:23:131",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".15"
+        ]
+      },
+      {
+        "id": 50898,
+        "nodeType": "ImportDirective",
+        "src": "56:42:131",
+        "nodes": [],
+        "absolutePath": "node_modules/forge-std/src/Test.sol",
+        "file": "forge-std/Test.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 51071,
+        "sourceUnit": 117553,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 50897,
+              "name": "Test",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 117552,
+              "src": "65:4:131",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 50901,
+        "nodeType": "ImportDirective",
+        "src": "99:109:131",
+        "nodes": [],
+        "absolutePath": "contracts/periphery/drippie/dripchecks/CheckGelatoLow.sol",
+        "file": "../periphery/drippie/dripchecks/CheckGelatoLow.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 51071,
+        "sourceUnit": 46178,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 50899,
+              "name": "CheckGelatoLow",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 46177,
+              "src": "112:14:131",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 50900,
+              "name": "IGelatoTreasury",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 46128,
+              "src": "132:15:131",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 50945,
+        "nodeType": "ContractDefinition",
+        "src": "361:447:131",
+        "nodes": [
+          {
+            "id": 50910,
+            "nodeType": "VariableDeclaration",
+            "src": "414:69:131",
+            "nodes": [],
+            "constant": false,
+            "mutability": "mutable",
+            "name": "tokenBalances",
+            "nameLocation": "470:13:131",
+            "scope": 50945,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_address_$_t_uint256_$_$",
+              "typeString": "mapping(address => mapping(address => uint256))"
+            },
+            "typeName": {
+              "id": 50909,
+              "keyType": {
+                "id": 50905,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "422:7:131",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "414:47:131",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_address_$_t_uint256_$_$",
+                "typeString": "mapping(address => mapping(address => uint256))"
+              },
+              "valueType": {
+                "id": 50908,
+                "keyType": {
+                  "id": 50906,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "441:7:131",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "nodeType": "Mapping",
+                "src": "433:27:131",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                  "typeString": "mapping(address => uint256)"
+                },
+                "valueType": {
+                  "id": 50907,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "452:7:131",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                }
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "id": 50928,
+            "nodeType": "FunctionDefinition",
+            "src": "490:169:131",
+            "nodes": [],
+            "body": {
+              "id": 50927,
+              "nodeType": "Block",
+              "src": "603:56:131",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 50925,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "baseExpression": {
+                        "baseExpression": {
+                          "id": 50919,
+                          "name": "tokenBalances",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 50910,
+                          "src": "613:13:131",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_address_$_t_uint256_$_$",
+                            "typeString": "mapping(address => mapping(address => uint256))"
+                          }
+                        },
+                        "id": 50922,
+                        "indexExpression": {
+                          "id": 50920,
+                          "name": "_token",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 50914,
+                          "src": "627:6:131",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "613:21:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                          "typeString": "mapping(address => uint256)"
+                        }
+                      },
+                      "id": 50923,
+                      "indexExpression": {
+                        "id": 50921,
+                        "name": "_user",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 50912,
+                        "src": "635:5:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "613:28:131",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 50924,
+                      "name": "_balance",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 50916,
+                      "src": "644:8:131",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "613:39:131",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 50926,
+                  "nodeType": "ExpressionStatement",
+                  "src": "613:39:131"
+                }
+              ]
+            },
+            "functionSelector": "060dac88",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setTokenBalance",
+            "nameLocation": "499:15:131",
+            "parameters": {
+              "id": 50917,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 50912,
+                  "mutability": "mutable",
+                  "name": "_user",
+                  "nameLocation": "532:5:131",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 50928,
+                  "src": "524:13:131",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 50911,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "524:7:131",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 50914,
+                  "mutability": "mutable",
+                  "name": "_token",
+                  "nameLocation": "555:6:131",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 50928,
+                  "src": "547:14:131",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 50913,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "547:7:131",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 50916,
+                  "mutability": "mutable",
+                  "name": "_balance",
+                  "nameLocation": "579:8:131",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 50928,
+                  "src": "571:16:131",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 50915,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "571:7:131",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "514:79:131"
+            },
+            "returnParameters": {
+              "id": 50918,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "603:0:131"
+            },
+            "scope": 50945,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 50944,
+            "nodeType": "FunctionDefinition",
+            "src": "665:141:131",
+            "nodes": [],
+            "body": {
+              "id": 50943,
+              "nodeType": "Block",
+              "src": "754:52:131",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "baseExpression": {
+                      "baseExpression": {
+                        "id": 50937,
+                        "name": "tokenBalances",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 50910,
+                        "src": "771:13:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_address_$_t_uint256_$_$",
+                          "typeString": "mapping(address => mapping(address => uint256))"
+                        }
+                      },
+                      "id": 50939,
+                      "indexExpression": {
+                        "id": 50938,
+                        "name": "_token",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 50932,
+                        "src": "785:6:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "771:21:131",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                        "typeString": "mapping(address => uint256)"
+                      }
+                    },
+                    "id": 50941,
+                    "indexExpression": {
+                      "id": 50940,
+                      "name": "_user",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 50930,
+                      "src": "793:5:131",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "771:28:131",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 50936,
+                  "id": 50942,
+                  "nodeType": "Return",
+                  "src": "764:35:131"
+                }
+              ]
+            },
+            "baseFunctions": [
+              46127
+            ],
+            "functionSelector": "b47064c8",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "userTokenBalance",
+            "nameLocation": "674:16:131",
+            "parameters": {
+              "id": 50933,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 50930,
+                  "mutability": "mutable",
+                  "name": "_user",
+                  "nameLocation": "699:5:131",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 50944,
+                  "src": "691:13:131",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 50929,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "691:7:131",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 50932,
+                  "mutability": "mutable",
+                  "name": "_token",
+                  "nameLocation": "714:6:131",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 50944,
+                  "src": "706:14:131",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 50931,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "706:7:131",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "690:31:131"
+            },
+            "returnParameters": {
+              "id": 50936,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 50935,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 50944,
+                  "src": "745:7:131",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 50934,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "745:7:131",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "744:9:131"
+            },
+            "scope": 50945,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 50903,
+              "name": "IGelatoTreasury",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 46128,
+              "src": "392:15:131"
+            },
+            "id": 50904,
+            "nodeType": "InheritanceSpecifier",
+            "src": "392:15:131"
+          }
+        ],
+        "canonicalName": "MockGelatoTreasury",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 50902,
+          "nodeType": "StructuredDocumentation",
+          "src": "210:150:131",
+          "text": " @title  MockGelatoTreasury\n @notice Mocks the Gelato treasury for testing purposes. Allows arbitrary\n         setting of user balances."
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          50945,
+          46128
+        ],
+        "name": "MockGelatoTreasury",
+        "nameLocation": "370:18:131",
+        "scope": 51071,
+        "usedErrors": []
+      },
+      {
+        "id": 51070,
+        "nodeType": "ContractDefinition",
+        "src": "962:1807:131",
+        "nodes": [
+          {
+            "id": 50952,
+            "nodeType": "VariableDeclaration",
+            "src": "1079:16:131",
+            "nodes": [],
+            "constant": false,
+            "documentation": {
+              "id": 50949,
+              "nodeType": "StructuredDocumentation",
+              "src": "1004:70:131",
+              "text": " @notice An instance of the CheckGelatoLow contract."
+            },
+            "mutability": "mutable",
+            "name": "c",
+            "nameLocation": "1094:1:131",
+            "scope": 51070,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_CheckGelatoLow_$46177",
+              "typeString": "contract CheckGelatoLow"
+            },
+            "typeName": {
+              "id": 50951,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 50950,
+                "name": "CheckGelatoLow",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 46177,
+                "src": "1079:14:131"
+              },
+              "referencedDeclaration": 46177,
+              "src": "1079:14:131",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_CheckGelatoLow_$46177",
+                "typeString": "contract CheckGelatoLow"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 50956,
+            "nodeType": "VariableDeclaration",
+            "src": "1181:25:131",
+            "nodes": [],
+            "constant": false,
+            "documentation": {
+              "id": 50953,
+              "nodeType": "StructuredDocumentation",
+              "src": "1102:74:131",
+              "text": " @notice An instance of the MockGelatoTreasury contract."
+            },
+            "mutability": "mutable",
+            "name": "gelato",
+            "nameLocation": "1200:6:131",
+            "scope": 51070,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_MockGelatoTreasury_$50945",
+              "typeString": "contract MockGelatoTreasury"
+            },
+            "typeName": {
+              "id": 50955,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 50954,
+                "name": "MockGelatoTreasury",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 50945,
+                "src": "1181:18:131"
+              },
+              "referencedDeclaration": 50945,
+              "src": "1181:18:131",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_MockGelatoTreasury_$50945",
+                "typeString": "contract MockGelatoTreasury"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 50960,
+            "nodeType": "VariableDeclaration",
+            "src": "1287:74:131",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 50957,
+              "nodeType": "StructuredDocumentation",
+              "src": "1213:69:131",
+              "text": " @notice The account Gelato uses to represent ether"
+            },
+            "mutability": "constant",
+            "name": "eth",
+            "nameLocation": "1313:3:131",
+            "scope": 51070,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 50958,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "1287:7:131",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "hexValue": "307845656565654565656545654565654565456545656545454565656565456565656565656545456545",
+              "id": 50959,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1319:42:131",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "value": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 50979,
+            "nodeType": "FunctionDefinition",
+            "src": "1463:110:131",
+            "nodes": [],
+            "body": {
+              "id": 50978,
+              "nodeType": "Block",
+              "src": "1489:84:131",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 50969,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 50964,
+                      "name": "c",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 50952,
+                      "src": "1499:1:131",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_CheckGelatoLow_$46177",
+                        "typeString": "contract CheckGelatoLow"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 50967,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "1503:18:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_CheckGelatoLow_$46177_$",
+                          "typeString": "function () returns (contract CheckGelatoLow)"
+                        },
+                        "typeName": {
+                          "id": 50966,
+                          "nodeType": "UserDefinedTypeName",
+                          "pathNode": {
+                            "id": 50965,
+                            "name": "CheckGelatoLow",
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 46177,
+                            "src": "1507:14:131"
+                          },
+                          "referencedDeclaration": 46177,
+                          "src": "1507:14:131",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_CheckGelatoLow_$46177",
+                            "typeString": "contract CheckGelatoLow"
+                          }
+                        }
+                      },
+                      "id": 50968,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1503:20:131",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_CheckGelatoLow_$46177",
+                        "typeString": "contract CheckGelatoLow"
+                      }
+                    },
+                    "src": "1499:24:131",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_CheckGelatoLow_$46177",
+                      "typeString": "contract CheckGelatoLow"
+                    }
+                  },
+                  "id": 50970,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1499:24:131"
+                },
+                {
+                  "expression": {
+                    "id": 50976,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 50971,
+                      "name": "gelato",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 50956,
+                      "src": "1533:6:131",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_MockGelatoTreasury_$50945",
+                        "typeString": "contract MockGelatoTreasury"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 50974,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "1542:22:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_MockGelatoTreasury_$50945_$",
+                          "typeString": "function () returns (contract MockGelatoTreasury)"
+                        },
+                        "typeName": {
+                          "id": 50973,
+                          "nodeType": "UserDefinedTypeName",
+                          "pathNode": {
+                            "id": 50972,
+                            "name": "MockGelatoTreasury",
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 50945,
+                            "src": "1546:18:131"
+                          },
+                          "referencedDeclaration": 50945,
+                          "src": "1546:18:131",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_MockGelatoTreasury_$50945",
+                            "typeString": "contract MockGelatoTreasury"
+                          }
+                        }
+                      },
+                      "id": 50975,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1542:24:131",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_MockGelatoTreasury_$50945",
+                        "typeString": "contract MockGelatoTreasury"
+                      }
+                    },
+                    "src": "1533:33:131",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_MockGelatoTreasury_$50945",
+                      "typeString": "contract MockGelatoTreasury"
+                    }
+                  },
+                  "id": 50977,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1533:33:131"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 50961,
+              "nodeType": "StructuredDocumentation",
+              "src": "1368:90:131",
+              "text": " @notice Deploy the `CheckGelatoLow` and `MockGelatoTreasury` contracts."
+            },
+            "functionSelector": "0a9254e4",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setUp",
+            "nameLocation": "1472:5:131",
+            "parameters": {
+              "id": 50962,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1477:2:131"
+            },
+            "returnParameters": {
+              "id": 50963,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1489:0:131"
+            },
+            "scope": 51070,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 51026,
+            "nodeType": "FunctionDefinition",
+            "src": "1758:398:131",
+            "nodes": [],
+            "body": {
+              "id": 51025,
+              "nodeType": "Block",
+              "src": "1840:316:131",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    50991
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 50991,
+                      "mutability": "mutable",
+                      "name": "p",
+                      "nameLocation": "1879:1:131",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 51025,
+                      "src": "1850:30:131",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Params_$46138_memory_ptr",
+                        "typeString": "struct CheckGelatoLow.Params"
+                      },
+                      "typeName": {
+                        "id": 50990,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 50989,
+                          "name": "CheckGelatoLow.Params",
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 46138,
+                          "src": "1850:21:131"
+                        },
+                        "referencedDeclaration": 46138,
+                        "src": "1850:21:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Params_$46138_storage_ptr",
+                          "typeString": "struct CheckGelatoLow.Params"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 51001,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 50996,
+                            "name": "gelato",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 50956,
+                            "src": "1937:6:131",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_MockGelatoTreasury_$50945",
+                              "typeString": "contract MockGelatoTreasury"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_MockGelatoTreasury_$50945",
+                              "typeString": "contract MockGelatoTreasury"
+                            }
+                          ],
+                          "id": 50995,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1929:7:131",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 50994,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "1929:7:131",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 50997,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1929:15:131",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 50998,
+                        "name": "_threshold",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 50982,
+                        "src": "1969:10:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "id": 50999,
+                        "name": "_recipient",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 50984,
+                        "src": "2004:10:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "id": 50992,
+                        "name": "CheckGelatoLow",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 46177,
+                        "src": "1883:14:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_CheckGelatoLow_$46177_$",
+                          "typeString": "type(contract CheckGelatoLow)"
+                        }
+                      },
+                      "id": 50993,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "Params",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 46138,
+                      "src": "1883:21:131",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_struct$_Params_$46138_storage_ptr_$",
+                        "typeString": "type(struct CheckGelatoLow.Params storage pointer)"
+                      }
+                    },
+                    "id": 51000,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [
+                      "treasury",
+                      "threshold",
+                      "recipient"
+                    ],
+                    "nodeType": "FunctionCall",
+                    "src": "1883:142:131",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Params_$46138_memory_ptr",
+                      "typeString": "struct CheckGelatoLow.Params memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1850:175:131"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 51011,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "arguments": [
+                            {
+                              "id": 51007,
+                              "name": "_recipient",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 50984,
+                              "src": "2070:10:131",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            },
+                            {
+                              "id": 51008,
+                              "name": "eth",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 50960,
+                              "src": "2082:3:131",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              },
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "expression": {
+                              "id": 51005,
+                              "name": "gelato",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 50956,
+                              "src": "2046:6:131",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_MockGelatoTreasury_$50945",
+                                "typeString": "contract MockGelatoTreasury"
+                              }
+                            },
+                            "id": 51006,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "userTokenBalance",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 50944,
+                            "src": "2046:23:131",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_view$_t_address_$_t_address_$returns$_t_uint256_$",
+                              "typeString": "function (address,address) view external returns (uint256)"
+                            }
+                          },
+                          "id": 51009,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "2046:40:131",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "<",
+                        "rightExpression": {
+                          "id": 51010,
+                          "name": "_threshold",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 50982,
+                          "src": "2089:10:131",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "2046:53:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "expression": {
+                        "id": 51002,
+                        "name": "vm",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 122936,
+                        "src": "2036:2:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Vm_$119058",
+                          "typeString": "contract Vm"
+                        }
+                      },
+                      "id": 51004,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "assume",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 118582,
+                      "src": "2036:9:131",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure external"
+                      }
+                    },
+                    "id": 51012,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2036:64:131",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 51013,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2036:64:131"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "id": 51019,
+                                "name": "p",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 50991,
+                                "src": "2139:1:131",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_struct$_Params_$46138_memory_ptr",
+                                  "typeString": "struct CheckGelatoLow.Params memory"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_struct$_Params_$46138_memory_ptr",
+                                  "typeString": "struct CheckGelatoLow.Params memory"
+                                }
+                              ],
+                              "expression": {
+                                "id": 51017,
+                                "name": "abi",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": -1,
+                                "src": "2128:3:131",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_magic_abi",
+                                  "typeString": "abi"
+                                }
+                              },
+                              "id": 51018,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "memberName": "encode",
+                              "nodeType": "MemberAccess",
+                              "src": "2128:10:131",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_abiencode_pure$__$returns$_t_bytes_memory_ptr_$",
+                                "typeString": "function () pure returns (bytes memory)"
+                              }
+                            },
+                            "id": 51020,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "2128:13:131",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes_memory_ptr",
+                              "typeString": "bytes memory"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_bytes_memory_ptr",
+                              "typeString": "bytes memory"
+                            }
+                          ],
+                          "expression": {
+                            "id": 51015,
+                            "name": "c",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 50952,
+                            "src": "2120:1:131",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_CheckGelatoLow_$46177",
+                              "typeString": "contract CheckGelatoLow"
+                            }
+                          },
+                          "id": 51016,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "check",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 46176,
+                          "src": "2120:7:131",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$_t_bytes_memory_ptr_$returns$_t_bool_$",
+                            "typeString": "function (bytes memory) view external returns (bool)"
+                          }
+                        },
+                        "id": 51021,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "2120:22:131",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "74727565",
+                        "id": 51022,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "bool",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2144:4:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "value": "true"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 51014,
+                      "name": "assertEq",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        123071,
+                        123096,
+                        123109,
+                        123125,
+                        123167,
+                        123209,
+                        123251,
+                        123288,
+                        123325,
+                        123362,
+                        114965,
+                        114990,
+                        115020,
+                        115045,
+                        115104,
+                        115129,
+                        115159,
+                        115184,
+                        116284,
+                        116319
+                      ],
+                      "referencedDeclaration": 123071,
+                      "src": "2111:8:131",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bool_$_t_bool_$returns$__$",
+                        "typeString": "function (bool,bool)"
+                      }
+                    },
+                    "id": 51023,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2111:38:131",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 51024,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2111:38:131"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 50980,
+              "nodeType": "StructuredDocumentation",
+              "src": "1579:174:131",
+              "text": " @notice Fuzz the `check` function and assert that it always returns true\n         when the user's balance in the treasury is less than the threshold."
+            },
+            "functionSelector": "7d447886",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testFuzz_check_succeeds",
+            "nameLocation": "1767:23:131",
+            "parameters": {
+              "id": 50985,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 50982,
+                  "mutability": "mutable",
+                  "name": "_threshold",
+                  "nameLocation": "1799:10:131",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51026,
+                  "src": "1791:18:131",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 50981,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1791:7:131",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 50984,
+                  "mutability": "mutable",
+                  "name": "_recipient",
+                  "nameLocation": "1819:10:131",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51026,
+                  "src": "1811:18:131",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 50983,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1811:7:131",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1790:40:131"
+            },
+            "returnParameters": {
+              "id": 50986,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1840:0:131"
+            },
+            "scope": 51070,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 51069,
+            "nodeType": "FunctionDefinition",
+            "src": "2372:395:131",
+            "nodes": [],
+            "body": {
+              "id": 51068,
+              "nodeType": "Block",
+              "src": "2463:304:131",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    51038
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 51038,
+                      "mutability": "mutable",
+                      "name": "p",
+                      "nameLocation": "2502:1:131",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 51068,
+                      "src": "2473:30:131",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Params_$46138_memory_ptr",
+                        "typeString": "struct CheckGelatoLow.Params"
+                      },
+                      "typeName": {
+                        "id": 51037,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 51036,
+                          "name": "CheckGelatoLow.Params",
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 46138,
+                          "src": "2473:21:131"
+                        },
+                        "referencedDeclaration": 46138,
+                        "src": "2473:21:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Params_$46138_storage_ptr",
+                          "typeString": "struct CheckGelatoLow.Params"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 51048,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 51043,
+                            "name": "gelato",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 50956,
+                            "src": "2560:6:131",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_MockGelatoTreasury_$50945",
+                              "typeString": "contract MockGelatoTreasury"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_MockGelatoTreasury_$50945",
+                              "typeString": "contract MockGelatoTreasury"
+                            }
+                          ],
+                          "id": 51042,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "2552:7:131",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 51041,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "2552:7:131",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 51044,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "2552:15:131",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 51045,
+                        "name": "_threshold",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51029,
+                        "src": "2592:10:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "id": 51046,
+                        "name": "_recipient",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51031,
+                        "src": "2627:10:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "id": 51039,
+                        "name": "CheckGelatoLow",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 46177,
+                        "src": "2506:14:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_CheckGelatoLow_$46177_$",
+                          "typeString": "type(contract CheckGelatoLow)"
+                        }
+                      },
+                      "id": 51040,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "Params",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 46138,
+                      "src": "2506:21:131",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_struct$_Params_$46138_storage_ptr_$",
+                        "typeString": "type(struct CheckGelatoLow.Params storage pointer)"
+                      }
+                    },
+                    "id": 51047,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [
+                      "treasury",
+                      "threshold",
+                      "recipient"
+                    ],
+                    "nodeType": "FunctionCall",
+                    "src": "2506:142:131",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Params_$46138_memory_ptr",
+                      "typeString": "struct CheckGelatoLow.Params memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2473:175:131"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 51052,
+                        "name": "_recipient",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51031,
+                        "src": "2682:10:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 51053,
+                        "name": "eth",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 50960,
+                        "src": "2694:3:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 51054,
+                        "name": "_threshold",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51029,
+                        "src": "2699:10:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 51049,
+                        "name": "gelato",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 50956,
+                        "src": "2659:6:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_MockGelatoTreasury_$50945",
+                          "typeString": "contract MockGelatoTreasury"
+                        }
+                      },
+                      "id": 51051,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "setTokenBalance",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 50928,
+                      "src": "2659:22:131",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,address,uint256) external"
+                      }
+                    },
+                    "id": 51055,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2659:51:131",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 51056,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2659:51:131"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "id": 51062,
+                                "name": "p",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 51038,
+                                "src": "2749:1:131",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_struct$_Params_$46138_memory_ptr",
+                                  "typeString": "struct CheckGelatoLow.Params memory"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_struct$_Params_$46138_memory_ptr",
+                                  "typeString": "struct CheckGelatoLow.Params memory"
+                                }
+                              ],
+                              "expression": {
+                                "id": 51060,
+                                "name": "abi",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": -1,
+                                "src": "2738:3:131",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_magic_abi",
+                                  "typeString": "abi"
+                                }
+                              },
+                              "id": 51061,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "memberName": "encode",
+                              "nodeType": "MemberAccess",
+                              "src": "2738:10:131",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_abiencode_pure$__$returns$_t_bytes_memory_ptr_$",
+                                "typeString": "function () pure returns (bytes memory)"
+                              }
+                            },
+                            "id": 51063,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "2738:13:131",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes_memory_ptr",
+                              "typeString": "bytes memory"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_bytes_memory_ptr",
+                              "typeString": "bytes memory"
+                            }
+                          ],
+                          "expression": {
+                            "id": 51058,
+                            "name": "c",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 50952,
+                            "src": "2730:1:131",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_CheckGelatoLow_$46177",
+                              "typeString": "contract CheckGelatoLow"
+                            }
+                          },
+                          "id": 51059,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "check",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 46176,
+                          "src": "2730:7:131",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$_t_bytes_memory_ptr_$returns$_t_bool_$",
+                            "typeString": "function (bytes memory) view external returns (bool)"
+                          }
+                        },
+                        "id": 51064,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "2730:22:131",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "66616c7365",
+                        "id": 51065,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "bool",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2754:5:131",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "value": "false"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 51057,
+                      "name": "assertEq",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        123071,
+                        123096,
+                        123109,
+                        123125,
+                        123167,
+                        123209,
+                        123251,
+                        123288,
+                        123325,
+                        123362,
+                        114965,
+                        114990,
+                        115020,
+                        115045,
+                        115104,
+                        115129,
+                        115159,
+                        115184,
+                        116284,
+                        116319
+                      ],
+                      "referencedDeclaration": 123071,
+                      "src": "2721:8:131",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bool_$_t_bool_$returns$__$",
+                        "typeString": "function (bool,bool)"
+                      }
+                    },
+                    "id": 51066,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2721:39:131",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 51067,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2721:39:131"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 51027,
+              "nodeType": "StructuredDocumentation",
+              "src": "2162:205:131",
+              "text": " @notice Fuzz the `check` function and assert that it always returns false\n         when the user's balance in the treasury is greater than or equal\n         to the threshold."
+            },
+            "functionSelector": "75a7b620",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testFuzz_check_highBalance_fails",
+            "nameLocation": "2381:32:131",
+            "parameters": {
+              "id": 51032,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51029,
+                  "mutability": "mutable",
+                  "name": "_threshold",
+                  "nameLocation": "2422:10:131",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51069,
+                  "src": "2414:18:131",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 51028,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2414:7:131",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 51031,
+                  "mutability": "mutable",
+                  "name": "_recipient",
+                  "nameLocation": "2442:10:131",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51069,
+                  "src": "2434:18:131",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 51030,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2434:7:131",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2413:40:131"
+            },
+            "returnParameters": {
+              "id": 51033,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2463:0:131"
+            },
+            "scope": 51070,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 50947,
+              "name": "Test",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 117552,
+              "src": "993:4:131"
+            },
+            "id": 50948,
+            "nodeType": "InheritanceSpecifier",
+            "src": "993:4:131"
+          }
+        ],
+        "canonicalName": "CheckGelatoLowTest",
+        "contractDependencies": [
+          46177,
+          50945
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 50946,
+          "nodeType": "StructuredDocumentation",
+          "src": "810:151:131",
+          "text": " @title  CheckGelatoLowTest\n @notice Tests the CheckBalanceHigh contract via fuzzing both the success case\n         and the failure case."
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          51070,
+          117552,
+          122943,
+          122940,
+          117503,
+          116655,
+          127476,
+          126797,
+          125064,
+          124370,
+          116431
+        ],
+        "name": "CheckGelatoLowTest",
+        "nameLocation": "971:18:131",
+        "scope": 51071,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 131
+}

@@ -1,0 +1,379 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "check",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b50610163806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c8063c64b3bb514610030575b600080fd5b61004461003e366004610087565b50600190565b604051901515815260200160405180910390f35b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b60006020828403121561009957600080fd5b813567ffffffffffffffff808211156100b157600080fd5b818401915084601f8301126100c557600080fd5b8135818111156100d7576100d7610058565b604051601f82017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0908116603f0116810190838211818310171561011d5761011d610058565b8160405282815287602084870101111561013657600080fd5b82602086016020830137600092810160200192909252509594505050505056fea164736f6c634300080f000a",
+    "sourceMap": "181:173:114:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c8063c64b3bb514610030575b600080fd5b61004461003e366004610087565b50600190565b604051901515815260200160405180910390f35b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b60006020828403121561009957600080fd5b813567ffffffffffffffff808211156100b157600080fd5b818401915084601f8301126100c557600080fd5b8135818111156100d7576100d7610058565b604051601f82017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0908116603f0116810190838211818310171561011d5761011d610058565b8160405282815287602084870101111561013657600080fd5b82602086016020830137600092810160200192909252509594505050505056fea164736f6c634300080f000a",
+    "sourceMap": "181:173:114:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;266:86;;;;;;:::i;:::-;-1:-1:-1;341:4:114;;266:86;;;;1353:14:283;;1346:22;1328:41;;1316:2;1301:18;266:86:114;;;;;;;14:184:283;66:77;63:1;56:88;163:4;160:1;153:15;187:4;184:1;177:15;203:980;271:6;324:2;312:9;303:7;299:23;295:32;292:52;;;340:1;337;330:12;292:52;380:9;367:23;409:18;450:2;442:6;439:14;436:34;;;466:1;463;456:12;436:34;504:6;493:9;489:22;479:32;;549:7;542:4;538:2;534:13;530:27;520:55;;571:1;568;561:12;520:55;607:2;594:16;629:2;625;622:10;619:36;;;635:18;;:::i;:::-;769:2;763:9;831:4;823:13;;674:66;819:22;;;843:2;815:31;811:40;799:53;;;867:18;;;887:22;;;864:46;861:72;;;913:18;;:::i;:::-;953:10;949:2;942:22;988:2;980:6;973:18;1028:7;1023:2;1018;1014;1010:11;1006:20;1003:33;1000:53;;;1049:1;1046;1039:12;1000:53;1105:2;1100;1096;1092:11;1087:2;1079:6;1075:15;1062:46;1150:1;1128:15;;;1145:2;1124:24;1117:35;;;;-1:-1:-1;1132:6:283;203:980;-1:-1:-1;;;;;203:980:283:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "check(bytes)": "c64b3bb5"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"check\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"check(bytes)\":{\"params\":{\"_params\":\"Encoded parameters for the drip check.\"},\"returns\":{\"_0\":\"Whether the drip should be executed.\"}}},\"title\":\"CheckTrue\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"check(bytes)\":{\"notice\":\"Checks whether a drip should be executable.\"}},\"notice\":\"DripCheck that always returns true.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/periphery/drippie/dripchecks/CheckTrue.sol\":\"CheckTrue\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"none\"},\"optimizer\":{\"enabled\":true,\"runs\":999999},\"remappings\":[\":@cwia/=node_modules/clones-with-immutable-args/src/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/\",\":@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/\",\":@rari-capital/=node_modules/@rari-capital/\",\":@rari-capital/solmate/=node_modules/@rari-capital/solmate/\",\":clones-with-immutable-args/=node_modules/clones-with-immutable-args/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\"]},\"sources\":{\"contracts/periphery/drippie/IDripCheck.sol\":{\"keccak256\":\"0xb52c89360566b2963dfd82cb2cc23f0c3ce4503a69e8563878e8aa80b6c60b3f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d1a67f456f8eb6219f4e85857714bed1c27ce934e5e81497b733646848b315c\",\"dweb:/ipfs/QmRFwsdm5ZCWP9b3S7YAz9TuCdgLzsNrAMpX5WckU3v7WG\"]},\"contracts/periphery/drippie/dripchecks/CheckTrue.sol\":{\"keccak256\":\"0x7c18afe5a410a91a5037acb68e2ce98b8146ef292ef8e9fc5c09ebc0a9a9befc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b3ab6a1337f3c259c405c75191cc18fa15a22d363a2edb79c0e2cc5af979a91c\",\"dweb:/ipfs/QmdjM2ATteRowWBGSGEximmMAfceVmTNdzyDfSa6k2GJWD\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.15+commit.e14f2714"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "check",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "check(bytes)": {
+            "params": {
+              "_params": "Encoded parameters for the drip check."
+            },
+            "returns": {
+              "_0": "Whether the drip should be executed."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "check(bytes)": {
+            "notice": "Checks whether a drip should be executable."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@cwia/=node_modules/clones-with-immutable-args/src/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/",
+        "@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/",
+        "@rari-capital/=node_modules/@rari-capital/",
+        "@rari-capital/solmate/=node_modules/@rari-capital/solmate/",
+        "clones-with-immutable-args/=node_modules/clones-with-immutable-args/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 999999
+      },
+      "metadata": {
+        "bytecodeHash": "none"
+      },
+      "compilationTarget": {
+        "contracts/periphery/drippie/dripchecks/CheckTrue.sol": "CheckTrue"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/periphery/drippie/IDripCheck.sol": {
+        "keccak256": "0xb52c89360566b2963dfd82cb2cc23f0c3ce4503a69e8563878e8aa80b6c60b3f",
+        "urls": [
+          "bzz-raw://2d1a67f456f8eb6219f4e85857714bed1c27ce934e5e81497b733646848b315c",
+          "dweb:/ipfs/QmRFwsdm5ZCWP9b3S7YAz9TuCdgLzsNrAMpX5WckU3v7WG"
+        ],
+        "license": "MIT"
+      },
+      "contracts/periphery/drippie/dripchecks/CheckTrue.sol": {
+        "keccak256": "0x7c18afe5a410a91a5037acb68e2ce98b8146ef292ef8e9fc5c09ebc0a9a9befc",
+        "urls": [
+          "bzz-raw://b3ab6a1337f3c259c405c75191cc18fa15a22d363a2edb79c0e2cc5af979a91c",
+          "dweb:/ipfs/QmdjM2ATteRowWBGSGEximmMAfceVmTNdzyDfSa6k2GJWD"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": {}
+  },
+  "userdoc": {
+    "version": 1,
+    "kind": "user",
+    "methods": {
+      "check(bytes)": {
+        "notice": "Checks whether a drip should be executable."
+      }
+    },
+    "notice": "DripCheck that always returns true."
+  },
+  "devdoc": {
+    "version": 1,
+    "kind": "dev",
+    "methods": {
+      "check(bytes)": {
+        "params": {
+          "_params": "Encoded parameters for the drip check."
+        },
+        "returns": {
+          "_0": "Whether the drip should be executed."
+        }
+      }
+    },
+    "title": "CheckTrue"
+  },
+  "ast": {
+    "absolutePath": "contracts/periphery/drippie/dripchecks/CheckTrue.sol",
+    "id": 46197,
+    "exportedSymbols": {
+      "CheckTrue": [
+        46196
+      ],
+      "IDripCheck": [
+        46024
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:323:114",
+    "nodes": [
+      {
+        "id": 46179,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:114",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".15"
+        ]
+      },
+      {
+        "id": 46181,
+        "nodeType": "ImportDirective",
+        "src": "57:47:114",
+        "nodes": [],
+        "absolutePath": "contracts/periphery/drippie/IDripCheck.sol",
+        "file": "../IDripCheck.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 46197,
+        "sourceUnit": 46025,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 46180,
+              "name": "IDripCheck",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 46024,
+              "src": "66:10:114",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 46196,
+        "nodeType": "ContractDefinition",
+        "src": "181:173:114",
+        "nodes": [
+          {
+            "id": 46195,
+            "nodeType": "FunctionDefinition",
+            "src": "266:86:114",
+            "nodes": [],
+            "body": {
+              "id": 46194,
+              "nodeType": "Block",
+              "src": "324:28:114",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "hexValue": "74727565",
+                    "id": 46192,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "341:4:114",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "functionReturnParameters": 46191,
+                  "id": 46193,
+                  "nodeType": "Return",
+                  "src": "334:11:114"
+                }
+              ]
+            },
+            "baseFunctions": [
+              46023
+            ],
+            "documentation": {
+              "id": 46185,
+              "nodeType": "StructuredDocumentation",
+              "src": "220:41:114",
+              "text": " @inheritdoc IDripCheck"
+            },
+            "functionSelector": "c64b3bb5",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "check",
+            "nameLocation": "275:5:114",
+            "parameters": {
+              "id": 46188,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46187,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46195,
+                  "src": "281:12:114",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 46186,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "281:5:114",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "280:14:114"
+            },
+            "returnParameters": {
+              "id": 46191,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46190,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46195,
+                  "src": "318:4:114",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 46189,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "318:4:114",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "317:6:114"
+            },
+            "scope": 46196,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 46183,
+              "name": "IDripCheck",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 46024,
+              "src": "203:10:114"
+            },
+            "id": 46184,
+            "nodeType": "InheritanceSpecifier",
+            "src": "203:10:114"
+          }
+        ],
+        "canonicalName": "CheckTrue",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 46182,
+          "nodeType": "StructuredDocumentation",
+          "src": "106:74:114",
+          "text": " @title CheckTrue\n @notice DripCheck that always returns true."
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          46196,
+          46024
+        ],
+        "name": "CheckTrue",
+        "nameLocation": "190:9:114",
+        "scope": 46197,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 114
+}
